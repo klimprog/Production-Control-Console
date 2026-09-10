@@ -1,0 +1,886 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Окно и вкладки -->
+  <ProdConsole.Window.Title>Центральная консоль производства</ProdConsole.Window.Title>
+  <ProdConsole.RimUi.Title>Консоль производства отключена</ProdConsole.RimUi.Title>
+  <ProdConsole.RimUi.Outdated>Фреймворк RimUI Framework устарел: установлен {0}, консоли нужен {1} или новее.</ProdConsole.RimUi.Outdated>
+  <ProdConsole.RimUi.Stopped>Пока он не обновлён, мод отключён целиком: кнопка «Производство» скрыта, заказы, поля и стадо мод не трогает. Сами заказы и настройки целы — обновите RimUI Framework, и всё продолжится с того же места.</ProdConsole.RimUi.Stopped>
+  <ProdConsole.Window.NoMap>Нет активной карты.</ProdConsole.Window.NoMap>
+  <ProdConsole.Tab.Benches>Верстаки</ProdConsole.Tab.Benches>
+  <ProdConsole.Tab.Settings>Настройки</ProdConsole.Tab.Settings>
+
+  <!-- Каталог -->
+  <ProdConsole.Catalog.Uncategorized>Прочее</ProdConsole.Catalog.Uncategorized>
+
+  <!-- Колонки таблиц каталога -->
+
+  <!-- Статусы -->
+  <ProdConsole.Bench.Status.Free>свободен</ProdConsole.Bench.Status.Free>
+  <ProdConsole.Bench.Status.Working>в работе</ProdConsole.Bench.Status.Working>
+  <ProdConsole.Bench.Status.Paused>пауза</ProdConsole.Bench.Status.Paused>
+  <ProdConsole.Bench.Tasks>активных задач: {0}</ProdConsole.Bench.Tasks>
+  <ProdConsole.Status.Ready>можно производить</ProdConsole.Status.Ready>
+  <ProdConsole.Status.NoBench>нет верстака</ProdConsole.Status.NoBench>
+  <ProdConsole.Status.NoResearch>не исследовано</ProdConsole.Status.NoResearch>
+  <ProdConsole.Status.NoIngredients>не хватает ресурсов</ProdConsole.Status.NoIngredients>
+  <ProdConsole.Status.NoPawn>некому работать</ProdConsole.Status.NoPawn>
+  <ProdConsole.Status.NoSource>склад-источник исчез</ProdConsole.Status.NoSource>
+  <ProdConsole.Status.NoStore>склад-приёмник исчез</ProdConsole.Status.NoStore>
+  <ProdConsole.Status.BenchOff>верстаки выключены</ProdConsole.Status.BenchOff>
+  <ProdConsole.Status.PawnOff>исполнители выключены</ProdConsole.Status.PawnOff>
+  <ProdConsole.Status.SourceOff>склад-источник выключен</ProdConsole.Status.SourceOff>
+  <ProdConsole.Status.StoreOff>склад-приёмник выключен</ProdConsole.Status.StoreOff>
+  <ProdConsole.Use>использовать</ProdConsole.Use>
+  <ProdConsole.Ignore>игнорировать</ProdConsole.Ignore>
+  <ProdConsole.Ignore.State>игнорируется</ProdConsole.Ignore.State>
+  <ProdConsole.Storage.Rename>Переименовать</ProdConsole.Storage.Rename>
+  <ProdConsole.Storage.Filters>Фильтры</ProdConsole.Storage.Filters>
+  <ProdConsole.Ignore.Type>игнорировать этот тип</ProdConsole.Ignore.Type>
+  <ProdConsole.Ignore.Title>Игнорировать объект</ProdConsole.Ignore.Title>
+  <ProdConsole.Ignore.Accept>Игнорировать</ProdConsole.Ignore.Accept>
+  <ProdConsole.Ignore.Bench>Верстак «{0}» участвует в задачах ({1}). Если его игнорировать, мод перестанет его видеть, задания с него будут сняты, а из состава этих задач он будет удалён. Вернуть его можно галочкой «показывать игнорируемые» на вкладке верстаков.</ProdConsole.Ignore.Bench>
+  <ProdConsole.Ignore.BenchDef>Верстаки типа «{0}» участвуют в задачах ({1}). Если игнорировать весь тип, мод перестанет видеть все такие верстаки, задания с них будут сняты, а из состава этих задач они будут удалены. Вернуть их можно галочкой «показывать игнорируемые» на вкладке верстаков.</ProdConsole.Ignore.BenchDef>
+  <ProdConsole.Ignore.Pawn>Колонист «{0}» участвует в задачах ({1}). Если его игнорировать, мод перестанет его видеть, а из состава этих задач он будет удалён. Вернуть его можно галочкой «игнорировать» в его карточке.</ProdConsole.Ignore.Pawn>
+  <ProdConsole.Ignore.Storage>Склад «{0}» участвует в задачах ({1}). Если его игнорировать, мод перестанет его видеть, а из состава этих задач он будет удалён. Вернуть его можно через фильтр «Игнорируемые» на вкладке складов.</ProdConsole.Ignore.Storage>
+  <ProdConsole.Use.Off>выключен</ProdConsole.Use.Off>
+
+  <!-- Макеты (этап Ф1.5) -->
+
+  <!-- Задания -->
+  <ProdConsole.Orders.Mode.Count>{0} шт.</ProdConsole.Orders.Mode.Count>
+  <ProdConsole.Orders.Mode.Stock>запас {0}</ProdConsole.Orders.Mode.Stock>
+  <ProdConsole.Orders.Mode.Forever>бесконечно</ProdConsole.Orders.Mode.Forever>
+  <ProdConsole.Orders.Mode.Cycles>{0} циклов</ProdConsole.Orders.Mode.Cycles>
+  <ProdConsole.Orders.State.Active>работает</ProdConsole.Orders.State.Active>
+  <ProdConsole.Orders.State.Paused>пауза</ProdConsole.Orders.State.Paused>
+  <ProdConsole.Orders.State.Blocked>заблокировано</ProdConsole.Orders.State.Blocked>
+  <ProdConsole.Orders.State.Done>выполнено</ProdConsole.Orders.State.Done>
+  <ProdConsole.Orders.Delete>Удалить</ProdConsole.Orders.Delete>
+  <ProdConsole.Orders.AnyPawn>любой</ProdConsole.Orders.AnyPawn>
+
+  <!-- Верстаки -->
+  <ProdConsole.Benches.NoPawnNeeded>работает без пешки</ProdConsole.Benches.NoPawnNeeded>
+
+  <!-- Настройки -->
+
+  <!-- Задания на верстаках (Ф2) -->
+  <ProdConsole.Bill.Managed>консоль производства: {0}</ProdConsole.Bill.Managed>
+  <ProdConsole.Bill.Orphan>консоль производства: задание удалено</ProdConsole.Bill.Orphan>
+  <ProdConsole.Bill.NoWorker>исполнитель не назначен</ProdConsole.Bill.NoWorker>
+  <ProdConsole.Bench.Taken>Консоль взяла верстак «{0}». Заданий игрока приостановлено: {1} — пауза снимется, когда верстак освободится.</ProdConsole.Bench.Taken>
+
+  <!-- Режимы количества (короткие подписи переключателя) -->
+
+  <!-- Форма нового задания -->
+  <ProdConsole.NewOrder.Created>Задание создано: {0}</ProdConsole.NewOrder.Created>
+
+  <!-- Действия со списком заданий -->
+
+  <!-- Владение верстаком -->
+
+  <!-- Настройки (Ф2) -->
+
+  <!-- Ф3: материал, навык, исполнители -->
+  <ProdConsole.NewOrder.Saved>Задание изменено: {0}</ProdConsole.NewOrder.Saved>
+  <ProdConsole.NewOrder.Autonomous>К машинам, работающим без пешки, выбор исполнителей не относится: они делают работу сами.</ProdConsole.NewOrder.Autonomous>
+
+  <ProdConsole.Tab.Overview>Обзор</ProdConsole.Tab.Overview>
+  <ProdConsole.Tab.Production>Производство</ProdConsole.Tab.Production>
+  <ProdConsole.Wizard.Step.Product>Что производим</ProdConsole.Wizard.Step.Product>
+  <ProdConsole.Wizard.Step.Ingredients>Из чего</ProdConsole.Wizard.Step.Ingredients>
+  <ProdConsole.Wizard.Step.Benches>На чём</ProdConsole.Wizard.Step.Benches>
+  <ProdConsole.Wizard.Step.Summary>Сводка</ProdConsole.Wizard.Step.Summary>
+  <ProdConsole.Wizard.Sum.Nothing>не выбрано</ProdConsole.Wizard.Sum.Nothing>
+  <ProdConsole.Overview.State>Состояние производства</ProdConsole.Overview.State>
+  <ProdConsole.Production.New>Новая задача</ProdConsole.Production.New>
+  <ProdConsole.Production.PickHint>Выберите задачу слева.</ProdConsole.Production.PickHint>
+  <ProdConsole.Production.Need>нужно {0}</ProdConsole.Production.Need>
+  <ProdConsole.Production.Have>есть {0}</ProdConsole.Production.Have>
+  <ProdConsole.Production.Start>Запустить</ProdConsole.Production.Start>
+  <ProdConsole.Production.Stop>Остановить</ProdConsole.Production.Stop>
+  <ProdConsole.Benches.General>Общая информация</ProdConsole.Benches.General>
+  <ProdConsole.Benches.List>Список верстаков</ProdConsole.Benches.List>
+  <ProdConsole.Production.List>Список задач</ProdConsole.Production.List>
+  <ProdConsole.Tab.Storage>Склады</ProdConsole.Tab.Storage>
+  <ProdConsole.Storage.Section>Склады</ProdConsole.Storage.Section>
+  <ProdConsole.Storage.Any>любой склад</ProdConsole.Storage.Any>
+  <ProdConsole.Storage.StoreTo>Куда класть</ProdConsole.Storage.StoreTo>
+  <ProdConsole.Storage.Radius>Радиус поиска ингредиентов</ProdConsole.Storage.Radius>
+  <ProdConsole.Storage.Radius.Hint>Считается от верстака. 999 — искать по всей карте.</ProdConsole.Storage.Radius.Hint>
+  <ProdConsole.Storage.Empty>На карте нет ни одного склада.</ProdConsole.Storage.Empty>
+  <ProdConsole.Tab.Executors>Колонисты</ProdConsole.Tab.Executors>
+  <ProdConsole.Tab.Animals>Животноводство</ProdConsole.Tab.Animals>
+  <ProdConsole.Tab.Growing>Садоводство</ProdConsole.Tab.Growing>
+  <ProdConsole.Growing.Section>Поля и фермы</ProdConsole.Growing.Section>
+  <ProdConsole.Growing.Card>Карточка поля</ProdConsole.Growing.Card>
+  <ProdConsole.Growing.PickHint>Выберите поле или ферму слева.</ProdConsole.Growing.PickHint>
+  <ProdConsole.Growing.Empty>На карте нет полей и ферм.</ProdConsole.Growing.Empty>
+  <ProdConsole.Growing.Filter.All>Все</ProdConsole.Growing.Filter.All>
+  <ProdConsole.Growing.Filter.Farm>Ферма</ProdConsole.Growing.Filter.Farm>
+  <ProdConsole.Growing.Filter.Zone>Поле</ProdConsole.Growing.Filter.Zone>
+  <ProdConsole.Growing.Filter.Managed>Управляется</ProdConsole.Growing.Filter.Managed>
+  <ProdConsole.Growing.Filter.Idle>Простаивают</ProdConsole.Growing.Filter.Idle>
+  <ProdConsole.Growing.Filter.Blight>Болезнь</ProdConsole.Growing.Filter.Blight>
+  <ProdConsole.Growing.Idle>Не используется</ProdConsole.Growing.Idle>
+  <ProdConsole.Growing.Line>{0} · {1}</ProdConsole.Growing.Line>
+  <ProdConsole.Growing.Sick>болеет</ProdConsole.Growing.Sick>
+  <ProdConsole.Growing.Managed>управляется</ProdConsole.Growing.Managed>
+  <ProdConsole.Growing.Info>Информация</ProdConsole.Growing.Info>
+  <ProdConsole.Growing.Assigned>Назначено сеять</ProdConsole.Growing.Assigned>
+  <ProdConsole.Growing.Drug>Наркотик</ProdConsole.Growing.Drug>
+  <ProdConsole.Growing.Now>Сейчас выращивается</ProdConsole.Growing.Now>
+  <ProdConsole.Growing.Sown>Засеяно</ProdConsole.Growing.Sown>
+  <ProdConsole.Growing.SownLine>{0} из {1}</ProdConsole.Growing.SownLine>
+  <ProdConsole.Growing.Skill>Требуемый навык</ProdConsole.Growing.Skill>
+  <ProdConsole.Growing.Harvest>Доступно к сбору</ProdConsole.Growing.Harvest>
+  <ProdConsole.Growing.HarvestLine>{0} из {1}</ProdConsole.Growing.HarvestLine>
+  <ProdConsole.Growing.Healthy>Здоров</ProdConsole.Growing.Healthy>
+  <ProdConsole.Growing.Blight>Порча: {0} посева</ProdConsole.Growing.Blight>
+  <ProdConsole.Growing.Sowing>Посадка</ProdConsole.Growing.Sowing>
+  <ProdConsole.Growing.Sow.Off>Этим полем мод не управляет: культуру назначает игрок.</ProdConsole.Growing.Sow.Off>
+  <ProdConsole.Growing.Mode>Режим</ProdConsole.Growing.Mode>
+  <ProdConsole.Growing.Mode.Repeat>Повтор</ProdConsole.Growing.Mode.Repeat>
+  <ProdConsole.Growing.Mode.Queue>Очередь</ProdConsole.Growing.Mode.Queue>
+  <ProdConsole.Growing.Mode.None>Не сажать</ProdConsole.Growing.Mode.None>
+  <ProdConsole.Growing.Mode.None.Note>Поле остаётся под управлением, но культура на него не назначается.</ProdConsole.Growing.Mode.None.Note>
+  <ProdConsole.Growing.RepeatQueue>повторять очередь</ProdConsole.Growing.RepeatQueue>
+  <ProdConsole.Growing.Queue.Note>Перетащите культуру из «Доступно» в «Очередь». Порядок в очереди тоже меняется перетаскиванием, лишнее убирается крестиком. Следующая культура назначается, когда поле опустеет.</ProdConsole.Growing.Queue.Note>
+  <ProdConsole.Growing.Available>Доступно</ProdConsole.Growing.Available>
+  <ProdConsole.Growing.Queue>Очередь</ProdConsole.Growing.Queue>
+  <ProdConsole.Growing.Queue.Remove>Убрать из очереди</ProdConsole.Growing.Queue.Remove>
+  <ProdConsole.Growing.Queue.Current>сейчас</ProdConsole.Growing.Queue.Current>
+  <ProdConsole.Growing.NotNow>Сейчас посадить нельзя.</ProdConsole.Growing.NotNow>
+  <ProdConsole.Growing.OutOfSeason>Не сезон роста.</ProdConsole.Growing.OutOfSeason>
+  <ProdConsole.Growing.Unavailable>Нельзя посадить сейчас</ProdConsole.Growing.Unavailable>
+  <ProdConsole.Growing.NothingSowable>Сейчас на этом поле нельзя посадить ничего: подходящих культур нет.</ProdConsole.Growing.NothingSowable>
+  <ProdConsole.Growing.Blocked>Поле закрыто модом: посев начнётся, когда придёт черёд следующей культуры.</ProdConsole.Growing.Blocked>
+  <ProdConsole.Growing.CutBlighted>вырубать больные и не сеять, пока поле не вылечится</ProdConsole.Growing.CutBlighted>
+  <ProdConsole.Growing.Copy>Копировать план</ProdConsole.Growing.Copy>
+  <ProdConsole.Growing.Copy.Tip>Скопировать настройки этого поля. Копируется только сохранённый план — сохраните изменения.</ProdConsole.Growing.Copy.Tip>
+  <ProdConsole.Growing.Paste>Вставить план</ProdConsole.Growing.Paste>
+  <ProdConsole.Growing.Paste.Tip>Применить скопированный план к этому полю. Культуры, которые здесь не растут, будут отброшены.</ProdConsole.Growing.Paste.Tip>
+  <ProdConsole.Growing.Copied>План поля скопирован.</ProdConsole.Growing.Copied>
+  <ProdConsole.Growing.Paste.Dropped>На этом поле нельзя вырастить: {0}. Остальное вставлено.</ProdConsole.Growing.Paste.Dropped>
+  <ProdConsole.Growing.Queue.Reset>Отменить текущую и начать очередь заново</ProdConsole.Growing.Queue.Reset>
+  <ProdConsole.Growing.ChipFacts>{0} дн. · урожай {1} · навык {2}</ProdConsole.Growing.ChipFacts>
+  <ProdConsole.Growing.What>Что сажать</ProdConsole.Growing.What>
+  <ProdConsole.Growing.NoPlants>На этом поле нельзя вырастить ничего из доступного.</ProdConsole.Growing.NoPlants>
+  <ProdConsole.Growing.CutNow>Вырубить текущий посев для немедленной посадки выбранного</ProdConsole.Growing.CutNow>
+  <ProdConsole.Growing.PickPlant>Выберите культуру</ProdConsole.Growing.PickPlant>
+  <ProdConsole.Growing.Confirm.Cut>На поле растёт {0} ({1} растений). Смена культуры на «{2}» с посадкой немедленно означает, что растущее срежут, не дожидаясь урожая. Продолжить?</ProdConsole.Growing.Confirm.Cut>
+  <ProdConsole.Growing.Days>Срок роста: {0} дн.</ProdConsole.Growing.Days>
+  <ProdConsole.Growing.Yield>Урожай: {0}</ProdConsole.Growing.Yield>
+  <ProdConsole.Growing.SkillShort>Навык: {0}</ProdConsole.Growing.SkillShort>
+  <ProdConsole.Animals.Section>Виды животных</ProdConsole.Animals.Section>
+  <ProdConsole.Animals.Card>Карточка вида</ProdConsole.Animals.Card>
+  <ProdConsole.Animals.PickHint>Выберите вид животных слева.</ProdConsole.Animals.PickHint>
+  <ProdConsole.Animals.Empty>На карте нет животных.</ProdConsole.Animals.Empty>
+  <ProdConsole.Animals.Filter.All>Все</ProdConsole.Animals.Filter.All>
+  <ProdConsole.Animals.Filter.Predator>Хищники</ProdConsole.Animals.Filter.Predator>
+  <ProdConsole.Animals.Filter.Peaceful>Не хищники</ProdConsole.Animals.Filter.Peaceful>
+  <ProdConsole.Animals.Filter.OnMap>Есть на карте</ProdConsole.Animals.Filter.OnMap>
+  <ProdConsole.Animals.Filter.Tamed>Есть прирученные</ProdConsole.Animals.Filter.Tamed>
+  <ProdConsole.Animals.Predator.Tip>Хищник: будучи голодным, охотится на животных меньшего размера, иногда и на людей.</ProdConsole.Animals.Predator.Tip>
+  <ProdConsole.Animals.Pack.Tip>Вьючное: носит груз в караване.</ProdConsole.Animals.Pack.Tip>
+  <ProdConsole.Animals.Predator>Хищник</ProdConsole.Animals.Predator>
+  <ProdConsole.Animals.Filter.Pack>Вьючные</ProdConsole.Animals.Filter.Pack>
+  <ProdConsole.Animals.TamedLine>Приручено: {0}</ProdConsole.Animals.TamedLine>
+  <ProdConsole.Animals.WildLine>Дикие: {0}</ProdConsole.Animals.WildLine>
+  <ProdConsole.Animals.Mode.Tame>Приручать</ProdConsole.Animals.Mode.Tame>
+  <ProdConsole.Animals.Mode.Hunt>Охота</ProdConsole.Animals.Mode.Hunt>
+  <ProdConsole.Animals.Mode.Slaughter>Забой</ProdConsole.Animals.Mode.Slaughter>
+  <ProdConsole.Animals.Info>Информация</ProdConsole.Animals.Info>
+  <ProdConsole.Animals.Auto>Автоуправление</ProdConsole.Animals.Auto>
+  <ProdConsole.Animals.TamedPanel>Приручённых: {0}</ProdConsole.Animals.TamedPanel>
+  <ProdConsole.Animals.WildPanel>Диких: {0}</ProdConsole.Animals.WildPanel>
+  <ProdConsole.Animals.Limits>Лимиты</ProdConsole.Animals.Limits>
+  <ProdConsole.Animals.Limits.Note>Сколько животных этого вида держать. Ниже минимума — приручаем, выше максимума — забиваем. «Всего» — предел отдельно для самцов и отдельно для самок, а возрастные клетки говорят, кого именно трогать, когда предел перейдён.</ProdConsole.Animals.Limits.Note>
+  <ProdConsole.Animals.Male>Самцы</ProdConsole.Animals.Male>
+  <ProdConsole.Animals.Female>Самки</ProdConsole.Animals.Female>
+  <ProdConsole.Animals.Limits.Total>Всего</ProdConsole.Animals.Limits.Total>
+  <ProdConsole.Animals.Limit.Infinite>Бесконечно</ProdConsole.Animals.Limit.Infinite>
+  <ProdConsole.Animals.Limit.Range>Диапазон</ProdConsole.Animals.Limit.Range>
+  <ProdConsole.Animals.Limit.Exact>Точное</ProdConsole.Animals.Limit.Exact>
+  <ProdConsole.Animals.Mode>Режим</ProdConsole.Animals.Mode>
+  <ProdConsole.Animals.Mode.Infinite>Бесконечно</ProdConsole.Animals.Mode.Infinite>
+  <ProdConsole.Animals.Mode.ByLimits>По лимитам</ProdConsole.Animals.Mode.ByLimits>
+  <ProdConsole.Animals.WhoTame>Кого приручать:</ProdConsole.Animals.WhoTame>
+  <ProdConsole.Animals.WhoSlaughter>Кого забивать:</ProdConsole.Animals.WhoSlaughter>
+  <ProdConsole.Animals.Taming>Приручение</ProdConsole.Animals.Taming>
+  <ProdConsole.Animals.Tame.Off>Приручением этого вида мод не управляет: пометки ставит игрок.</ProdConsole.Animals.Tame.Off>
+  <ProdConsole.Animals.Tame.Note>Мод ставит пометку «приручить» на диких животных, пока прирученных меньше указанного. Пометку исполняют колонисты по своим приоритетам работ.</ProdConsole.Animals.Tame.Note>
+  <ProdConsole.Animals.Age.Baby>детёныши</ProdConsole.Animals.Age.Baby>
+  <ProdConsole.Animals.Age.Juvenile>молодые</ProdConsole.Animals.Age.Juvenile>
+  <ProdConsole.Animals.Age.Adult>взрослые</ProdConsole.Animals.Age.Adult>
+  <ProdConsole.Animals.Pack>Вьючное</ProdConsole.Animals.Pack>
+  <ProdConsole.Animals.Skill>Навык животноводства</ProdConsole.Animals.Skill>
+  <ProdConsole.Animals.NoHandler>Приручать некому: нужен колонист с навыком животноводства не ниже {0}, которому разрешена эта работа.</ProdConsole.Animals.NoHandler>
+  <ProdConsole.Animals.Tame.Danger>Сорванное приручение: зверь бросается на приручающего с вероятностью {0}.</ProdConsole.Animals.Tame.Danger>
+  <ProdConsole.Animals.Area>Область по умолчанию</ProdConsole.Animals.Area>
+  <ProdConsole.Animals.Area.Any>Без ограничений</ProdConsole.Animals.Area.Any>
+  <ProdConsole.Animals.Pen>Загон: {0}</ProdConsole.Animals.Pen>
+  <ProdConsole.Animals.Care>Лечение по умолчанию</ProdConsole.Animals.Care>
+  <ProdConsole.Animals.Sterilize>стерилизовать новых прирученных</ProdConsole.Animals.Sterilize>
+  <ProdConsole.Animals.Hunting>Охота</ProdConsole.Animals.Hunting>
+  <ProdConsole.Animals.Hunt.Off>Охотой на этот вид мод не управляет: пометки ставит игрок.</ProdConsole.Animals.Hunt.Off>
+  <ProdConsole.Animals.Hunt.Note>Мод помечает на охоту тех диких животных, что сверх брони. Бронь — это сколько ОСТАВИТЬ на карте: выбитое под ноль поголовье само не восстановится.</ProdConsole.Animals.Hunt.Note>
+  <ProdConsole.Animals.Hunt.Danger>Опасная добыча: раненый зверь бросается на охотника с вероятностью {0}.</ProdConsole.Animals.Hunt.Danger>
+  <ProdConsole.Animals.KeepMales>оставлять самцов</ProdConsole.Animals.KeepMales>
+  <ProdConsole.Animals.KeepFemales>оставлять самок</ProdConsole.Animals.KeepFemales>
+  <ProdConsole.Animals.Slaughtering>Забой</ProdConsole.Animals.Slaughtering>
+  <ProdConsole.Animals.Slaughter.Off>Забоем этого вида мод не управляет: пометки ставит игрок.</ProdConsole.Animals.Slaughter.Off>
+  <ProdConsole.Animals.Slaughter.Note>Мод помечает на забой всех прирученных сверх нормы — порциями и в выбранном порядке.</ProdConsole.Animals.Slaughter.Note>
+  <ProdConsole.Animals.Slaughter.Danger>Забой — это удары: раненый зверь бросается на забойщика с вероятностью {0}.</ProdConsole.Animals.Slaughter.Danger>
+  <ProdConsole.Animals.Slaughter.Vanilla>Ванильный авто-забой по этому виду отключается: иначе два правила пойдут в разнобой.</ProdConsole.Animals.Slaughter.Vanilla>
+  <ProdConsole.Animals.Priority>Приоритет забоя</ProdConsole.Animals.Priority>
+  <ProdConsole.Animals.Priority.Oldest>Самых старых</ProdConsole.Animals.Priority.Oldest>
+  <ProdConsole.Animals.Priority.Youngest>Самых молодых</ProdConsole.Animals.Priority.Youngest>
+  <ProdConsole.Animals.SlaughterPregnant>забивать беременных</ProdConsole.Animals.SlaughterPregnant>
+  <ProdConsole.Animals.SlaughterBonded>забивать животных с привязанностью</ProdConsole.Animals.SlaughterBonded>
+  <ProdConsole.Animals.TamedList>Прирученные животные</ProdConsole.Animals.TamedList>
+  <ProdConsole.Animals.NoTamed>Прирученных животных этого вида нет.</ProdConsole.Animals.NoTamed>
+  <ProdConsole.Animals.WildList>Дикие животные</ProdConsole.Animals.WildList>
+  <ProdConsole.Animals.NoWild>Диких животных этого вида на карте нет.</ProdConsole.Animals.NoWild>
+  <ProdConsole.Animals.Col.Name>Кличка</ProdConsole.Animals.Col.Name>
+  <ProdConsole.Animals.Col.Gender>Пол</ProdConsole.Animals.Col.Gender>
+  <ProdConsole.Animals.Col.Age>Возраст</ProdConsole.Animals.Col.Age>
+  <ProdConsole.Animals.AgeCell>{0} ({1})</ProdConsole.Animals.AgeCell>
+  <ProdConsole.Animals.Age.One.Baby>детёныш</ProdConsole.Animals.Age.One.Baby>
+  <ProdConsole.Animals.Age.One.Juvenile>молодой</ProdConsole.Animals.Age.One.Juvenile>
+  <ProdConsole.Animals.Age.One.Adult>взрослый</ProdConsole.Animals.Age.One.Adult>
+  <ProdConsole.Animals.Gender.Male>самец</ProdConsole.Animals.Gender.Male>
+  <ProdConsole.Animals.Gender.Female>самка</ProdConsole.Animals.Gender.Female>
+  <ProdConsole.Animals.Pregnant>Беременна</ProdConsole.Animals.Pregnant>
+  <ProdConsole.Animals.Col.Slaughter>Забить</ProdConsole.Animals.Col.Slaughter>
+  <ProdConsole.Animals.Col.Tame>Приручить</ProdConsole.Animals.Col.Tame>
+  <ProdConsole.Animals.Col.Hunt>Охота</ProdConsole.Animals.Col.Hunt>
+  <ProdConsole.Animals.Col.Master>Хозяин</ProdConsole.Animals.Col.Master>
+  <ProdConsole.Animals.Col.Bond>Привязанность</ProdConsole.Animals.Col.Bond>
+  <ProdConsole.Animals.Col.Release>Отпустить</ProdConsole.Animals.Col.Release>
+  <ProdConsole.Settings.AutonomousTitle>Автономные машины</ProdConsole.Settings.AutonomousTitle>
+  <ProdConsole.Settings.Timings>Частота проверок</ProdConsole.Settings.Timings>
+  <ProdConsole.Settings.Timings.Text>Как часто консоль пересматривает свои разделы. Шестьдесят тиков — секунда игрового времени. Чаще — отзывчивее, но дороже по нагрузке.</ProdConsole.Settings.Timings.Text>
+  <ProdConsole.Settings.Timings.Queues>Очереди</ProdConsole.Settings.Timings.Queues>
+  <ProdConsole.Settings.Timings.Growing>Садоводство</ProdConsole.Settings.Timings.Growing>
+  <ProdConsole.Settings.Timings.Animals>Животноводство</ProdConsole.Settings.Timings.Animals>
+  <ProdConsole.Settings.Defaults>Значения нового заказа</ProdConsole.Settings.Defaults>
+  <ProdConsole.Settings.Defaults.Text>С чего начинается каждая новая задача. В самом мастере это всё меняется.</ProdConsole.Settings.Defaults.Text>
+  <ProdConsole.Settings.Mode>Режим задачи</ProdConsole.Settings.Mode>
+  <ProdConsole.Settings.Sources>Склады-источники</ProdConsole.Settings.Sources>
+  <ProdConsole.Settings.Store>Склады-приёмники</ProdConsole.Settings.Store>
+  <ProdConsole.Settings.Executors>Исполнители</ProdConsole.Settings.Executors>
+  <ProdConsole.Settings.Sections>Галочки разделов</ProdConsole.Settings.Sections>
+  <ProdConsole.Settings.Sections.Text>Как стоят эти галочки у нового вида и нового поля. На уже настроенные не влияют.</ProdConsole.Settings.Sections.Text>
+  <ProdConsole.Settings.Ticks>тиков</ProdConsole.Settings.Ticks>
+  <ProdConsole.Executors.List>Колонисты</ProdConsole.Executors.List>
+  <ProdConsole.Executors.PickHint>Выберите колониста слева.</ProdConsole.Executors.PickHint>
+  <ProdConsole.Executors.Busy>в работе</ProdConsole.Executors.Busy>
+  <ProdConsole.Executors.Free>свободен</ProdConsole.Executors.Free>
+  <ProdConsole.Executors.Skills>Производственные навыки</ProdConsole.Executors.Skills>
+  <ProdConsole.Executors.Orders>Задачи, где задействован</ProdConsole.Executors.Orders>
+  <ProdConsole.Executors.Benches>Используемые верстаки</ProdConsole.Executors.Benches>
+  <ProdConsole.Executors.Current>Текущая задача: {0}</ProdConsole.Executors.Current>
+  <ProdConsole.Executors.Idle>Сейчас не занят задачами консоли</ProdConsole.Executors.Idle>
+  <ProdConsole.Executors.No>нет</ProdConsole.Executors.No>
+  <ProdConsole.Executors.NoOrders>Ни в одной задаче не разрешён.</ProdConsole.Executors.NoOrders>
+  <ProdConsole.Executors.NoBenches>Верстаков нет — задач с этим исполнителем не назначено.</ProdConsole.Executors.NoBenches>
+  <ProdConsole.Chart.Stub>График показывает пример: накопление истории производства ещё не сделано.</ProdConsole.Chart.Stub>
+  <ProdConsole.Overview.BenchLoad>Загрузка верстаков</ProdConsole.Overview.BenchLoad>
+  <ProdConsole.Overview.Attention>Заказы, требующие внимания</ProdConsole.Overview.Attention>
+  <ProdConsole.Overview.Soon>Ближайшие завершения</ProdConsole.Overview.Soon>
+  <ProdConsole.Overview.Output>Выпуск за 7 дней</ProdConsole.Overview.Output>
+  <ProdConsole.Overview.AllFine>Все задания в порядке</ProdConsole.Overview.AllFine>
+  <ProdConsole.Overview.Found>Найдено</ProdConsole.Overview.Found>
+  <ProdConsole.Overview.Working>Работают</ProdConsole.Overview.Working>
+  <ProdConsole.Overview.Col.Product>Продукт</ProdConsole.Overview.Col.Product>
+  <ProdConsole.Overview.Col.Reason>Причина</ProdConsole.Overview.Col.Reason>
+  <ProdConsole.Overview.Col.Progress>Прогресс</ProdConsole.Overview.Col.Progress>
+  <ProdConsole.Overview.NoReason>причина не указана</ProdConsole.Overview.NoReason>
+  <ProdConsole.Production.What>Что делаем</ProdConsole.Production.What>
+  <ProdConsole.Production.Who>Кто делает</ProdConsole.Production.Who>
+  <ProdConsole.Production.Where>На чём</ProdConsole.Production.Where>
+  <ProdConsole.Production.From>Из чего</ProdConsole.Production.From>
+  <ProdConsole.Production.Stats>Статистика</ProdConsole.Production.Stats>
+  <ProdConsole.Benches.Filter.All>Все</ProdConsole.Benches.Filter.All>
+  <ProdConsole.Benches.Filter.Ready>Доступные</ProdConsole.Benches.Filter.Ready>
+  <ProdConsole.Benches.Filter.Unusable>Недоступные</ProdConsole.Benches.Filter.Unusable>
+  <ProdConsole.Benches.Filter.Ignored>Игнорируемые</ProdConsole.Benches.Filter.Ignored>
+  <ProdConsole.Benches.FoundFree>{0} найдено · {1} свободно</ProdConsole.Benches.FoundFree>
+  <ProdConsole.Benches.PickHint>Выберите тип верстака слева.</ProdConsole.Benches.PickHint>
+  <ProdConsole.Benches.TitleWithCount>{0} · {1} экземпляров</ProdConsole.Benches.TitleWithCount>
+  <ProdConsole.Benches.Instances>Экземпляры</ProdConsole.Benches.Instances>
+  <ProdConsole.Benches.RecipeTable>Рецепты и стоимость</ProdConsole.Benches.RecipeTable>
+  <ProdConsole.Benches.ActiveTasks>Активных задач</ProdConsole.Benches.ActiveTasks>
+  <ProdConsole.Benches.Queue>очередь: {0}</ProdConsole.Benches.Queue>
+  <ProdConsole.Benches.Col.Product>Продукт</ProdConsole.Benches.Col.Product>
+  <ProdConsole.Benches.Col.Cost>Стоимость</ProdConsole.Benches.Col.Cost>
+  <ProdConsole.Benches.Col.Available>Доступность</ProdConsole.Benches.Col.Available>
+  <ProdConsole.Storage.Filter.All>Все</ProdConsole.Storage.Filter.All>
+  <ProdConsole.Storage.Filter.Ready>Доступные</ProdConsole.Storage.Filter.Ready>
+  <ProdConsole.Storage.Filter.Unusable>Недоступные</ProdConsole.Storage.Filter.Unusable>
+  <ProdConsole.Storage.Filter.Ignored>Игнорируемые</ProdConsole.Storage.Filter.Ignored>
+  <ProdConsole.Storage.PickHint>Выберите склад слева.</ProdConsole.Storage.PickHint>
+  <ProdConsole.Storage.Info>Информация</ProdConsole.Storage.Info>
+  <ProdConsole.Storage.Orders>Заказы</ProdConsole.Storage.Orders>
+  <ProdConsole.Storage.Content>Содержимое</ProdConsole.Storage.Content>
+  <ProdConsole.Storage.Capacity>Вместимость: {0} мест</ProdConsole.Storage.Capacity>
+  <ProdConsole.Storage.Load>Загрузка: {0}</ProdConsole.Storage.Load>
+  <ProdConsole.Storage.Items>вещей: {0}</ProdConsole.Storage.Items>
+  <ProdConsole.Storage.AsTarget>складывает результат сюда</ProdConsole.Storage.AsTarget>
+  <ProdConsole.Storage.NoOrders>Ни один заказ этот склад не использует.</ProdConsole.Storage.NoOrders>
+  <ProdConsole.Storage.NoContent>Склад пуст.</ProdConsole.Storage.NoContent>
+  <ProdConsole.Storage.NoMatch>По поиску и фильтру ничего не найдено.</ProdConsole.Storage.NoMatch>
+  <ProdConsole.Overview.Stock>Сводка по складам</ProdConsole.Overview.Stock>
+  <ProdConsole.Tab.Stock>Сводка по складам</ProdConsole.Tab.Stock>
+  <ProdConsole.Stock.Col.Item>Предмет</ProdConsole.Stock.Col.Item>
+  <ProdConsole.Stock.Col.Storages>Где лежит</ProdConsole.Stock.Col.Storages>
+  <ProdConsole.Stock.Col.Orders>Задачи</ProdConsole.Stock.Col.Orders>
+  <ProdConsole.Stock.Col.Count>Количество</ProdConsole.Stock.Col.Count>
+  <ProdConsole.Stock.Col.Need>Требуется</ProdConsole.Stock.Col.Need>
+  <ProdConsole.Stock.Col.Balance>Баланс</ProdConsole.Stock.Col.Balance>
+  <ProdConsole.Stock.Total>Позиций на складах: {0}</ProdConsole.Stock.Total>
+  <ProdConsole.Stock.Filter.All>Все</ProdConsole.Stock.Filter.All>
+  <ProdConsole.Stock.Filter.Orders>Задачи</ProdConsole.Stock.Filter.Orders>
+  <ProdConsole.Stock.Filter.Storages>Склады</ProdConsole.Stock.Filter.Storages>
+  <ProdConsole.Stock.Filter.Balance>Баланс</ProdConsole.Stock.Filter.Balance>
+  <ProdConsole.Stock.Filter.Deficit>Дефицит</ProdConsole.Stock.Filter.Deficit>
+  <ProdConsole.Stock.Filter.Surplus>Профицит</ProdConsole.Stock.Filter.Surplus>
+  <ProdConsole.Storage.Col.Item>Предмет</ProdConsole.Storage.Col.Item>
+  <ProdConsole.Storage.Col.Count>Количество</ProdConsole.Storage.Col.Count>
+  <ProdConsole.Storage.Col.Needed>Требуется заказам</ProdConsole.Storage.Col.Needed>
+  <ProdConsole.Storage.Col.Balance>Баланс</ProdConsole.Storage.Col.Balance>
+  <ProdConsole.Wizard.Sources.Scope>Область поиска</ProdConsole.Wizard.Sources.Scope>
+  <ProdConsole.Wizard.Sources.Chosen>Склады</ProdConsole.Wizard.Sources.Chosen>
+  <ProdConsole.Wizard.Sources.Any>Все доступные</ProdConsole.Wizard.Sources.Any>
+  <ProdConsole.Help.Title>Справка</ProdConsole.Help.Title>
+  <ProdConsole.Help.Show>Показать в консоли</ProdConsole.Help.Show>
+  <ProdConsole.Settings.Reset>Сбросить</ProdConsole.Settings.Reset>
+
+  <!-- ==== Боевое окно на основе утверждённого макета ==== -->
+
+  <!-- Действия и общие подписи -->
+  <ProdConsole.Action.Close>Закрыть</ProdConsole.Action.Close>
+  <ProdConsole.Action.Help>Справка</ProdConsole.Action.Help>
+  <ProdConsole.Action.Center>Центрировать карту</ProdConsole.Action.Center>
+  <ProdConsole.Action.Save>Сохранить</ProdConsole.Action.Save>
+  <ProdConsole.Action.Cancel>Отмена</ProdConsole.Action.Cancel>
+  <ProdConsole.Action.Search>Поиск…</ProdConsole.Action.Search>
+
+  <!-- Состояния и причины -->
+
+  <!-- Приоритеты -->
+  <ProdConsole.Priority>Приоритет</ProdConsole.Priority>
+  <ProdConsole.Priority.High>Высокий</ProdConsole.Priority.High>
+  <ProdConsole.Priority.Normal>Средний</ProdConsole.Priority.Normal>
+  <ProdConsole.Priority.Low>Низкий</ProdConsole.Priority.Low>
+
+  <!-- Режимы количества -->
+  <ProdConsole.Amount>Количество</ProdConsole.Amount>
+  <ProdConsole.Amount.Mode>Режим</ProdConsole.Amount.Mode>
+  <ProdConsole.Amount.Fixed>Определённое количество</ProdConsole.Amount.Fixed>
+  <ProdConsole.Amount.Maintain>Поддерживать количество</ProdConsole.Amount.Maintain>
+  <ProdConsole.Amount.Forever>Бесконечно</ProdConsole.Amount.Forever>
+  <ProdConsole.Amount.Fixed.Text>Заказ завершится после изготовления указанного количества.</ProdConsole.Amount.Fixed.Text>
+  <ProdConsole.Amount.Maintain.Text>Производство возобновится, когда запас станет ниже указанного значения.</ProdConsole.Amount.Maintain.Text>
+  <ProdConsole.Amount.Forever.Text>Задание остаётся активным без ограничения по количеству.</ProdConsole.Amount.Forever.Text>
+  <ProdConsole.Amount.Forever.NoParams>Дополнительные параметры не требуются</ProdConsole.Amount.Forever.NoParams>
+  <ProdConsole.Amount.Params>Параметры режима</ProdConsole.Amount.Params>
+
+  <!-- Обзор -->
+  <ProdConsole.Overview.Stat.Active>Активные</ProdConsole.Overview.Stat.Active>
+  <ProdConsole.Overview.Stat.Working>В работе</ProdConsole.Overview.Stat.Working>
+  <ProdConsole.Overview.Stat.Waiting>Ожидают</ProdConsole.Overview.Stat.Waiting>
+  <ProdConsole.Overview.Stat.Stopped>Остановлены</ProdConsole.Overview.Stat.Stopped>
+  <ProdConsole.Overview.NeedAttention>{0} требуют внимания</ProdConsole.Overview.NeedAttention>
+  <ProdConsole.Overview.LastCheck>Последняя сверка: {0}</ProdConsole.Overview.LastCheck>
+  <ProdConsole.Overview.BusyOther>Заняты другими задачами</ProdConsole.Overview.BusyOther>
+  <ProdConsole.Overview.Unavailable>Недоступны</ProdConsole.Overview.Unavailable>
+  <ProdConsole.Overview.Col.State>Состояние</ProdConsole.Overview.Col.State>
+
+  <!-- Производство -->
+  <ProdConsole.Production.Orders>Заказы</ProdConsole.Production.Orders>
+  <ProdConsole.Production.ModeLine>Режим: {0}</ProdConsole.Production.ModeLine>
+  <ProdConsole.Production.DoneLine>Сделано {0} / {1} · на складах {2}</ProdConsole.Production.DoneLine>
+  <ProdConsole.Production.Done>Сделано {0} / {1}</ProdConsole.Production.Done>
+  <ProdConsole.Production.TakeFrom>Где берём</ProdConsole.Production.TakeFrom>
+
+  <!-- Верстаки -->
+  <ProdConsole.Benches.Section>Верстаки</ProdConsole.Benches.Section>
+  <ProdConsole.Benches.RecipesAvailable>Доступно рецептов</ProdConsole.Benches.RecipesAvailable>
+
+  <!-- Исполнители -->
+  <ProdConsole.Executors.Filter.All>Все</ProdConsole.Executors.Filter.All>
+  <ProdConsole.Executors.Filter.Working>Работает</ProdConsole.Executors.Filter.Working>
+  <ProdConsole.Executors.Filter.Free>Свободен</ProdConsole.Executors.Filter.Free>
+  <ProdConsole.Executors.Filter.Unavailable>Недоступен</ProdConsole.Executors.Filter.Unavailable>
+  <ProdConsole.Executors.Unavailable>недоступен</ProdConsole.Executors.Unavailable>
+  <ProdConsole.Executors.Output>Выработка за 7 дней</ProdConsole.Executors.Output>
+  <ProdConsole.Executors.Skill>{0} {1}</ProdConsole.Executors.Skill>
+
+  <!-- Склады -->
+  <ProdConsole.Storage.SearchItems>Поиск предметов…</ProdConsole.Storage.SearchItems>
+  <ProdConsole.Storage.Category.All>Все категории</ProdConsole.Storage.Category.All>
+  <ProdConsole.Storage.SourceOn>берёт сырьё отсюда</ProdConsole.Storage.SourceOn>
+
+  <!-- Графики -->
+  <ProdConsole.Chart.Series.Output>Выпуск</ProdConsole.Chart.Series.Output>
+  <ProdConsole.Chart.Series.Work>Выработка</ProdConsole.Chart.Series.Work>
+
+  <!-- Мастер создания задачи -->
+  <ProdConsole.Wizard.Create>Создание задачи</ProdConsole.Wizard.Create>
+  <ProdConsole.Wizard.CreateButton>Создать задачу</ProdConsole.Wizard.CreateButton>
+  <ProdConsole.Wizard.NextArrow>Далее →</ProdConsole.Wizard.NextArrow>
+  <ProdConsole.Wizard.BackArrow>← Назад</ProdConsole.Wizard.BackArrow>
+  <ProdConsole.Wizard.Step.Quantity>Количество</ProdConsole.Wizard.Step.Quantity>
+  <ProdConsole.Wizard.Step.Where>Где берём</ProdConsole.Wizard.Step.Where>
+  <ProdConsole.Wizard.Step.Executors>Исполнители</ProdConsole.Wizard.Step.Executors>
+  <ProdConsole.Wizard.Product.Title>Выберите продукт</ProdConsole.Wizard.Product.Title>
+  <ProdConsole.Wizard.Product.Note>Список собран из рецептов доступных на карте верстаков.</ProdConsole.Wizard.Product.Note>
+  <ProdConsole.Wizard.Product.Categories>Категории</ProdConsole.Wizard.Product.Categories>
+  <ProdConsole.Wizard.Product.Available>Доступные продукты</ProdConsole.Wizard.Product.Available>
+  <ProdConsole.Wizard.Product.SearchCategory>Поиск категории…</ProdConsole.Wizard.Product.SearchCategory>
+  <ProdConsole.Wizard.Product.Search>Поиск продукта…</ProdConsole.Wizard.Product.Search>
+  <ProdConsole.Wizard.Cat.All>Все продукты</ProdConsole.Wizard.Cat.All>
+  <ProdConsole.Wizard.Col.Recipes>Рецепты</ProdConsole.Wizard.Col.Recipes>
+  <ProdConsole.Wizard.Col.Benches>Верстаки</ProdConsole.Wizard.Col.Benches>
+  <ProdConsole.Wizard.Filter.All>Все</ProdConsole.Wizard.Filter.All>
+  <ProdConsole.Wizard.Filter.Ready>Можно производить</ProdConsole.Wizard.Filter.Ready>
+  <ProdConsole.Wizard.Filter.NoIngredients>Не хватает ресурсов</ProdConsole.Wizard.Filter.NoIngredients>
+  <ProdConsole.Wizard.Filter.NoBench>Нет верстака</ProdConsole.Wizard.Filter.NoBench>
+  <ProdConsole.Wizard.Filter.NoResearch>Не исследовано</ProdConsole.Wizard.Filter.NoResearch>
+  <ProdConsole.Wizard.Filter.Unavailable>Недоступно</ProdConsole.Wizard.Filter.Unavailable>
+  <ProdConsole.Wizard.Col.InStock>На складах</ProdConsole.Wizard.Col.InStock>
+  <ProdConsole.Wizard.Status.Unavailable>Недоступен</ProdConsole.Wizard.Status.Unavailable>
+  <ProdConsole.Wizard.Quantity.Note>Выберите один из трёх понятных игроку режимов заказа.</ProdConsole.Wizard.Quantity.Note>
+  <ProdConsole.Wizard.Quantity.InStockNow>Сейчас на складах</ProdConsole.Wizard.Quantity.InStockNow>
+  <ProdConsole.Wizard.Sources.Title>Где берём ингредиенты</ProdConsole.Wizard.Sources.Title>
+  <ProdConsole.Wizard.Sources.Note>Доступность ингредиентов на следующих шагах считается только по выбранной области.</ProdConsole.Wizard.Sources.Note>
+  <ProdConsole.Wizard.Sources.Selected>Выбранные склады</ProdConsole.Wizard.Sources.Selected>
+  <ProdConsole.Wizard.Sources.RadiusTab>Радиус</ProdConsole.Wizard.Sources.RadiusTab>
+  <ProdConsole.Wizard.Sources.AllTitle>Все доступные склады</ProdConsole.Wizard.Sources.AllTitle>
+  <ProdConsole.Wizard.Sources.AllText>Ингредиенты можно брать с любого доступного заданию склада без ограничения количества.</ProdConsole.Wizard.Sources.AllText>
+  <ProdConsole.Wizard.Sources.Found>Найдено складов: {0} · доступных ячеек: {1}</ProdConsole.Wizard.Sources.Found>
+  <ProdConsole.Wizard.Sources.RadiusForm>Настройка радиуса</ProdConsole.Wizard.Sources.RadiusForm>
+  <ProdConsole.Wizard.Sources.RadiusCells>Радиус {0} клеток</ProdConsole.Wizard.Sources.RadiusCells>
+  <ProdConsole.Wizard.Ingredients.Title>Ингредиенты</ProdConsole.Wizard.Ingredients.Title>
+  <ProdConsole.Wizard.Ingredients.Note>Отметьте, что разрешено брать для этого задания. Обязательное сырьё показано отдельно: его нужен любой способ производства, и выбора там нет.</ProdConsole.Wizard.Ingredients.Note>
+  <ProdConsole.Wizard.Benches.Title>Верстаки</ProdConsole.Wizard.Benches.Title>
+  <ProdConsole.Wizard.Benches.Note>Одинаковые типы сгруппированы. В каждой карточке показана стоимость рецепта на конкретном верстаке.</ProdConsole.Wizard.Benches.Note>
+  <ProdConsole.Wizard.Benches.Availability>{0} найдено · {1} доступно · {2} занято другими задачами</ProdConsole.Wizard.Benches.Availability>
+  <ProdConsole.Wizard.Executors.Title>Исполнители</ProdConsole.Wizard.Executors.Title>
+  <ProdConsole.Wizard.Executors.Note>Исполнители выбираются после верстаков, когда уже известно, допускает ли оборудование назначение пешки.</ProdConsole.Wizard.Executors.Note>
+  <ProdConsole.Wizard.Executors.Panel>Кто может выполнять</ProdConsole.Wizard.Executors.Panel>
+  <ProdConsole.Wizard.Col.Executor>Исполнитель</ProdConsole.Wizard.Col.Executor>
+  <ProdConsole.Wizard.Col.Skill>Навык</ProdConsole.Wizard.Col.Skill>
+  <ProdConsole.Wizard.Col.Job>Текущая работа</ProdConsole.Wizard.Col.Job>
+  <ProdConsole.Wizard.Pawn.Free>Свободен</ProdConsole.Wizard.Pawn.Free>
+  <ProdConsole.Wizard.Summary.Title>Сводка перед созданием</ProdConsole.Wizard.Summary.Title>
+  <ProdConsole.Wizard.Summary.Note>Проверьте выбранные параметры задачи.</ProdConsole.Wizard.Summary.Note>
+  <ProdConsole.Wizard.Summary.Left>Останется произвести</ProdConsole.Wizard.Summary.Left>
+  <ProdConsole.Wizard.Summary.Make>Сделать {0}</ProdConsole.Wizard.Summary.Make>
+
+  <!-- Настройки консоли -->
+  <ProdConsole.Settings.Autonomous.Allow>Разрешать выполнение без пешки</ProdConsole.Settings.Autonomous.Allow>
+  <ProdConsole.Settings.Autonomous.Text>Применяется только к верстакам, поддерживающим автономную работу.</ProdConsole.Settings.Autonomous.Text>
+
+  <!-- Справка: страницы -->
+  <ProdConsole.Help.Tab.General>Общее</ProdConsole.Help.Tab.General>
+  <ProdConsole.Help.Tab.Wizard>Создание задачи</ProdConsole.Help.Tab.Wizard>
+
+
+  <!-- Мастер на реальных данных -->
+  <ProdConsole.Wizard.Cat.Operations>Операции</ProdConsole.Wizard.Cat.Operations>
+  <ProdConsole.Wizard.Need.Product>Выберите продукт.</ProdConsole.Wizard.Need.Product>
+  <ProdConsole.Wizard.Need.Bench>Выберите хотя бы один верстак.</ProdConsole.Wizard.Need.Bench>
+  <ProdConsole.Wizard.Need.Producible>Этот предмет сейчас произвести нечем: нет верстака либо не открыто исследование.</ProdConsole.Wizard.Need.Producible>
+  <ProdConsole.Wizard.Need.Available>Это произвести нечем: верстака для такого рецепта в игре нет.</ProdConsole.Wizard.Need.Available>
+  <ProdConsole.Wizard.Benches.Empty>Ни один верстак карты не делает это из выбранного сырья.</ProdConsole.Wizard.Benches.Empty>
+  <ProdConsole.Wizard.Executors.Empty>Никто из колонистов за эту работу не возьмётся.</ProdConsole.Wizard.Executors.Empty>
+  <ProdConsole.Amount.Cycles>Число выполнений</ProdConsole.Amount.Cycles>
+  <ProdConsole.Amount.Cycles.Text>У этой операции нет готового продукта, поэтому считать штуки нечем — заказ меряется числом выполнений рецепта.</ProdConsole.Amount.Cycles.Text>
+
+
+  <!-- Категории и сводные записи каталога -->
+  <ProdConsole.Cat.Food>Еда</ProdConsole.Cat.Food>
+  <ProdConsole.Cat.Materials>Материалы</ProdConsole.Cat.Materials>
+  <ProdConsole.Group.Meat>Мясо</ProdConsole.Group.Meat>
+  <ProdConsole.Group.Leather>Кожа</ProdConsole.Group.Leather>
+
+  <!-- Шаг «куда класть» -->
+  <ProdConsole.Wizard.Step.StoreTo>Куда класть</ProdConsole.Wizard.Step.StoreTo>
+  <ProdConsole.Wizard.StoreTo.Title>Куда складывать результат</ProdConsole.Wizard.StoreTo.Title>
+  <ProdConsole.Wizard.StoreTo.Note>Готовое можно отправлять на конкретный склад или оставить это игре — тогда она сама выберет ближайший подходящий.</ProdConsole.Wizard.StoreTo.Note>
+  <ProdConsole.Wizard.StoreTo.Any>Любой подходящий склад</ProdConsole.Wizard.StoreTo.Any>
+  <ProdConsole.Wizard.StoreTo.AnyText>Игра отнесёт готовое на ближайший склад, который его принимает.</ProdConsole.Wizard.StoreTo.AnyText>
+  <ProdConsole.Wizard.StoreTo.Picked>Выбранный склад</ProdConsole.Wizard.StoreTo.Picked>
+
+  <!-- Ингредиенты: обязательное и выбор -->
+  <ProdConsole.Wizard.Ingredients.Mandatory>Обязательные</ProdConsole.Wizard.Ingredients.Mandatory>
+  <ProdConsole.Wizard.Ingredients.MandatoryHint>Это сырьё нужно при любом способе производства, поэтому выбора здесь нет.</ProdConsole.Wizard.Ingredients.MandatoryHint>
+  <ProdConsole.Wizard.Ingredients.Choice>{0} · на выбор</ProdConsole.Wizard.Ingredients.Choice>
+  <ProdConsole.Wizard.Ingredients.NoChoice>У этой цели нет выбора сырья: рецепты не оставляют вариантов.</ProdConsole.Wizard.Ingredients.NoChoice>
+
+  <!-- Исполнители -->
+  <ProdConsole.Wizard.Executors.Anyone>Кто угодно</ProdConsole.Wizard.Executors.Anyone>
+  <ProdConsole.Wizard.Executors.AnyoneHint>Работать будет любой колонист, которому позволяют расписание работ и навык.</ProdConsole.Wizard.Executors.AnyoneHint>
+  <ProdConsole.Wizard.Need.Pawn>Выберите исполнителя или отметьте «кто угодно».</ProdConsole.Wizard.Need.Pawn>
+
+  <!-- Сводка: плашки «ограничений нет» -->
+  <ProdConsole.Wizard.Sum.AnyPawn>Любой колонист</ProdConsole.Wizard.Sum.AnyPawn>
+  <ProdConsole.Wizard.Sum.AnyPawnHint>Отдельные исполнители не выбраны.</ProdConsole.Wizard.Sum.AnyPawnHint>
+  <ProdConsole.Wizard.Sum.AnySource>Все доступные склады</ProdConsole.Wizard.Sum.AnySource>
+  <ProdConsole.Wizard.Sum.AnySourceHint>Сырьё берётся откуда угодно в пределах карты.</ProdConsole.Wizard.Sum.AnySourceHint>
+  <ProdConsole.Wizard.Sum.RadiusHint>Сырьё ищется только в этом радиусе от верстака.</ProdConsole.Wizard.Sum.RadiusHint>
+
+  <!-- Склады: наполненность -->
+  <ProdConsole.Storage.Fill>{0} / {1} ({2}%)</ProdConsole.Storage.Fill>
+
+
+  <!-- Приёмник результата -->
+  <ProdConsole.Wizard.StoreTo.NoneAccepts>Ни один склад карты не принимает этот продукт: проверьте фильтры складов.</ProdConsole.Wizard.StoreTo.NoneAccepts>
+
+
+
+  <!-- Ось X графиков: игровая дата DD.MM.YYYY, месяц - квадрум -->
+  <ProdConsole.Chart.Date>{0}.{1}.{2}</ProdConsole.Chart.Date>
+
+  <!-- Фильтр списка задач -->
+  <ProdConsole.Orders.Filter.All>Все</ProdConsole.Orders.Filter.All>
+
+  <!-- Плашки под списками карточек: сколько выбрано -->
+  <ProdConsole.Selected.Pawns.One>Выбрано: {0} колонист</ProdConsole.Selected.Pawns.One>
+  <ProdConsole.Selected.Pawns.Few>Выбрано: {0} колониста</ProdConsole.Selected.Pawns.Few>
+  <ProdConsole.Selected.Pawns.Many>Выбрано: {0} колонистов</ProdConsole.Selected.Pawns.Many>
+  <ProdConsole.Selected.Benches.One>Выбран: {0} верстак</ProdConsole.Selected.Benches.One>
+  <ProdConsole.Selected.Benches.Few>Выбрано: {0} верстака</ProdConsole.Selected.Benches.Few>
+  <ProdConsole.Selected.Benches.Many>Выбрано: {0} верстаков</ProdConsole.Selected.Benches.Many>
+  <ProdConsole.Selected.Ingredients.One>Выбран: {0} ингредиент</ProdConsole.Selected.Ingredients.One>
+  <ProdConsole.Selected.Ingredients.Few>Выбрано: {0} ингредиента</ProdConsole.Selected.Ingredients.Few>
+  <ProdConsole.Selected.Ingredients.Many>Выбрано: {0} ингредиентов</ProdConsole.Selected.Ingredients.Many>
+  <ProdConsole.Selected.Storages.One>Выбран: {0} склад</ProdConsole.Selected.Storages.One>
+  <ProdConsole.Selected.Storages.Few>Выбрано: {0} склада</ProdConsole.Selected.Storages.Few>
+  <ProdConsole.Selected.Storages.Many>Выбрано: {0} складов</ProdConsole.Selected.Storages.Many>
+  <ProdConsole.Selected.AnyPawn>Выбрано: любой колонист</ProdConsole.Selected.AnyPawn>
+  <ProdConsole.Selected.AnySource>Выбрано: все склады карты</ProdConsole.Selected.AnySource>
+  <ProdConsole.Selected.AnyStore>Выбрано: любой подходящий склад</ProdConsole.Selected.AnyStore>
+  <ProdConsole.Selected.Radius>Выбрано: в радиусе {0}</ProdConsole.Selected.Radius>
+
+  <ProdConsole.SkillNeed>{0}: {1}</ProdConsole.SkillNeed>
+  <ProdConsole.Executors.WorkOff>работа выключена в расписании</ProdConsole.Executors.WorkOff>
+
+  <ProdConsole.Ingredients.NoneUsable>С этим набором сырья ничего не сделать</ProdConsole.Ingredients.NoneUsable>
+  <ProdConsole.Ingredients.NoneUsableHint>Ни один способ производства не выполним: верните хотя бы одну галочку.</ProdConsole.Ingredients.NoneUsableHint>
+
+
+  <!-- Исполнители: доступность и роль в задаче -->
+  <ProdConsole.Executors.SkillShort>не хватает навыка</ProdConsole.Executors.SkillShort>
+  <ProdConsole.Executors.Info>Информация</ProdConsole.Executors.Info>
+  <ProdConsole.Executors.Availability.Yes>доступен</ProdConsole.Executors.Availability.Yes>
+  <ProdConsole.Executors.Availability.Limited>ограниченно доступен</ProdConsole.Executors.Availability.Limited>
+  <ProdConsole.Executors.Availability.No>не может работать</ProdConsole.Executors.Availability.No>
+  <ProdConsole.Executors.Working>работает</ProdConsole.Executors.Working>
+  <ProdConsole.Executors.Reserve>резерв</ProdConsole.Executors.Reserve>
+
+  <!-- Склады: неоднозначная потребность -->
+  <ProdConsole.Storage.UpTo>до {0}</ProdConsole.Storage.UpTo>
+
+  <ProdConsole.Storage.NoIngredientsHere>сырья для задачи здесь нет</ProdConsole.Storage.NoIngredientsHere>
+
+  <ProdConsole.Help.Production.About.Title>Что это за раздел</ProdConsole.Help.Production.About.Title>
+  <ProdConsole.Help.Production.About.Body>Здесь живут задачи консоли: слева список всех, справа карточка выбранной. Задача — это «что и сколько сделать»: продукт, количество, из чего, на чём и кто работает.
+
+Консоль не заставляет колонистов работать. Она расставляет по верстакам обычные задания игры, а берутся за них колонисты сами — по своим приоритетам работ и своему расписанию. Если задача стоит, а колонист спит или тушит пожар, дело не в консоли.
+
+Всё, что вы правите в карточке, доезжает до верстаков в ближайшую сверку — она идёт раз в секунду с небольшим.</ProdConsole.Help.Production.About.Body>
+  <ProdConsole.Help.Production.List.Title>Список задач</ProdConsole.Help.Production.List.Title>
+  <ProdConsole.Help.Production.List.Body>Задачи отсортированы по приоритету: высокий сверху. Внутри одного приоритета — по названию, чтобы список не перетасовывался сам собой.
+
+Поиск ищет по названию продукта. Фильтр рядом отбирает по состоянию:
+
+— работает — задача идёт, задания на верстаках стоят;
+— пауза — вы её остановили кнопкой; всё сохранено, задания сняты;
+— заблокировано — консоль хочет работать, но не может, и говорит почему;
+— выполнено — нужное количество сделано.
+
+Цветная плашка на карточке и в списке — то же состояние. Красная означает, что задача стоит не по вашей воле: рядом всегда написана причина.</ProdConsole.Help.Production.List.Body>
+  <ProdConsole.Help.Production.Blocked.Title>Почему задача стоит</ProdConsole.Help.Production.Blocked.Title>
+  <ProdConsole.Help.Production.Blocked.Body>Причина написана словами прямо в карточке и в обзоре. Что она означает:
+
+— не хватает ресурсов — нужного сырья нет на складах, откуда разрешено брать;
+— нет верстака — подходящего верстака нет на карте, он сломан, обесточен или занят другой задачей консоли;
+— некому работать — среди выбранных исполнителей нет никого, кто может и кому разрешён этот тип работ;
+— не исследовано — рецепт ещё не открыт;
+— склад-источник или склад-приёмник исчез — склад разобрали, а задача на него ссылается;
+— верстаки, исполнители или склады выключены — с них снята галочка «использовать» в своей вкладке.
+
+Задача при этом никуда не девается и ничего не теряет: устраните причину, и она пойдёт дальше сама.</ProdConsole.Help.Production.Blocked.Body>
+  <ProdConsole.Help.Production.What.Title>Что делаем</ProdConsole.Help.Production.What.Title>
+  <ProdConsole.Help.Production.What.Body>Блок «Что делаем» — продукт, режим и количество.
+
+— определённое количество — сделать N штук и закрыться;
+— поддерживать количество — держать на складах N штук: запас упал, консоль доделала;
+— бесконечно — работать, пока не остановите;
+— число выполнений — для операций без продукта: разделка туш, переплавка, сжигание.
+
+Здесь же выбирается материал, если рецепт из чего-то делается, и диапазон навыка: кому доверять работу. Диапазон отдаётся игре как есть — колонист вне него за задание не возьмётся.</ProdConsole.Help.Production.What.Body>
+  <ProdConsole.Help.Production.Who.Title>Кто делает</ProdConsole.Help.Production.Who.Title>
+  <ProdConsole.Help.Production.Who.Body>Можно оставить «кто угодно» — тогда работу возьмёт любой подходящий колонист. Можно выбрать поимённо: тогда только они, даже если рядом свободен другой.
+
+Красным помечены те, кто выбран, но работать не сможет: у колониста выключен нужный тип работ в «Работах», не хватает навыка или он вовсе не может этим заниматься. Консоль не чинит это за вас — она только предупреждает, потому что снятый тип работ обычно снят намеренно.
+
+Галочка «использовать» во вкладке «Колонисты» сильнее: снятого оттуда консоль не тронет ни в одной задаче.</ProdConsole.Help.Production.Who.Body>
+  <ProdConsole.Help.Production.From.Title>Из чего и где берём</ProdConsole.Help.Production.From.Title>
+  <ProdConsole.Help.Production.From.Body>«Из чего» — какое сырьё разрешено. Снятая галочка означает «этим не пользоваться»: пригодится, когда дерево нужно на постройку, а не на дрова.
+
+«Где берём» — с каких складов носить сырьё:
+
+— все доступные — откуда угодно на карте;
+— выбранные склады — только с них;
+— радиус — только то, что лежит в стольких-то клетках от верстака.
+
+Радиус удобен для дальней мастерской: колонист не побежит через всю карту за одной доской. Но если в радиусе пусто, задача встанет с причиной «не хватает ресурсов» — сырьё на карте есть, просто не там.</ProdConsole.Help.Production.From.Body>
+  <ProdConsole.Help.Production.Where.Title>На чём и куда класть</ProdConsole.Help.Production.Where.Title>
+  <ProdConsole.Help.Production.Where.Body>«На чём» — верстаки, которым разрешено брать эту задачу. Один верстак консоль отдаёт одной задаче: иначе два задания на одном столе мешали бы друг другу и считали выпуск вдвойне.
+
+Несколько верстаков работают на общий счёт: пять столов не сделают пять раз по сто, они вместе сделают сто.
+
+«Куда класть» — склад для готового. «Любой подходящий» означает обычное поведение игры: колонист отнесёт туда, куда сам сочтёт нужным.</ProdConsole.Help.Production.Where.Body>
+  <ProdConsole.Help.Production.Stats.Title>Статистика</ProdConsole.Help.Production.Stats.Title>
+  <ProdConsole.Help.Production.Stats.Body>Строка «Сделано» показывает три числа: сколько выпущено по этой задаче, сколько заказано и сколько такого предмета лежит на складах прямо сейчас.
+
+Последнее число важно для режима «поддерживать»: именно по нему консоль решает, доделывать или остановиться. Если запас растёт сам — из торговли, с трупов, из других модов, — задача честно замолчит.</ProdConsole.Help.Production.Stats.Body>
+  <ProdConsole.Help.Wizard.About.Title>Как устроен мастер</ProdConsole.Help.Wizard.About.Title>
+  <ProdConsole.Help.Wizard.About.Body>Мастер собирает задачу по шагам: что производим, сколько, где берём сырьё, из чего, на чём, кто делает, куда класть и сводка.
+
+Кнопка «Далее» неактивна, пока шаг не заполнен. Так задача не создастся наполовину — например, без единого верстака, на котором её можно выполнить.
+
+Назад можно вернуться в любой момент, ничего не потеряв. Пока не нажата кнопка на последнем шаге, в игре не меняется ничего.</ProdConsole.Help.Wizard.About.Body>
+  <ProdConsole.Help.Wizard.Product.Title>Что производим</ProdConsole.Help.Wizard.Product.Title>
+  <ProdConsole.Help.Wizard.Product.Body>Список собран из данных самой игры, поэтому рецепты и верстаки из других модов появляются в нём сами.
+
+У каждого продукта видно, можно ли его делать прямо сейчас: есть ли верстак, открыто ли исследование, хватает ли сырья. Красные — те, что сделать нельзя; их и выбрать нельзя, чтобы задача не родилась мёртвой.
+
+Категории слева сужают список, поиск ищет по названию.</ProdConsole.Help.Wizard.Product.Body>
+  <ProdConsole.Help.Wizard.Quantity.Title>Сколько</ProdConsole.Help.Wizard.Quantity.Title>
+  <ProdConsole.Help.Wizard.Quantity.Body>Три режима на выбор, и это разные вопросы:
+
+— определённое количество — «сделать 50 стульев и хватит»;
+— поддерживать количество — «чтобы на складах всегда лежало 50 наборов еды»;
+— бесконечно — «делай, пока не скажу стоп».
+
+У операций без продукта — разделки, переплавки — вместо штук число выполнений.
+
+Стартовые числа берутся из настроек консоли: если у вас обычный заказ на 200, незачем каждый раз перебивать десятку.</ProdConsole.Help.Wizard.Quantity.Body>
+  <ProdConsole.Help.Wizard.Sources.Title>Где берём</ProdConsole.Help.Wizard.Sources.Title>
+  <ProdConsole.Help.Wizard.Sources.Body>Шаг про сырьё: откуда его носить.
+
+— все доступные — вся карта;
+— выбранные склады — только отмеченные;
+— радиус — круг вокруг верстака.
+
+Внизу видно, сколько сырья попадает в выбранную область. Ноль здесь — верный признак, что задача встанет сразу после создания.</ProdConsole.Help.Wizard.Sources.Body>
+  <ProdConsole.Help.Wizard.Ingredients.Title>Из чего</ProdConsole.Help.Wizard.Ingredients.Title>
+  <ProdConsole.Help.Wizard.Ingredients.Body>Здесь отмечается, какими материалами разрешено пользоваться. По умолчанию разрешено всё, что допускает сам рецепт.
+
+Снимать галочки стоит тогда, когда материал нужен вам для другого: запретите дерево — колонисты будут топить углём, а брёвна останутся на стройку.</ProdConsole.Help.Wizard.Ingredients.Body>
+  <ProdConsole.Help.Wizard.Benches.Title>На чём</ProdConsole.Help.Wizard.Benches.Title>
+  <ProdConsole.Help.Wizard.Benches.Body>Выбираются конкретные верстаки на карте, а не их тип. Так задача может жить в одной мастерской и не трогать вторую.
+
+Занятый другой задачей консоли верстак выбрать нельзя — рядом написано, кем занят. Освободится, когда та задача будет выполнена или остановлена.</ProdConsole.Help.Wizard.Benches.Body>
+  <ProdConsole.Help.Wizard.Executors.Title>Кто делает</ProdConsole.Help.Wizard.Executors.Title>
+  <ProdConsole.Help.Wizard.Executors.Body>Галочка «кто угодно» оставляет работу любому подходящему колонисту — так задача не встанет из-за того, что один выбранный заболел.
+
+Если выбираете поимённо, обратите внимание на подписи: у кого выключен нужный тип работ, у кого не хватает навыка. Такой колонист останется в списке, но работать не станет.</ProdConsole.Help.Wizard.Executors.Body>
+  <ProdConsole.Help.Wizard.StoreTo.Title>Куда класть</ProdConsole.Help.Wizard.StoreTo.Title>
+  <ProdConsole.Help.Wizard.StoreTo.Body>«Любой подходящий склад» — обычное поведение игры: готовое унесут туда, куда положено по настройкам складов.
+
+Выбранный склад полезен, когда продукт нужен в конкретном месте: лекарства в лазарете, детали у станка. Если склад заполнится, консоль скажет об этом причиной остановки.</ProdConsole.Help.Wizard.StoreTo.Body>
+  <ProdConsole.Help.Wizard.Summary.Title>Сводка</ProdConsole.Help.Wizard.Summary.Title>
+  <ProdConsole.Help.Wizard.Summary.Body>Последний шаг показывает задачу целиком: что, сколько, кто, из чего, на чём и куда. Это последняя возможность что-то поправить, не создавая задачу.
+
+После нажатия задача появляется в разделе «Производство» и начинает работать. Всё, что здесь выбрано, потом правится в её карточке — заново проходить мастер не нужно.</ProdConsole.Help.Wizard.Summary.Body>
+
+  <ProdConsole.Help.Animals.About.Title>Что это за раздел</ProdConsole.Help.Animals.About.Title>
+  <ProdConsole.Help.Animals.About.Body>Слева список видов животных, справа карточка выбранного вида. Настройки задаются виду целиком: «всех альпак держать так-то», а не каждой альпаке отдельно.
+
+Консоль ставит те же пометки, что и вы вручную: приручить, забить, охота. Выполняют их колонисты по своим приоритетам работ — если в «Работах» ни у кого не включено «Уход за животными», пометки будут висеть.
+
+Если вид вам не интересен, просто не трогайте его: без включённого автоуправления консоль о нём даже не вспомнит.</ProdConsole.Help.Animals.About.Body>
+  <ProdConsole.Help.Animals.Auto.Title>Автоуправление</ProdConsole.Help.Animals.Auto.Title>
+  <ProdConsole.Help.Animals.Auto.Body>Галочка под названием вида — первое решение о нём: ведёте его вы или ведёт мод.
+
+Снята — консоль не трогает этот вид совсем: не приручает, не охотится, не забивает. Пометки, которые вы поставили руками, остаются вашими.
+
+Включена — работают три блока ниже, каждый со своей галочкой. Галочки в таблицах животных при этом запираются: мод расставляет те же пометки сам, и поставленная руками была бы снята следующим же проходом.</ProdConsole.Help.Animals.Auto.Body>
+  <ProdConsole.Help.Animals.Limits.Title>Лимиты поголовья</ProdConsole.Help.Animals.Limits.Title>
+  <ProdConsole.Help.Animals.Limits.Body>Одна таблица отвечает сразу на два вопроса: кого приручать и кого забивать. Ниже минимума — приручаем, выше максимума — забиваем.
+
+Строки — пол, колонки — «всего» и три возраста. «Всего» здесь не сумма самцов и самок, а предел отдельно для каждого пола: стадо ради молока держат на самках, а лишние самцы дерутся и едят.
+
+Возрастные клетки отвечают на другой вопрос — кого именно трогать, когда предел по полу перейдён. Под нож первой идёт группа, которая сама вышла за свой максимум, и чем сильнее вышла, тем раньше; ту, что уже на своём минимуме, не трогаем никогда. Приручение зеркально: добираем ту группу, которой сильнее прочих не хватает.
+
+В каждой клетке свой режим: «бесконечно» — без ограничения, «диапазон» — от и до, «точное» — ровно столько.</ProdConsole.Help.Animals.Limits.Body>
+  <ProdConsole.Help.Animals.Taming.Title>Приручение</ProdConsole.Help.Animals.Taming.Title>
+  <ProdConsole.Help.Animals.Taming.Body>Мод помечает диких животных этого вида на приручение, пока прирученных меньше, чем сказано в лимитах.
+
+Режим «бесконечно» приручает всё, до чего дотянется, не глядя на численность. «По лимитам» — как написано в таблице.
+
+Галочки «кого приручать» — про возраст: детёныши приручаются легче, но растут долго.
+
+«Область» и «Лечение» назначаются новому животному сразу после приручения — чтобы не бегать за каждым вручную. Если на карте есть загон, вместо областей предлагаются загоны: колонисты всё равно отведут животное туда.
+
+Оранжевая плашка предупреждает о шансе, что сорванное приручение обернётся нападением. У хищников он высокий.</ProdConsole.Help.Animals.Taming.Body>
+  <ProdConsole.Help.Animals.Hunting.Title>Охота</ProdConsole.Help.Animals.Hunting.Title>
+  <ProdConsole.Help.Animals.Hunting.Body>Здесь не «сколько добыть», а «сколько ОСТАВИТЬ на карте». Карта восстанавливает поголовье сама, если её не выбивать под ноль, и бронь — единственное, что это гарантирует.
+
+Бронь задаётся по возрастам и полу отдельно. Всё, что сверх брони, помечается на охоту.
+
+Раненый зверь бросается на охотника — вероятность написана в плашке. У хищников охота почти всегда заканчивается дракой, поэтому решать стоит осознанно.</ProdConsole.Help.Animals.Hunting.Body>
+  <ProdConsole.Help.Animals.Slaughter.Title>Забой</ProdConsole.Help.Animals.Slaughter.Title>
+  <ProdConsole.Help.Animals.Slaughter.Body>Мод помечает на забой всех прирученных сверх нормы — порциями, а не всё стадо разом.
+
+Приоритет решает, кем жертвовать первыми: самыми старыми или самыми молодыми. Старые дают меньше мяса, но и жить им меньше; молодые ещё вырастут.
+
+Две галочки сняты по умолчанию: беременных и с привязанностью к колонисту. Потеря приплода и психический слом хозяина обходятся дороже, чем лишний рот.
+
+Пока блок включён, ванильный авто-забой по этому виду отключается: два правила, режущие одно стадо, дают результат, которого никто не заказывал.</ProdConsole.Help.Animals.Slaughter.Body>
+  <ProdConsole.Help.Animals.Tables.Title>Таблицы животных</ProdConsole.Help.Animals.Tables.Title>
+  <ProdConsole.Help.Animals.Tables.Body>Внизу карточки два списка: прирученные этого вида и дикие на карте.
+
+У прирученных видно кличку, пол, возраст, хозяина и привязанность; беременные помечены зелёным значком. Колонки «Забить» и «Отпустить» ставят обычные игровые пометки сразу, без «Сохранить».
+
+У диких — пол, возраст и колонки «Приручить» и «Охота»: так можно указать на конкретного зверя, не отдавая моду вид целиком.
+
+Пока включено «Автоуправление», галочки видны, но нажать их нельзя — иначе вы и мод спорили бы за одни и те же пометки.</ProdConsole.Help.Animals.Tables.Body>
+  <ProdConsole.Help.Growing.About.Title>Что это за раздел</ProdConsole.Help.Growing.About.Title>
+  <ProdConsole.Help.Growing.About.Body>Слева поля, зоны выращивания и гидропоника, справа карточка выбранного. Консоль назначает полю культуру и следит за циклом, а сеют и убирают колонисты — как обычно.
+
+Поле, которое вы не отдали моду, он не трогает: культуру на нём назначаете вы.
+
+Фильтры слева отбирают по типу и состоянию: только фермы, только зоны, только те, чем управляет мод, простаивающие и заражённые.</ProdConsole.Help.Growing.About.Body>
+  <ProdConsole.Help.Growing.Sowing.Title>Посадка и режимы</ProdConsole.Help.Growing.Sowing.Title>
+  <ProdConsole.Help.Growing.Sowing.Body>Галочка в заголовке блока отдаёт поле моду. Дальше — режим:
+
+— повтор — одна культура по кругу: собрали, посеяли ту же;
+— очередь — культуры по списку, одна за другой;
+— не сажать — поле остаётся под управлением, но культура на него не назначается.
+
+В «повторе» выбирается культура из тех, что можно посадить прямо сейчас. Зимой список короче: выбрать то, что всё равно не взойдёт, значит поставить поле в тупик молча.
+
+Галочка «вырубить текущий посев» нужна, когда ждать урожай некогда: растущее пойдёт под нож, и поле засеют заново выбранным.</ProdConsole.Help.Growing.Sowing.Body>
+  <ProdConsole.Help.Growing.Queue.Title>Очередь культур</ProdConsole.Help.Growing.Queue.Title>
+  <ProdConsole.Help.Growing.Queue.Body>Культуры перетаскиваются мышью из «Доступно» в «Очередь». Порядок в очереди тоже меняется перетаскиванием, лишнее убирается крестиком.
+
+Следующая культура назначается, когда поле опустеет: мод ждёт, пока колонисты уберут урожай, и только потом меняет посев. Иначе половина поля осталась бы недозревшей.
+
+Пока идёт ожидание, поле закрыто служебной культурой — так колонисты не засеют его сами тем, что было раньше. В карточке об этом сказано прямо.
+
+«Повторять очередь» пускает список по кругу. Без неё после последней культуры поле останавливается.
+
+План поля копируется и вставляется на другие поля — не переписывать же одно и то же для пяти грядок.</ProdConsole.Help.Growing.Queue.Body>
+  <ProdConsole.Help.Growing.Blight.Title>Болезнь</ProdConsole.Help.Growing.Blight.Title>
+  <ProdConsole.Help.Growing.Blight.Body>Галочка «вырубать больные» помечает заражённые растения на вырубку и не даёт сеять, пока поле не вылечится.
+
+Запрет на посев здесь не перестраховка, а условие лечения. Колонисты вырубают и сажают параллельно, и новые посадки заражаются от соседних оставшихся — лечение стало бы бесконечным. Поэтому на время лечения поле закрывается служебной культурой, а после — возвращается та, что росла.
+
+Ставя эту галочку, вы отдаёте поле моду хотя бы частично, даже если сеять ему не разрешали.</ProdConsole.Help.Growing.Blight.Body>
+
+  <ProdConsole.Help.General.About.Title>Что такое консоль</ProdConsole.Help.General.About.Title>
+  <ProdConsole.Help.General.About.Body>Консоль собирает управление производством колонии в одном окне: задачи, верстаки, исполнители, склады, поля и стадо. Вместо обхода каждого верстака вы видите общую картину.
+
+Мод ничего не патчит в игре и не подменяет её механики. Он ставит те же задания и пометки, что вы ставите руками, — просто расставляет их сам и следит, чтобы они не противоречили друг другу.
+
+Каталог строится по данным самой игры, поэтому рецепты, верстаки и животные из других модов подхватываются без настройки.</ProdConsole.Help.General.About.Body>
+  <ProdConsole.Help.General.Window.Title>Как устроено окно</ProdConsole.Help.General.Window.Title>
+  <ProdConsole.Help.General.Window.Body>Вкладки сверху — разделы. Слева в каждом список, справа карточка выбранного.
+
+Кнопка «Новая задача» открывает мастер, шестерёнка — настройки, «?» — эту справку. Справка открывается на том разделе, в котором вы стоите.
+
+Красные и жёлтые плашки всегда сопровождаются причиной словами: консоль не сообщает о беде, не объяснив её.</ProdConsole.Help.General.Window.Body>
+  <ProdConsole.Help.General.Limits.Title>Чего мод не делает</ProdConsole.Help.General.Limits.Title>
+  <ProdConsole.Help.General.Limits.Body>Он не заставляет колонистов работать. Приоритеты работ, расписание и настроения остаются вашими; консоль только ставит задания.
+
+Он не отменяет ручные пометки и не спорит с ними: то, что вы поставили сами, остаётся вашим, пока вы не отдали объект моду галочкой.
+
+Он не создаёт предметы из воздуха и не ускоряет работу. Если чего-то не хватает — он скажет, чего именно, но добывать это придётся обычным путём.</ProdConsole.Help.General.Limits.Body>
+  <ProdConsole.Help.Overview.About.Title>Что это за раздел</ProdConsole.Help.Overview.About.Title>
+  <ProdConsole.Help.Overview.About.Body>Обзор отвечает на один вопрос: всё ли в порядке. Здесь ничего не настраивается — только показывается.
+
+Верхние счётчики: сколько задач работает, сколько выполняется прямо сейчас, сколько ждёт и сколько остановлено. Рядом — загрузка верстаков: сколько работают, сколько заняты другими делами, сколько недоступны.
+
+«Последняя сверка» показывает, когда консоль в последний раз сверяла задачи с картой. Если число растёт и не сбрасывается, значит игра на паузе.</ProdConsole.Help.Overview.About.Body>
+  <ProdConsole.Help.Overview.Attention.Title>Задачи, требующие внимания</ProdConsole.Help.Overview.Attention.Title>
+  <ProdConsole.Help.Overview.Attention.Body>Таблица собирает всё, что стоит: заблокированные и поставленные на паузу задачи с причиной.
+
+Клик по строке открывает эту задачу в разделе «Производство» — чинить её всё равно там.
+
+Справа «Ближайшие завершения»: что закончится в первую очередь. Полезно, когда ждёшь конкретную вещь и решаешь, добавлять ли ещё одну задачу.</ProdConsole.Help.Overview.Attention.Body>
+  <ProdConsole.Help.Overview.Stock.Title>Сводка по складам</ProdConsole.Help.Overview.Stock.Title>
+  <ProdConsole.Help.Overview.Stock.Body>Нижний блок — что лежит на складах, сколько требуется задачам и каков баланс.
+
+Красное «требуется» означает, что задачи просят больше, чем есть. Это не ошибка: возможно, сырьё как раз добывают. Но если число не меняется днями, добывать его некому.
+
+Тот же разрез подробнее — во вкладке «Сводка по складам».</ProdConsole.Help.Overview.Stock.Body>
+  <ProdConsole.Help.Benches.About.Title>Что это за раздел</ProdConsole.Help.Benches.About.Title>
+  <ProdConsole.Help.Benches.About.Body>Слева типы верстаков на карте, справа карточка выбранного типа. Консоль считает верстаки по типу, а не поштучно: десять швейных столов — это один тип и десять экземпляров.
+
+Галочка «использовать» решает, может ли консоль вообще ставить на этот тип задания. Снятая — верстак остаётся вашим полностью.
+
+Отдельные экземпляры можно исключить в списке ниже: например, оставить дальний стол для ручной работы.</ProdConsole.Help.Benches.About.Body>
+  <ProdConsole.Help.Benches.Card.Title>Что показывает карточка</ProdConsole.Help.Benches.Card.Title>
+  <ProdConsole.Help.Benches.Card.Body>«Общие сведения» — сколько верстаков этого типа на карте, сколько из них готовы работать, чем они заняты.
+
+«Экземпляры» — каждый верстак отдельно: занят ли задачей консоли, доступен ли, работает ли.
+
+«Рецепты» — что этот верстак умеет делать и хватает ли для этого ресурсов и навыка. Отсюда видно, почему задача не встала на этот стол.
+
+«Выпуск за 7 дней» — сколько сделано на верстаках этого типа.</ProdConsole.Help.Benches.Card.Body>
+  <ProdConsole.Help.Executors.About.Title>Что это за раздел</ProdConsole.Help.Executors.About.Title>
+  <ProdConsole.Help.Executors.About.Body>Список колонистов и автономных машин, которые могут участвовать в производстве, и карточка выбранного.
+
+Галочка «использовать» — разрешение консоли назначать этого колониста на задачи. Снятая означает «его не трогать»: он останется свободен для остальных дел.
+
+Игнорирование — более сильная мера: игнорируемого консоль не видит вовсе, он не появится ни в одном списке. Это для гостей, рабов и тех, кого вы не считаете частью производства.</ProdConsole.Help.Executors.About.Body>
+  <ProdConsole.Help.Executors.Card.Title>Что показывает карточка</ProdConsole.Help.Executors.Card.Title>
+  <ProdConsole.Help.Executors.Card.Body>«Информация» — состояние колониста и чем он занят прямо сейчас.
+
+«Навыки» — те, что важны для производства, со страстями. По ним видно, кому доверить точную работу.
+
+«Задачи» и «Верстаки» — где этот колонист участвует. Отсюда понятно, почему он занят.
+
+«Выпуск за 7 дней» — сколько он сделал. Не для отчёта, а чтобы заметить, что кто-то числится исполнителем, но не работает.</ProdConsole.Help.Executors.Card.Body>
+  <ProdConsole.Help.Storage.About.Title>Что это за раздел</ProdConsole.Help.Storage.About.Title>
+  <ProdConsole.Help.Storage.About.Body>Слева склады и полки, справа карточка выбранного. Консоль видит и обычные зоны хранения, и стеллажи, и группы складов.
+
+Галочка «использовать» решает, может ли консоль брать отсюда сырьё и класть сюда готовое. Снятая — склад полностью ваш.
+
+Склад можно переименовать прямо здесь: имя видно и в игре, и в списках консоли.</ProdConsole.Help.Storage.About.Body>
+  <ProdConsole.Help.Storage.Card.Title>Что показывает карточка</ProdConsole.Help.Storage.Card.Title>
+  <ProdConsole.Help.Storage.Card.Body>«Информация» — вместимость, заполненность и настройки фильтров.
+
+«Задачи» — какие задачи консоли берут отсюда сырьё или кладут сюда результат. Прежде чем разбирать склад, стоит заглянуть сюда.
+
+«Содержимое» — что лежит, с поиском по названию.
+
+Вкладка «Сводка по складам» — тот же материал в другом разрезе: не по складам, а по предметам, с балансом «есть / требуется».</ProdConsole.Help.Storage.Card.Body>
+  <ProdConsole.Help.Settings.About.Title>Настройки</ProdConsole.Help.Settings.About.Title>
+  <ProdConsole.Help.Settings.About.Body>Настройки общие для всех колоний: они хранятся в файле игрока, а не в сохранении.
+
+Здесь четыре блока: частота проверок, автономные верстаки, стартовые значения новой задачи и галочки разделов.
+
+Кнопка «Сбросить» возвращает всё к заводским значениям.</ProdConsole.Help.Settings.About.Body>
+  <ProdConsole.Help.Settings.Timings.Title>Частота проверок</ProdConsole.Help.Settings.Timings.Title>
+  <ProdConsole.Help.Settings.Timings.Body>Три интервала: очереди, садоводство и животноводство. Разными они и должны быть.
+
+Очередь сверяется часто: сняли галочку — ждёте, что задание с верстака исчезнет сразу. Поля и стадо меняются часами игрового времени, и частая проверка там — только нагрузка без пользы.
+
+Если игра подтормаживает на большой колонии, увеличивать стоит именно садоводство и животноводство: очередь трогать не надо, она и так дешёвая.</ProdConsole.Help.Settings.Timings.Body>
+  <ProdConsole.Help.Settings.Defaults.Title>Значения по умолчанию</ProdConsole.Help.Settings.Defaults.Title>
+  <ProdConsole.Help.Settings.Defaults.Body>Всё, что вы вводите в мастере руками, имеет стартовое значение: количество, запас, режим задачи, режим складов-источников и приёмников, галочка «кто угодно».
+
+Смысл простой: у каждой колонии свой обычный размер заказа. Если вы всегда делаете по двести, незачем каждый раз перебивать десятку.
+
+Ниже — галочки разделов: стерилизация, забой беременных и с привязанностью, вырубка больных и вырубка текущего посева. Они задают, как будет настроен НОВЫЙ вид или НОВОЕ поле; уже настроенные не меняются.</ProdConsole.Help.Settings.Defaults.Body>
+
+</LanguageData>

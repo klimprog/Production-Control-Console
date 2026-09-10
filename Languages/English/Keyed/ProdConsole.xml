@@ -1,0 +1,913 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Window and tabs -->
+  <ProdConsole.Window.Title>Production control console</ProdConsole.Window.Title>
+  <ProdConsole.Window.NoMap>No active map.</ProdConsole.Window.NoMap>
+  <ProdConsole.Tab.Benches>Workbenches</ProdConsole.Tab.Benches>
+  <ProdConsole.Tab.Settings>Settings</ProdConsole.Tab.Settings>
+
+  <!-- Catalog -->
+  <ProdConsole.Catalog.Uncategorized>Other</ProdConsole.Catalog.Uncategorized>
+
+  <!-- Catalog table columns -->
+
+  <!-- Statuses -->
+  <ProdConsole.Bench.Status.Free>free</ProdConsole.Bench.Status.Free>
+  <ProdConsole.Bench.Status.Working>working</ProdConsole.Bench.Status.Working>
+  <ProdConsole.Bench.Status.Paused>paused</ProdConsole.Bench.Status.Paused>
+  <ProdConsole.Bench.Tasks>active orders: {0}</ProdConsole.Bench.Tasks>
+  <ProdConsole.Status.Ready>can be produced</ProdConsole.Status.Ready>
+  <ProdConsole.Status.NoBench>no workbench</ProdConsole.Status.NoBench>
+  <ProdConsole.Status.NoResearch>not researched</ProdConsole.Status.NoResearch>
+  <ProdConsole.Status.NoIngredients>missing materials</ProdConsole.Status.NoIngredients>
+  <ProdConsole.Status.NoPawn>no free worker</ProdConsole.Status.NoPawn>
+
+  <!-- Mockups (stage F1.5) -->
+
+  <!-- Orders -->
+  <ProdConsole.Orders.Mode.Count>{0} items</ProdConsole.Orders.Mode.Count>
+  <ProdConsole.Orders.Mode.Stock>keep {0}</ProdConsole.Orders.Mode.Stock>
+  <ProdConsole.Orders.Mode.Forever>forever</ProdConsole.Orders.Mode.Forever>
+  <ProdConsole.Orders.Mode.Cycles>{0} cycles</ProdConsole.Orders.Mode.Cycles>
+  <ProdConsole.Orders.State.Active>running</ProdConsole.Orders.State.Active>
+  <ProdConsole.Orders.State.Paused>paused</ProdConsole.Orders.State.Paused>
+  <ProdConsole.Orders.State.Blocked>blocked</ProdConsole.Orders.State.Blocked>
+  <ProdConsole.Orders.State.Done>done</ProdConsole.Orders.State.Done>
+  <ProdConsole.Orders.Delete>Delete</ProdConsole.Orders.Delete>
+  <ProdConsole.Orders.AnyPawn>anyone</ProdConsole.Orders.AnyPawn>
+
+  <!-- Workbenches -->
+  <ProdConsole.Benches.NoPawnNeeded>works without a pawn</ProdConsole.Benches.NoPawnNeeded>
+
+  <!-- Settings -->
+
+  <!-- Bills on workbenches (F2) -->
+  <ProdConsole.Bill.Managed>production console: {0}</ProdConsole.Bill.Managed>
+  <ProdConsole.Bill.Orphan>production console: order deleted</ProdConsole.Bill.Orphan>
+  <ProdConsole.Bill.NoWorker>no worker assigned</ProdConsole.Bill.NoWorker>
+  <ProdConsole.Bench.Taken>The console took over "{0}". Player bills paused: {1} - they resume when the bench is released.</ProdConsole.Bench.Taken>
+
+  <!-- Amount modes (short switch labels) -->
+
+  <!-- New order form -->
+  <ProdConsole.NewOrder.Created>Order created: {0}</ProdConsole.NewOrder.Created>
+
+  <!-- Order list actions -->
+
+  <!-- Bench ownership -->
+
+  <!-- Settings (F2) -->
+
+  <!-- F3: material, skill, workers -->
+  <ProdConsole.NewOrder.Saved>Order updated: {0}</ProdConsole.NewOrder.Saved>
+  <ProdConsole.NewOrder.Autonomous>Machines that work without a pawn ignore the worker list: they do the job themselves.</ProdConsole.NewOrder.Autonomous>
+
+  <ProdConsole.Tab.Overview>Overview</ProdConsole.Tab.Overview>
+  <ProdConsole.Tab.Production>Production</ProdConsole.Tab.Production>
+  <ProdConsole.Wizard.Step.Product>What</ProdConsole.Wizard.Step.Product>
+  <ProdConsole.Wizard.Step.Ingredients>Materials</ProdConsole.Wizard.Step.Ingredients>
+  <ProdConsole.Wizard.Step.Benches>Workbenches</ProdConsole.Wizard.Step.Benches>
+  <ProdConsole.Wizard.Step.Summary>Summary</ProdConsole.Wizard.Step.Summary>
+  <ProdConsole.Wizard.Sum.Nothing>not chosen</ProdConsole.Wizard.Sum.Nothing>
+  <ProdConsole.Overview.State>Production status</ProdConsole.Overview.State>
+  <ProdConsole.Production.New>New order</ProdConsole.Production.New>
+  <ProdConsole.Production.PickHint>Select an order on the left.</ProdConsole.Production.PickHint>
+  <ProdConsole.Production.Need>need {0}</ProdConsole.Production.Need>
+  <ProdConsole.Production.Have>have {0}</ProdConsole.Production.Have>
+  <ProdConsole.Production.Start>Start</ProdConsole.Production.Start>
+  <ProdConsole.Production.Stop>Stop</ProdConsole.Production.Stop>
+  <ProdConsole.Benches.General>General</ProdConsole.Benches.General>
+  <ProdConsole.Benches.List>Workbench list</ProdConsole.Benches.List>
+  <ProdConsole.Production.List>Order list</ProdConsole.Production.List>
+  <ProdConsole.Tab.Storage>Storage</ProdConsole.Tab.Storage>
+  <ProdConsole.Storage.Section>Storage</ProdConsole.Storage.Section>
+  <ProdConsole.Storage.Any>any storage</ProdConsole.Storage.Any>
+  <ProdConsole.Storage.StoreTo>Store to</ProdConsole.Storage.StoreTo>
+  <ProdConsole.Storage.Radius>Ingredient search radius</ProdConsole.Storage.Radius>
+  <ProdConsole.Storage.Radius.Hint>Measured from the bench. 999 means the whole map.</ProdConsole.Storage.Radius.Hint>
+  <ProdConsole.Storage.Empty>No storage was found on this map.</ProdConsole.Storage.Empty>
+  <ProdConsole.Tab.Executors>Workers</ProdConsole.Tab.Executors>
+  <ProdConsole.Settings.AutonomousTitle>Autonomous machines</ProdConsole.Settings.AutonomousTitle>
+  <ProdConsole.Settings.Defaults>New order defaults</ProdConsole.Settings.Defaults>
+  <ProdConsole.Settings.Ticks>ticks</ProdConsole.Settings.Ticks>
+  <ProdConsole.Executors.List>Workers</ProdConsole.Executors.List>
+  <ProdConsole.Executors.PickHint>Pick a worker on the left.</ProdConsole.Executors.PickHint>
+  <ProdConsole.Executors.Busy>working</ProdConsole.Executors.Busy>
+  <ProdConsole.Executors.Free>idle</ProdConsole.Executors.Free>
+  <ProdConsole.Executors.Skills>Production skills</ProdConsole.Executors.Skills>
+  <ProdConsole.Executors.Orders>Assigned orders</ProdConsole.Executors.Orders>
+  <ProdConsole.Executors.Benches>Benches in use</ProdConsole.Executors.Benches>
+  <ProdConsole.Executors.Current>Current order: {0}</ProdConsole.Executors.Current>
+  <ProdConsole.Executors.Idle>Not working on a console order</ProdConsole.Executors.Idle>
+  <ProdConsole.Executors.No>no</ProdConsole.Executors.No>
+  <ProdConsole.Executors.NoOrders>Not assigned to any order.</ProdConsole.Executors.NoOrders>
+  <ProdConsole.Executors.NoBenches>No workbenches—this worker is not assigned to any order.</ProdConsole.Executors.NoBenches>
+  <ProdConsole.Chart.Stub>The chart shows sample data: production history is not collected yet.</ProdConsole.Chart.Stub>
+  <ProdConsole.Overview.BenchLoad>Bench load</ProdConsole.Overview.BenchLoad>
+  <ProdConsole.Overview.Attention>Orders needing attention</ProdConsole.Overview.Attention>
+  <ProdConsole.Overview.Soon>Finishing soon</ProdConsole.Overview.Soon>
+  <ProdConsole.Overview.Output>Output over 7 days</ProdConsole.Overview.Output>
+  <ProdConsole.Overview.AllFine>All orders running</ProdConsole.Overview.AllFine>
+  <ProdConsole.Overview.Found>Found</ProdConsole.Overview.Found>
+  <ProdConsole.Overview.Working>Working</ProdConsole.Overview.Working>
+  <ProdConsole.Overview.Col.Product>Product</ProdConsole.Overview.Col.Product>
+  <ProdConsole.Overview.Col.Reason>Reason</ProdConsole.Overview.Col.Reason>
+  <ProdConsole.Overview.Col.Progress>Progress</ProdConsole.Overview.Col.Progress>
+  <ProdConsole.Overview.NoReason>no reason given</ProdConsole.Overview.NoReason>
+  <ProdConsole.Production.What>What to make</ProdConsole.Production.What>
+  <ProdConsole.Production.Who>Who makes it</ProdConsole.Production.Who>
+  <ProdConsole.Production.Where>Workbenches</ProdConsole.Production.Where>
+  <ProdConsole.Production.From>Materials</ProdConsole.Production.From>
+  <ProdConsole.Production.Stats>Statistics</ProdConsole.Production.Stats>
+  <ProdConsole.Benches.FoundFree>{0} found - {1} free</ProdConsole.Benches.FoundFree>
+  <ProdConsole.Benches.PickHint>Pick a bench type on the left.</ProdConsole.Benches.PickHint>
+  <ProdConsole.Benches.TitleWithCount>{0} - {1} instances</ProdConsole.Benches.TitleWithCount>
+  <ProdConsole.Benches.Instances>Instances</ProdConsole.Benches.Instances>
+  <ProdConsole.Benches.RecipeTable>Recipes and cost</ProdConsole.Benches.RecipeTable>
+  <ProdConsole.Benches.ActiveTasks>Active orders</ProdConsole.Benches.ActiveTasks>
+  <ProdConsole.Benches.Queue>queue: {0}</ProdConsole.Benches.Queue>
+  <ProdConsole.Benches.Col.Product>Product</ProdConsole.Benches.Col.Product>
+  <ProdConsole.Benches.Col.Cost>Cost</ProdConsole.Benches.Col.Cost>
+  <ProdConsole.Benches.Col.Available>Availability</ProdConsole.Benches.Col.Available>
+  <ProdConsole.Storage.PickHint>Pick a storage on the left.</ProdConsole.Storage.PickHint>
+  <ProdConsole.Storage.Info>Details</ProdConsole.Storage.Info>
+  <ProdConsole.Storage.Orders>Orders</ProdConsole.Storage.Orders>
+  <ProdConsole.Storage.Content>Contents</ProdConsole.Storage.Content>
+  <ProdConsole.Storage.Capacity>Capacity: {0} slots</ProdConsole.Storage.Capacity>
+  <ProdConsole.Storage.Load>Load: {0}</ProdConsole.Storage.Load>
+  <ProdConsole.Storage.Items>items: {0}</ProdConsole.Storage.Items>
+  <ProdConsole.Storage.AsTarget>output target</ProdConsole.Storage.AsTarget>
+  <ProdConsole.Storage.NoOrders>No order uses this storage.</ProdConsole.Storage.NoOrders>
+  <ProdConsole.Storage.NoContent>The storage is empty.</ProdConsole.Storage.NoContent>
+  <ProdConsole.Storage.Col.Item>Item</ProdConsole.Storage.Col.Item>
+  <ProdConsole.Storage.Col.Count>Count</ProdConsole.Storage.Col.Count>
+  <ProdConsole.Storage.Col.Needed>Required by orders</ProdConsole.Storage.Col.Needed>
+  <ProdConsole.Storage.Col.Balance>Balance</ProdConsole.Storage.Col.Balance>
+  <ProdConsole.Wizard.Sources.Scope>Search scope</ProdConsole.Wizard.Sources.Scope>
+  <ProdConsole.Wizard.Sources.Chosen>Storage</ProdConsole.Wizard.Sources.Chosen>
+  <ProdConsole.Wizard.Sources.Any>All available</ProdConsole.Wizard.Sources.Any>
+  <ProdConsole.Help.Title>Help</ProdConsole.Help.Title>
+  <ProdConsole.Settings.Reset>Reset</ProdConsole.Settings.Reset>
+
+  <!-- ==== Main window based on the approved layout ==== -->
+
+  <!-- Actions and shared labels -->
+  <ProdConsole.Action.Close>Close</ProdConsole.Action.Close>
+  <ProdConsole.Action.Help>Help</ProdConsole.Action.Help>
+  <ProdConsole.Action.Center>Center on map</ProdConsole.Action.Center>
+  <ProdConsole.Action.Save>Save</ProdConsole.Action.Save>
+  <ProdConsole.Action.Search>Search...</ProdConsole.Action.Search>
+
+  <!-- States and reasons -->
+
+  <!-- Priorities -->
+  <ProdConsole.Priority>Priority</ProdConsole.Priority>
+  <ProdConsole.Priority.High>High</ProdConsole.Priority.High>
+  <ProdConsole.Priority.Normal>Normal</ProdConsole.Priority.Normal>
+  <ProdConsole.Priority.Low>Low</ProdConsole.Priority.Low>
+
+  <!-- Amount modes -->
+  <ProdConsole.Amount>Amount</ProdConsole.Amount>
+  <ProdConsole.Amount.Mode>Mode</ProdConsole.Amount.Mode>
+  <ProdConsole.Amount.Fixed>Exact amount</ProdConsole.Amount.Fixed>
+  <ProdConsole.Amount.Maintain>Keep in stock</ProdConsole.Amount.Maintain>
+  <ProdConsole.Amount.Forever>Forever</ProdConsole.Amount.Forever>
+  <ProdConsole.Amount.Fixed.Text>The order finishes once the requested amount has been made.</ProdConsole.Amount.Fixed.Text>
+  <ProdConsole.Amount.Maintain.Text>Production resumes whenever the stock drops below the given value.</ProdConsole.Amount.Maintain.Text>
+  <ProdConsole.Amount.Forever.Text>The order stays active with no amount limit.</ProdConsole.Amount.Forever.Text>
+  <ProdConsole.Amount.Forever.NoParams>No further settings needed</ProdConsole.Amount.Forever.NoParams>
+  <ProdConsole.Amount.Params>Mode settings</ProdConsole.Amount.Params>
+
+  <!-- Overview -->
+  <ProdConsole.Overview.Stat.Active>Active</ProdConsole.Overview.Stat.Active>
+  <ProdConsole.Overview.Stat.Working>Running</ProdConsole.Overview.Stat.Working>
+  <ProdConsole.Overview.Stat.Waiting>Waiting</ProdConsole.Overview.Stat.Waiting>
+  <ProdConsole.Overview.Stat.Stopped>Stopped</ProdConsole.Overview.Stat.Stopped>
+  <ProdConsole.Overview.NeedAttention>{0} need attention</ProdConsole.Overview.NeedAttention>
+  <ProdConsole.Overview.LastCheck>Last check: {0}</ProdConsole.Overview.LastCheck>
+  <ProdConsole.Overview.BusyOther>Busy with other work</ProdConsole.Overview.BusyOther>
+  <ProdConsole.Overview.Unavailable>Unavailable</ProdConsole.Overview.Unavailable>
+  <ProdConsole.Overview.Col.State>State</ProdConsole.Overview.Col.State>
+
+  <!-- Production -->
+  <ProdConsole.Production.Orders>Orders</ProdConsole.Production.Orders>
+  <ProdConsole.Production.ModeLine>Mode: {0}</ProdConsole.Production.ModeLine>
+  <ProdConsole.Production.DoneLine>Made {0} / {1} - {2} in storage</ProdConsole.Production.DoneLine>
+  <ProdConsole.Production.Done>Made {0} / {1}</ProdConsole.Production.Done>
+  <ProdConsole.Production.TakeFrom>Sources</ProdConsole.Production.TakeFrom>
+
+  <!-- Workbenches -->
+  <ProdConsole.Benches.Section>Workbenches</ProdConsole.Benches.Section>
+  <ProdConsole.Benches.RecipesAvailable>Recipes available</ProdConsole.Benches.RecipesAvailable>
+
+  <!-- Workers -->
+  <ProdConsole.Executors.Filter.All>All</ProdConsole.Executors.Filter.All>
+  <ProdConsole.Executors.Output>Output over 7 days</ProdConsole.Executors.Output>
+  <ProdConsole.Executors.Skill>{0} {1}</ProdConsole.Executors.Skill>
+
+  <!-- Storage -->
+  <ProdConsole.Storage.SearchItems>Search items...</ProdConsole.Storage.SearchItems>
+  <ProdConsole.Storage.Category.All>All categories</ProdConsole.Storage.Category.All>
+  <ProdConsole.Storage.SourceOn>Ingredient source</ProdConsole.Storage.SourceOn>
+
+  <!-- Charts -->
+  <ProdConsole.Chart.Series.Output>Output</ProdConsole.Chart.Series.Output>
+  <ProdConsole.Chart.Series.Work>Work done</ProdConsole.Chart.Series.Work>
+
+  <!-- Order wizard -->
+  <ProdConsole.Wizard.Create>New order</ProdConsole.Wizard.Create>
+  <ProdConsole.Wizard.CreateButton>Create order</ProdConsole.Wizard.CreateButton>
+  <ProdConsole.Wizard.NextArrow>Next &gt;</ProdConsole.Wizard.NextArrow>
+  <ProdConsole.Wizard.BackArrow>&lt; Back</ProdConsole.Wizard.BackArrow>
+  <ProdConsole.Wizard.Step.Quantity>Amount</ProdConsole.Wizard.Step.Quantity>
+  <ProdConsole.Wizard.Step.Where>Sources</ProdConsole.Wizard.Step.Where>
+  <ProdConsole.Wizard.Step.Executors>Workers</ProdConsole.Wizard.Step.Executors>
+  <ProdConsole.Wizard.Product.Title>Pick a product</ProdConsole.Wizard.Product.Title>
+  <ProdConsole.Wizard.Product.Note>The list comes from the recipes of the workbenches present on the map.</ProdConsole.Wizard.Product.Note>
+  <ProdConsole.Wizard.Product.Categories>Categories</ProdConsole.Wizard.Product.Categories>
+  <ProdConsole.Wizard.Product.Available>Available products</ProdConsole.Wizard.Product.Available>
+  <ProdConsole.Wizard.Product.SearchCategory>Search categories...</ProdConsole.Wizard.Product.SearchCategory>
+  <ProdConsole.Wizard.Product.Search>Search products...</ProdConsole.Wizard.Product.Search>
+  <ProdConsole.Wizard.Cat.All>All products</ProdConsole.Wizard.Cat.All>
+  <ProdConsole.Wizard.Col.Recipes>Recipes</ProdConsole.Wizard.Col.Recipes>
+  <ProdConsole.Wizard.Col.InStock>In storage</ProdConsole.Wizard.Col.InStock>
+  <ProdConsole.Wizard.Quantity.Note>Pick one of the three order modes.</ProdConsole.Wizard.Quantity.Note>
+  <ProdConsole.Wizard.Quantity.InStockNow>Currently in storage</ProdConsole.Wizard.Quantity.InStockNow>
+  <ProdConsole.Wizard.Sources.Title>Where ingredients come from</ProdConsole.Wizard.Sources.Title>
+  <ProdConsole.Wizard.Sources.Note>Ingredient availability on the following steps is counted inside the chosen area only.</ProdConsole.Wizard.Sources.Note>
+  <ProdConsole.Wizard.Sources.Selected>Selected storages</ProdConsole.Wizard.Sources.Selected>
+  <ProdConsole.Wizard.Sources.RadiusTab>Radius</ProdConsole.Wizard.Sources.RadiusTab>
+  <ProdConsole.Wizard.Sources.AllTitle>All available storages</ProdConsole.Wizard.Sources.AllTitle>
+  <ProdConsole.Wizard.Sources.AllText>Ingredients may be taken from any storage the order can reach, with no amount limit.</ProdConsole.Wizard.Sources.AllText>
+  <ProdConsole.Wizard.Sources.Found>Storages found: {0} - free cells: {1}</ProdConsole.Wizard.Sources.Found>
+  <ProdConsole.Wizard.Sources.RadiusForm>Radius settings</ProdConsole.Wizard.Sources.RadiusForm>
+  <ProdConsole.Wizard.Sources.RadiusCells>Radius of {0} cells</ProdConsole.Wizard.Sources.RadiusCells>
+  <ProdConsole.Wizard.Ingredients.Title>Ingredients</ProdConsole.Wizard.Ingredients.Title>
+  <ProdConsole.Wizard.Ingredients.Note>Select what this order may use. Required materials are listed separately because every production method needs them.</ProdConsole.Wizard.Ingredients.Note>
+  <ProdConsole.Wizard.Benches.Title>Workbenches</ProdConsole.Wizard.Benches.Title>
+  <ProdConsole.Wizard.Benches.Note>Identical types are grouped. Each card shows the recipe cost on that particular bench.</ProdConsole.Wizard.Benches.Note>
+  <ProdConsole.Wizard.Benches.Availability>{0} found - {1} available - {2} busy with other work</ProdConsole.Wizard.Benches.Availability>
+  <ProdConsole.Wizard.Executors.Title>Workers</ProdConsole.Wizard.Executors.Title>
+  <ProdConsole.Wizard.Executors.Note>Workers are selected after the workbenches, once it is known whether the equipment needs a worker at all.</ProdConsole.Wizard.Executors.Note>
+  <ProdConsole.Wizard.Executors.Panel>Who can do it</ProdConsole.Wizard.Executors.Panel>
+  <ProdConsole.Wizard.Col.Executor>Worker</ProdConsole.Wizard.Col.Executor>
+  <ProdConsole.Wizard.Col.Skill>Skill</ProdConsole.Wizard.Col.Skill>
+  <ProdConsole.Wizard.Col.Job>Current job</ProdConsole.Wizard.Col.Job>
+  <ProdConsole.Wizard.Pawn.Free>Idle</ProdConsole.Wizard.Pawn.Free>
+  <ProdConsole.Wizard.Summary.Title>Summary before creating</ProdConsole.Wizard.Summary.Title>
+  <ProdConsole.Wizard.Summary.Note>Review the selected settings before creating the order.</ProdConsole.Wizard.Summary.Note>
+  <ProdConsole.Wizard.Summary.Left>Left to produce</ProdConsole.Wizard.Summary.Left>
+  <ProdConsole.Wizard.Summary.Make>Make {0}</ProdConsole.Wizard.Summary.Make>
+
+  <!-- Console settings -->
+  <ProdConsole.Settings.Autonomous.Allow>Allow work without a pawn</ProdConsole.Settings.Autonomous.Allow>
+  <ProdConsole.Settings.Autonomous.Text>Applies only to benches that can work on their own.</ProdConsole.Settings.Autonomous.Text>
+
+  <!-- Help pages -->
+  <ProdConsole.Help.Tab.General>General</ProdConsole.Help.Tab.General>
+  <ProdConsole.Help.Tab.Wizard>New order</ProdConsole.Help.Tab.Wizard>
+
+
+  <!-- Wizard using live game data -->
+  <ProdConsole.Wizard.Cat.Operations>Operations</ProdConsole.Wizard.Cat.Operations>
+  <ProdConsole.Wizard.Need.Product>Pick a product.</ProdConsole.Wizard.Need.Product>
+  <ProdConsole.Wizard.Need.Bench>Pick at least one workbench.</ProdConsole.Wizard.Need.Bench>
+  <ProdConsole.Wizard.Benches.Empty>No workbench on the map makes this from the chosen materials.</ProdConsole.Wizard.Benches.Empty>
+  <ProdConsole.Wizard.Executors.Empty>None of the colonists will take this work.</ProdConsole.Wizard.Executors.Empty>
+  <ProdConsole.Amount.Cycles>Number of runs</ProdConsole.Amount.Cycles>
+  <ProdConsole.Amount.Cycles.Text>This operation has no finished product to count, so the order is measured in recipe runs.</ProdConsole.Amount.Cycles.Text>
+
+
+  <!-- Catalog categories and grouped entries -->
+  <ProdConsole.Cat.Food>Food</ProdConsole.Cat.Food>
+  <ProdConsole.Cat.Materials>Materials</ProdConsole.Cat.Materials>
+  <ProdConsole.Group.Meat>Meat</ProdConsole.Group.Meat>
+  <ProdConsole.Group.Leather>Leather</ProdConsole.Group.Leather>
+
+  <!-- Destination step -->
+  <ProdConsole.Wizard.Step.StoreTo>Destination</ProdConsole.Wizard.Step.StoreTo>
+  <ProdConsole.Wizard.StoreTo.Title>Where the result goes</ProdConsole.Wizard.StoreTo.Title>
+  <ProdConsole.Wizard.StoreTo.Note>The result can go to a specific storage, or be left to the game, which picks the nearest suitable one.</ProdConsole.Wizard.StoreTo.Note>
+  <ProdConsole.Wizard.StoreTo.Any>Any suitable storage</ProdConsole.Wizard.StoreTo.Any>
+  <ProdConsole.Wizard.StoreTo.AnyText>The game hauls the result to the nearest storage that accepts it.</ProdConsole.Wizard.StoreTo.AnyText>
+  <ProdConsole.Wizard.StoreTo.Picked>Chosen storage</ProdConsole.Wizard.StoreTo.Picked>
+
+  <!-- Materials: required and selectable -->
+  <ProdConsole.Wizard.Ingredients.Mandatory>Required</ProdConsole.Wizard.Ingredients.Mandatory>
+  <ProdConsole.Wizard.Ingredients.MandatoryHint>This material is needed by every production method, so there is nothing to choose.</ProdConsole.Wizard.Ingredients.MandatoryHint>
+  <ProdConsole.Wizard.Ingredients.Choice>{0} - pick any</ProdConsole.Wizard.Ingredients.Choice>
+  <ProdConsole.Wizard.Ingredients.NoChoice>This target offers no material choice: its recipes leave no alternatives.</ProdConsole.Wizard.Ingredients.NoChoice>
+
+  <!-- Workers -->
+  <ProdConsole.Wizard.Executors.Anyone>Anyone</ProdConsole.Wizard.Executors.Anyone>
+  <ProdConsole.Wizard.Executors.AnyoneHint>Any colonist whose work schedule and skill allow it will do the job.</ProdConsole.Wizard.Executors.AnyoneHint>
+  <ProdConsole.Wizard.Need.Pawn>Select a worker, or enable Anyone.</ProdConsole.Wizard.Need.Pawn>
+
+  <!-- Summary: unrestricted badges -->
+  <ProdConsole.Wizard.Sum.AnyPawn>Any colonist</ProdConsole.Wizard.Sum.AnyPawn>
+  <ProdConsole.Wizard.Sum.AnyPawnHint>No specific workers were chosen.</ProdConsole.Wizard.Sum.AnyPawnHint>
+  <ProdConsole.Wizard.Sum.AnySource>All available storages</ProdConsole.Wizard.Sum.AnySource>
+  <ProdConsole.Wizard.Sum.AnySourceHint>Materials are taken from anywhere on the map.</ProdConsole.Wizard.Sum.AnySourceHint>
+  <ProdConsole.Wizard.Sum.RadiusHint>Materials are searched for within this radius of the bench only.</ProdConsole.Wizard.Sum.RadiusHint>
+
+  <!-- Storage capacity -->
+  <ProdConsole.Storage.Fill>{0} / {1} ({2}%)</ProdConsole.Storage.Fill>
+
+
+  <!-- Destination storage -->
+  <ProdConsole.Wizard.StoreTo.NoneAccepts>No storage on the map accepts this product: check the storage filters.</ProdConsole.Wizard.StoreTo.NoneAccepts>
+
+
+
+  <!-- Chart X axis: in-game date DD.MM.YYYY, month is a quadrum -->
+  <ProdConsole.Chart.Date>{0}.{1}.{2}</ProdConsole.Chart.Date>
+
+  <!-- Order list filter -->
+  <ProdConsole.Orders.Filter.All>All</ProdConsole.Orders.Filter.All>
+
+  <!-- Plaques under the card lists: how many are selected -->
+  <ProdConsole.Selected.Pawns.One>Selected: {0} colonist</ProdConsole.Selected.Pawns.One>
+  <ProdConsole.Selected.Pawns.Few>Selected: {0} colonists</ProdConsole.Selected.Pawns.Few>
+  <ProdConsole.Selected.Pawns.Many>Selected: {0} colonists</ProdConsole.Selected.Pawns.Many>
+  <ProdConsole.Selected.Benches.One>Selected: {0} bench</ProdConsole.Selected.Benches.One>
+  <ProdConsole.Selected.Benches.Few>Selected: {0} benches</ProdConsole.Selected.Benches.Few>
+  <ProdConsole.Selected.Benches.Many>Selected: {0} benches</ProdConsole.Selected.Benches.Many>
+  <ProdConsole.Selected.Ingredients.One>Selected: {0} ingredient</ProdConsole.Selected.Ingredients.One>
+  <ProdConsole.Selected.Ingredients.Few>Selected: {0} ingredients</ProdConsole.Selected.Ingredients.Few>
+  <ProdConsole.Selected.Ingredients.Many>Selected: {0} ingredients</ProdConsole.Selected.Ingredients.Many>
+  <ProdConsole.Selected.Storages.One>Selected: {0} storage</ProdConsole.Selected.Storages.One>
+  <ProdConsole.Selected.Storages.Few>Selected: {0} storages</ProdConsole.Selected.Storages.Few>
+  <ProdConsole.Selected.Storages.Many>Selected: {0} storages</ProdConsole.Selected.Storages.Many>
+  <ProdConsole.Selected.AnyPawn>Selected: any colonist</ProdConsole.Selected.AnyPawn>
+  <ProdConsole.Selected.AnySource>Selected: all storages</ProdConsole.Selected.AnySource>
+  <ProdConsole.Selected.AnyStore>Selected: any suitable storage</ProdConsole.Selected.AnyStore>
+  <ProdConsole.Selected.Radius>Selected radius: {0}</ProdConsole.Selected.Radius>
+
+  <ProdConsole.SkillNeed>{0}: {1}</ProdConsole.SkillNeed>
+  <ProdConsole.Executors.WorkOff>work disabled in the work tab</ProdConsole.Executors.WorkOff>
+
+
+  <!-- RimUI dependency -->
+  <ProdConsole.RimUi.Title>Production console disabled</ProdConsole.RimUi.Title>
+  <ProdConsole.RimUi.Outdated>RimUI Framework is out of date: {0} is installed, but the console requires {1} or later.</ProdConsole.RimUi.Outdated>
+  <ProdConsole.RimUi.Stopped>Until RimUI Framework is updated, the entire mod remains disabled: the Production button is hidden, and the console will not touch orders, fields, or herds. Your orders and settings are safe. Update RimUI Framework and everything will resume where it left off.</ProdConsole.RimUi.Stopped>
+
+  <!-- Disabled and ignored objects -->
+  <ProdConsole.Status.NoSource>source storage gone</ProdConsole.Status.NoSource>
+  <ProdConsole.Status.NoStore>destination gone</ProdConsole.Status.NoStore>
+  <ProdConsole.Status.BenchOff>workbenches off</ProdConsole.Status.BenchOff>
+  <ProdConsole.Status.PawnOff>workers off</ProdConsole.Status.PawnOff>
+  <ProdConsole.Status.SourceOff>source storage off</ProdConsole.Status.SourceOff>
+  <ProdConsole.Status.StoreOff>destination off</ProdConsole.Status.StoreOff>
+  <ProdConsole.Use>use</ProdConsole.Use>
+  <ProdConsole.Ignore>ignore</ProdConsole.Ignore>
+  <ProdConsole.Ignore.State>ignored</ProdConsole.Ignore.State>
+  <ProdConsole.Storage.Rename>Rename</ProdConsole.Storage.Rename>
+  <ProdConsole.Storage.Filters>Filters</ProdConsole.Storage.Filters>
+  <ProdConsole.Ignore.Type>ignore this type</ProdConsole.Ignore.Type>
+  <ProdConsole.Ignore.Title>Ignore object</ProdConsole.Ignore.Title>
+  <ProdConsole.Ignore.Accept>Ignore</ProdConsole.Ignore.Accept>
+  <ProdConsole.Ignore.Bench>Workbench "{0}" is used by {1} order(s). If you ignore it, the console will stop seeing it, remove its bills, and drop it from those orders. To restore it, enable "show ignored" on the Workbenches tab.</ProdConsole.Ignore.Bench>
+  <ProdConsole.Ignore.BenchDef>Workbenches of type "{0}" are used by {1} order(s). If you ignore this type, the console will stop seeing every such workbench, remove their bills, and drop them from those orders. To restore them, enable "show ignored" on the Workbenches tab.</ProdConsole.Ignore.BenchDef>
+  <ProdConsole.Ignore.Pawn>Colonist "{0}" is assigned to {1} order(s). If you ignore them, the console will stop seeing them and remove them from those orders. To restore them, clear the "ignore" checkbox on their card.</ProdConsole.Ignore.Pawn>
+  <ProdConsole.Ignore.Storage>Storage "{0}" is used by {1} order(s). If you ignore it, the console will stop seeing it and remove it from those orders. To restore it, use the "Ignored" filter on the Storage tab.</ProdConsole.Ignore.Storage>
+  <ProdConsole.Use.Off>disabled</ProdConsole.Use.Off>
+
+  <!-- Growing -->
+  <ProdConsole.Tab.Animals>Animals</ProdConsole.Tab.Animals>
+  <ProdConsole.Tab.Growing>Growing</ProdConsole.Tab.Growing>
+  <ProdConsole.Growing.Section>Fields and hydroponics</ProdConsole.Growing.Section>
+  <ProdConsole.Growing.Card>Field details</ProdConsole.Growing.Card>
+  <ProdConsole.Growing.PickHint>Select a field or hydroponics group on the left.</ProdConsole.Growing.PickHint>
+  <ProdConsole.Growing.Empty>There are no growing zones or hydroponics on this map.</ProdConsole.Growing.Empty>
+  <ProdConsole.Growing.Filter.All>All</ProdConsole.Growing.Filter.All>
+  <ProdConsole.Growing.Filter.Farm>Hydroponic</ProdConsole.Growing.Filter.Farm>
+  <ProdConsole.Growing.Filter.Zone>Zones</ProdConsole.Growing.Filter.Zone>
+  <ProdConsole.Growing.Filter.Managed>Managed</ProdConsole.Growing.Filter.Managed>
+  <ProdConsole.Growing.Filter.Idle>Idle</ProdConsole.Growing.Filter.Idle>
+  <ProdConsole.Growing.Filter.Blight>Blighted</ProdConsole.Growing.Filter.Blight>
+  <ProdConsole.Growing.Idle>Not in use</ProdConsole.Growing.Idle>
+  <ProdConsole.Growing.Line>{0} · {1}</ProdConsole.Growing.Line>
+  <ProdConsole.Growing.Sick>blighted</ProdConsole.Growing.Sick>
+  <ProdConsole.Growing.Managed>managed</ProdConsole.Growing.Managed>
+  <ProdConsole.Growing.Info>Information</ProdConsole.Growing.Info>
+  <ProdConsole.Growing.Assigned>Assigned crop</ProdConsole.Growing.Assigned>
+  <ProdConsole.Growing.Drug>Drug</ProdConsole.Growing.Drug>
+  <ProdConsole.Growing.Now>Currently growing</ProdConsole.Growing.Now>
+  <ProdConsole.Growing.Sown>Sown</ProdConsole.Growing.Sown>
+  <ProdConsole.Growing.SownLine>{0} of {1}</ProdConsole.Growing.SownLine>
+  <ProdConsole.Growing.Skill>Required skill</ProdConsole.Growing.Skill>
+  <ProdConsole.Growing.Harvest>Ready to harvest</ProdConsole.Growing.Harvest>
+  <ProdConsole.Growing.HarvestLine>{0} of {1}</ProdConsole.Growing.HarvestLine>
+  <ProdConsole.Growing.Healthy>Healthy</ProdConsole.Growing.Healthy>
+  <ProdConsole.Growing.Blight>Blight: {0} plants</ProdConsole.Growing.Blight>
+  <ProdConsole.Growing.Sowing>Sowing</ProdConsole.Growing.Sowing>
+  <ProdConsole.Growing.Sow.Off>This field is not managed by the console. You choose what to grow here.</ProdConsole.Growing.Sow.Off>
+  <ProdConsole.Growing.Mode>Mode</ProdConsole.Growing.Mode>
+  <ProdConsole.Growing.Mode.Repeat>Repeat</ProdConsole.Growing.Mode.Repeat>
+  <ProdConsole.Growing.Mode.Queue>Queue</ProdConsole.Growing.Mode.Queue>
+  <ProdConsole.Growing.Mode.None>Do not sow</ProdConsole.Growing.Mode.None>
+  <ProdConsole.Growing.Mode.None.Note>The field remains managed, but no crop will be assigned.</ProdConsole.Growing.Mode.None.Note>
+  <ProdConsole.Growing.RepeatQueue>repeat queue</ProdConsole.Growing.RepeatQueue>
+  <ProdConsole.Growing.Queue.Note>Drag crops from Available to Queue. Drag queue entries to reorder them, or remove them with the cross. The next crop is assigned once the field is empty.</ProdConsole.Growing.Queue.Note>
+  <ProdConsole.Growing.Available>Available</ProdConsole.Growing.Available>
+  <ProdConsole.Growing.Queue>Queue</ProdConsole.Growing.Queue>
+  <ProdConsole.Growing.Queue.Remove>Remove from queue</ProdConsole.Growing.Queue.Remove>
+  <ProdConsole.Growing.Queue.Current>current</ProdConsole.Growing.Queue.Current>
+  <ProdConsole.Growing.NotNow>Cannot be sown right now.</ProdConsole.Growing.NotNow>
+  <ProdConsole.Growing.OutOfSeason>Out of growing season.</ProdConsole.Growing.OutOfSeason>
+  <ProdConsole.Growing.Unavailable>Cannot sow now</ProdConsole.Growing.Unavailable>
+  <ProdConsole.Growing.NothingSowable>Nothing suitable can be sown in this field right now.</ProdConsole.Growing.NothingSowable>
+  <ProdConsole.Growing.Blocked>The console has closed this field. Sowing will resume when the next crop is due.</ProdConsole.Growing.Blocked>
+  <ProdConsole.Growing.CutBlighted>cut blighted plants and stop sowing until the field recovers</ProdConsole.Growing.CutBlighted>
+  <ProdConsole.Growing.Copy>Copy plan</ProdConsole.Growing.Copy>
+  <ProdConsole.Growing.Copy.Tip>Copy this field's settings. Only saved settings are copied, so save your changes first.</ProdConsole.Growing.Copy.Tip>
+  <ProdConsole.Growing.Paste>Paste plan</ProdConsole.Growing.Paste>
+  <ProdConsole.Growing.Paste.Tip>Apply the copied plan to this field. Crops that cannot grow here will be skipped.</ProdConsole.Growing.Paste.Tip>
+  <ProdConsole.Growing.Copied>Field plan copied.</ProdConsole.Growing.Copied>
+  <ProdConsole.Growing.Paste.Dropped>Cannot grow here: {0}. Everything else was pasted.</ProdConsole.Growing.Paste.Dropped>
+  <ProdConsole.Growing.Queue.Reset>Cancel the current crop and restart the queue</ProdConsole.Growing.Queue.Reset>
+  <ProdConsole.Growing.ChipFacts>{0} d · yield {1} · skill {2}</ProdConsole.Growing.ChipFacts>
+  <ProdConsole.Growing.What>What to grow</ProdConsole.Growing.What>
+  <ProdConsole.Growing.NoPlants>None of the available crops can grow in this field.</ProdConsole.Growing.NoPlants>
+  <ProdConsole.Growing.CutNow>Cut the current crop and sow the selected one immediately</ProdConsole.Growing.CutNow>
+  <ProdConsole.Growing.PickPlant>Select a crop</ProdConsole.Growing.PickPlant>
+  <ProdConsole.Growing.Confirm.Cut>{0} is growing in this field ({1} plants). Switching to "{2}" immediately will cut the current crop before it can be harvested. Continue?</ProdConsole.Growing.Confirm.Cut>
+  <ProdConsole.Growing.Days>Growing time: {0} d</ProdConsole.Growing.Days>
+  <ProdConsole.Growing.Yield>Yield: {0}</ProdConsole.Growing.Yield>
+  <ProdConsole.Growing.SkillShort>Skill: {0}</ProdConsole.Growing.SkillShort>
+
+  <!-- Animals: overview and limits -->
+  <ProdConsole.Animals.Section>Animal species</ProdConsole.Animals.Section>
+  <ProdConsole.Animals.Card>Species details</ProdConsole.Animals.Card>
+  <ProdConsole.Animals.PickHint>Select an animal species on the left.</ProdConsole.Animals.PickHint>
+  <ProdConsole.Animals.Empty>There are no animals on this map.</ProdConsole.Animals.Empty>
+  <ProdConsole.Animals.Filter.All>All</ProdConsole.Animals.Filter.All>
+  <ProdConsole.Animals.Filter.Predator>Predators</ProdConsole.Animals.Filter.Predator>
+  <ProdConsole.Animals.Filter.Peaceful>Non-predators</ProdConsole.Animals.Filter.Peaceful>
+  <ProdConsole.Animals.Filter.OnMap>Present on map</ProdConsole.Animals.Filter.OnMap>
+  <ProdConsole.Animals.Filter.Tamed>Tamed on map</ProdConsole.Animals.Filter.Tamed>
+  <ProdConsole.Animals.Predator.Tip>Predator: when hungry, it hunts smaller animals and may attack people.</ProdConsole.Animals.Predator.Tip>
+  <ProdConsole.Animals.Pack.Tip>Pack animal: can carry goods in a caravan.</ProdConsole.Animals.Pack.Tip>
+  <ProdConsole.Animals.Predator>Predator</ProdConsole.Animals.Predator>
+  <ProdConsole.Animals.Filter.Pack>Pack animals</ProdConsole.Animals.Filter.Pack>
+  <ProdConsole.Animals.TamedLine>Tamed: {0}</ProdConsole.Animals.TamedLine>
+  <ProdConsole.Animals.WildLine>Wild: {0}</ProdConsole.Animals.WildLine>
+  <ProdConsole.Animals.Mode.Tame>Tame</ProdConsole.Animals.Mode.Tame>
+  <ProdConsole.Animals.Mode.Hunt>Hunt</ProdConsole.Animals.Mode.Hunt>
+  <ProdConsole.Animals.Mode.Slaughter>Slaughter</ProdConsole.Animals.Mode.Slaughter>
+  <ProdConsole.Animals.Info>Information</ProdConsole.Animals.Info>
+  <ProdConsole.Animals.Auto>Automation</ProdConsole.Animals.Auto>
+  <ProdConsole.Animals.TamedPanel>Tamed: {0}</ProdConsole.Animals.TamedPanel>
+  <ProdConsole.Animals.WildPanel>Wild: {0}</ProdConsole.Animals.WildPanel>
+  <ProdConsole.Animals.Limits>Limits</ProdConsole.Animals.Limits>
+  <ProdConsole.Animals.Limits.Note>Set how many animals of this species to keep. Below the minimum, the console tames more; above the maximum, it marks extras for slaughter. Total is a separate limit for males and females. The age limits decide which animals are affected when that total is exceeded.</ProdConsole.Animals.Limits.Note>
+  <ProdConsole.Animals.Male>Males</ProdConsole.Animals.Male>
+  <ProdConsole.Animals.Female>Females</ProdConsole.Animals.Female>
+
+  <!-- Animals: rules and tables -->
+  <ProdConsole.Animals.Limits.Total>Total</ProdConsole.Animals.Limits.Total>
+  <ProdConsole.Animals.Limit.Infinite>Unlimited</ProdConsole.Animals.Limit.Infinite>
+  <ProdConsole.Animals.Limit.Range>Range</ProdConsole.Animals.Limit.Range>
+  <ProdConsole.Animals.Limit.Exact>Exact</ProdConsole.Animals.Limit.Exact>
+  <ProdConsole.Animals.Mode>Mode</ProdConsole.Animals.Mode>
+  <ProdConsole.Animals.Mode.Infinite>Unlimited</ProdConsole.Animals.Mode.Infinite>
+  <ProdConsole.Animals.Mode.ByLimits>Use limits</ProdConsole.Animals.Mode.ByLimits>
+  <ProdConsole.Animals.WhoTame>Animals to tame:</ProdConsole.Animals.WhoTame>
+  <ProdConsole.Animals.WhoSlaughter>Animals to slaughter:</ProdConsole.Animals.WhoSlaughter>
+  <ProdConsole.Animals.Taming>Taming</ProdConsole.Animals.Taming>
+  <ProdConsole.Animals.Tame.Off>The console is not managing taming for this species. You place the designations yourself.</ProdConsole.Animals.Tame.Off>
+  <ProdConsole.Animals.Tame.Note>The console designates wild animals for taming until the tamed population reaches the chosen target. Colonists carry out those designations according to their normal work priorities.</ProdConsole.Animals.Tame.Note>
+  <ProdConsole.Animals.Age.Baby>babies</ProdConsole.Animals.Age.Baby>
+  <ProdConsole.Animals.Age.Juvenile>juveniles</ProdConsole.Animals.Age.Juvenile>
+  <ProdConsole.Animals.Age.Adult>adults</ProdConsole.Animals.Age.Adult>
+  <ProdConsole.Animals.Pack>Pack animal</ProdConsole.Animals.Pack>
+  <ProdConsole.Animals.Skill>Animals skill</ProdConsole.Animals.Skill>
+  <ProdConsole.Animals.NoHandler>No one can tame this species. A colonist with Animals skill {0} or higher must be allowed to perform this work.</ProdConsole.Animals.NoHandler>
+  <ProdConsole.Animals.Tame.Danger>Failed tame attempts have a {0} chance to trigger an attack.</ProdConsole.Animals.Tame.Danger>
+  <ProdConsole.Animals.Area>Default area</ProdConsole.Animals.Area>
+  <ProdConsole.Animals.Area.Any>Unrestricted</ProdConsole.Animals.Area.Any>
+  <ProdConsole.Animals.Pen>Pen: {0}</ProdConsole.Animals.Pen>
+  <ProdConsole.Animals.Care>Default medical care</ProdConsole.Animals.Care>
+  <ProdConsole.Animals.Sterilize>sterilize newly tamed animals</ProdConsole.Animals.Sterilize>
+  <ProdConsole.Animals.Hunting>Hunting</ProdConsole.Animals.Hunting>
+  <ProdConsole.Animals.Hunt.Off>The console is not managing hunting for this species. You place the designations yourself.</ProdConsole.Animals.Hunt.Off>
+  <ProdConsole.Animals.Hunt.Note>The console marks wild animals above the reserve for hunting. The reserve is how many should remain on the map; a population hunted to extinction will not recover on its own.</ProdConsole.Animals.Hunt.Note>
+  <ProdConsole.Animals.Hunt.Danger>Dangerous prey: when injured, this animal has a {0} chance to attack the hunter.</ProdConsole.Animals.Hunt.Danger>
+  <ProdConsole.Animals.KeepMales>keep males</ProdConsole.Animals.KeepMales>
+  <ProdConsole.Animals.KeepFemales>keep females</ProdConsole.Animals.KeepFemales>
+  <ProdConsole.Animals.Slaughtering>Slaughter</ProdConsole.Animals.Slaughtering>
+  <ProdConsole.Animals.Slaughter.Off>The console is not managing slaughter for this species. You place the designations yourself.</ProdConsole.Animals.Slaughter.Off>
+  <ProdConsole.Animals.Slaughter.Note>The console marks every tamed animal above the limit for slaughter, a few at a time and in the chosen order.</ProdConsole.Animals.Slaughter.Note>
+  <ProdConsole.Animals.Slaughter.Danger>Slaughter involves close combat: when injured, this animal has a {0} chance to attack the handler.</ProdConsole.Animals.Slaughter.Danger>
+  <ProdConsole.Animals.Slaughter.Vanilla>Vanilla auto-slaughter is disabled for this species so the two sets of rules do not conflict.</ProdConsole.Animals.Slaughter.Vanilla>
+  <ProdConsole.Animals.Priority>Slaughter priority</ProdConsole.Animals.Priority>
+  <ProdConsole.Animals.Priority.Oldest>Oldest first</ProdConsole.Animals.Priority.Oldest>
+  <ProdConsole.Animals.Priority.Youngest>Youngest first</ProdConsole.Animals.Priority.Youngest>
+  <ProdConsole.Animals.SlaughterPregnant>slaughter pregnant animals</ProdConsole.Animals.SlaughterPregnant>
+  <ProdConsole.Animals.SlaughterBonded>slaughter bonded animals</ProdConsole.Animals.SlaughterBonded>
+  <ProdConsole.Animals.TamedList>Tamed animals</ProdConsole.Animals.TamedList>
+  <ProdConsole.Animals.NoTamed>There are no tamed animals of this species.</ProdConsole.Animals.NoTamed>
+  <ProdConsole.Animals.WildList>Wild animals</ProdConsole.Animals.WildList>
+  <ProdConsole.Animals.NoWild>There are no wild animals of this species on the map.</ProdConsole.Animals.NoWild>
+  <ProdConsole.Animals.Col.Name>Name</ProdConsole.Animals.Col.Name>
+  <ProdConsole.Animals.Col.Gender>Gender</ProdConsole.Animals.Col.Gender>
+  <ProdConsole.Animals.Col.Age>Age</ProdConsole.Animals.Col.Age>
+  <ProdConsole.Animals.AgeCell>{0} ({1})</ProdConsole.Animals.AgeCell>
+  <ProdConsole.Animals.Age.One.Baby>baby</ProdConsole.Animals.Age.One.Baby>
+  <ProdConsole.Animals.Age.One.Juvenile>juvenile</ProdConsole.Animals.Age.One.Juvenile>
+  <ProdConsole.Animals.Age.One.Adult>adult</ProdConsole.Animals.Age.One.Adult>
+  <ProdConsole.Animals.Gender.Male>male</ProdConsole.Animals.Gender.Male>
+  <ProdConsole.Animals.Gender.Female>female</ProdConsole.Animals.Gender.Female>
+  <ProdConsole.Animals.Pregnant>Pregnant</ProdConsole.Animals.Pregnant>
+  <ProdConsole.Animals.Col.Slaughter>Slaughter</ProdConsole.Animals.Col.Slaughter>
+  <ProdConsole.Animals.Col.Tame>Tame</ProdConsole.Animals.Col.Tame>
+  <ProdConsole.Animals.Col.Hunt>Hunt</ProdConsole.Animals.Col.Hunt>
+  <ProdConsole.Animals.Col.Master>Master</ProdConsole.Animals.Col.Master>
+  <ProdConsole.Animals.Col.Bond>Bond</ProdConsole.Animals.Col.Bond>
+  <ProdConsole.Animals.Col.Release>Release</ProdConsole.Animals.Col.Release>
+
+  <!-- Settings -->
+  <ProdConsole.Settings.Timings>Update intervals</ProdConsole.Settings.Timings>
+  <ProdConsole.Settings.Timings.Text>How often the console updates each system. Sixty ticks equal one second of game time. Shorter intervals feel more responsive but use more processing time.</ProdConsole.Settings.Timings.Text>
+  <ProdConsole.Settings.Timings.Queues>Orders</ProdConsole.Settings.Timings.Queues>
+  <ProdConsole.Settings.Timings.Growing>Growing</ProdConsole.Settings.Timings.Growing>
+  <ProdConsole.Settings.Timings.Animals>Animals</ProdConsole.Settings.Timings.Animals>
+  <ProdConsole.Settings.Defaults.Text>Starting values for every new order. You can still change all of them in the wizard.</ProdConsole.Settings.Defaults.Text>
+  <ProdConsole.Settings.Mode>Order mode</ProdConsole.Settings.Mode>
+  <ProdConsole.Settings.Sources>Source storages</ProdConsole.Settings.Sources>
+  <ProdConsole.Settings.Store>Destination storages</ProdConsole.Settings.Store>
+  <ProdConsole.Settings.Executors>Workers</ProdConsole.Settings.Executors>
+  <ProdConsole.Settings.Sections>Section defaults</ProdConsole.Settings.Sections>
+  <ProdConsole.Settings.Sections.Text>Initial checkbox states for a newly managed species or field. Existing setups are not changed.</ProdConsole.Settings.Sections.Text>
+
+  <!-- Filters and stock overview -->
+  <ProdConsole.Benches.Filter.All>All</ProdConsole.Benches.Filter.All>
+  <ProdConsole.Benches.Filter.Ready>Available</ProdConsole.Benches.Filter.Ready>
+  <ProdConsole.Benches.Filter.Unusable>Unavailable</ProdConsole.Benches.Filter.Unusable>
+  <ProdConsole.Benches.Filter.Ignored>Ignored</ProdConsole.Benches.Filter.Ignored>
+  <ProdConsole.Storage.Filter.All>All</ProdConsole.Storage.Filter.All>
+  <ProdConsole.Storage.Filter.Ready>Available</ProdConsole.Storage.Filter.Ready>
+  <ProdConsole.Storage.Filter.Unusable>Unavailable</ProdConsole.Storage.Filter.Unusable>
+  <ProdConsole.Storage.Filter.Ignored>Ignored</ProdConsole.Storage.Filter.Ignored>
+  <ProdConsole.Storage.NoMatch>Nothing matches the search and filter.</ProdConsole.Storage.NoMatch>
+  <ProdConsole.Overview.Stock>Stock overview</ProdConsole.Overview.Stock>
+  <ProdConsole.Tab.Stock>Stock overview</ProdConsole.Tab.Stock>
+  <ProdConsole.Stock.Col.Item>Item</ProdConsole.Stock.Col.Item>
+  <ProdConsole.Stock.Col.Storages>Stored in</ProdConsole.Stock.Col.Storages>
+  <ProdConsole.Stock.Col.Orders>Orders</ProdConsole.Stock.Col.Orders>
+  <ProdConsole.Stock.Col.Count>Count</ProdConsole.Stock.Col.Count>
+  <ProdConsole.Stock.Col.Need>Required</ProdConsole.Stock.Col.Need>
+  <ProdConsole.Stock.Col.Balance>Balance</ProdConsole.Stock.Col.Balance>
+  <ProdConsole.Stock.Total>Stored item types: {0}</ProdConsole.Stock.Total>
+  <ProdConsole.Stock.Filter.All>All</ProdConsole.Stock.Filter.All>
+  <ProdConsole.Stock.Filter.Orders>Orders</ProdConsole.Stock.Filter.Orders>
+  <ProdConsole.Stock.Filter.Storages>Storages</ProdConsole.Stock.Filter.Storages>
+  <ProdConsole.Stock.Filter.Balance>Balance</ProdConsole.Stock.Filter.Balance>
+  <ProdConsole.Stock.Filter.Deficit>Deficit</ProdConsole.Stock.Filter.Deficit>
+  <ProdConsole.Stock.Filter.Surplus>Surplus</ProdConsole.Stock.Filter.Surplus>
+  <ProdConsole.Help.Show>Show in console</ProdConsole.Help.Show>
+  <ProdConsole.Action.Cancel>Cancel</ProdConsole.Action.Cancel>
+  <ProdConsole.Executors.Filter.Working>Working</ProdConsole.Executors.Filter.Working>
+  <ProdConsole.Executors.Filter.Free>Idle</ProdConsole.Executors.Filter.Free>
+  <ProdConsole.Executors.Filter.Unavailable>Unavailable</ProdConsole.Executors.Filter.Unavailable>
+  <ProdConsole.Executors.Unavailable>unavailable</ProdConsole.Executors.Unavailable>
+  <ProdConsole.Wizard.Col.Benches>Workbenches</ProdConsole.Wizard.Col.Benches>
+  <ProdConsole.Wizard.Filter.All>All</ProdConsole.Wizard.Filter.All>
+  <ProdConsole.Wizard.Filter.Ready>Can be produced</ProdConsole.Wizard.Filter.Ready>
+  <ProdConsole.Wizard.Filter.NoIngredients>Missing materials</ProdConsole.Wizard.Filter.NoIngredients>
+  <ProdConsole.Wizard.Filter.NoBench>No workbench</ProdConsole.Wizard.Filter.NoBench>
+  <ProdConsole.Wizard.Filter.NoResearch>Not researched</ProdConsole.Wizard.Filter.NoResearch>
+  <ProdConsole.Wizard.Filter.Unavailable>Unavailable</ProdConsole.Wizard.Filter.Unavailable>
+  <ProdConsole.Wizard.Status.Unavailable>Unavailable</ProdConsole.Wizard.Status.Unavailable>
+
+  <!-- Availability and worker status -->
+  <ProdConsole.Wizard.Need.Producible>This item cannot be produced right now: there is no suitable workbench, or the required research is not finished.</ProdConsole.Wizard.Need.Producible>
+  <ProdConsole.Wizard.Need.Available>This cannot be produced: no workbench in the game supports this recipe.</ProdConsole.Wizard.Need.Available>
+  <ProdConsole.Ingredients.NoneUsable>Nothing can be made from this material selection</ProdConsole.Ingredients.NoneUsable>
+  <ProdConsole.Ingredients.NoneUsableHint>No production method can use the selected materials. Re-enable at least one option.</ProdConsole.Ingredients.NoneUsableHint>
+  <ProdConsole.Executors.SkillShort>skill too low</ProdConsole.Executors.SkillShort>
+  <ProdConsole.Executors.Info>Information</ProdConsole.Executors.Info>
+  <ProdConsole.Executors.Availability.Yes>available</ProdConsole.Executors.Availability.Yes>
+  <ProdConsole.Executors.Availability.Limited>limited availability</ProdConsole.Executors.Availability.Limited>
+  <ProdConsole.Executors.Availability.No>cannot work</ProdConsole.Executors.Availability.No>
+  <ProdConsole.Executors.Working>working</ProdConsole.Executors.Working>
+  <ProdConsole.Executors.Reserve>reserve</ProdConsole.Executors.Reserve>
+  <ProdConsole.Storage.UpTo>up to {0}</ProdConsole.Storage.UpTo>
+  <ProdConsole.Storage.NoIngredientsHere>no materials for this order</ProdConsole.Storage.NoIngredientsHere>
+
+  <!-- Help: production -->
+  <ProdConsole.Help.Production.About.Title>About this page</ProdConsole.Help.Production.About.Title>
+  <ProdConsole.Help.Production.About.Body>Console orders live here: the full list is on the left, and the selected order is shown on the right. An order describes what to make and how much, including the product, materials, workbenches, and workers.
+
+The console does not force colonists to work. It places normal RimWorld bills on workbenches, and colonists take them according to their work priorities and schedule. If an order is ready but its worker is asleep or fighting a fire, the console is not holding it up.
+
+Changes made on the order card reach the workbenches during the next update, usually a little over a second later.</ProdConsole.Help.Production.About.Body>
+  <ProdConsole.Help.Production.List.Title>Order list</ProdConsole.Help.Production.List.Title>
+  <ProdConsole.Help.Production.List.Body>Orders are sorted by priority, with High at the top. Orders at the same priority are sorted by product name so the list does not keep rearranging itself.
+
+Search matches product names. The nearby filter narrows the list by state:
+
+— running: the order is active and its bills are assigned to workbenches;
+— paused: you stopped the order; its settings are kept, but its bills are removed;
+— blocked: the console wants to continue but cannot, and shows the reason;
+— completed: the requested amount has been made.
+
+The colored badge on the card and in the list shows the same state. A red badge means the order was not stopped by you, and the reason is always shown beside it.</ProdConsole.Help.Production.List.Body>
+  <ProdConsole.Help.Production.Blocked.Title>Why an order is blocked</ProdConsole.Help.Production.Blocked.Title>
+  <ProdConsole.Help.Production.Blocked.Body>The reason is written directly on the order card and on the Overview page:
+
+— not enough resources: the allowed source storages do not contain the required materials;
+— no workbench: no suitable workbench exists, or every suitable bench is broken, unpowered, or reserved by another console order;
+— nobody to work: none of the selected workers can perform the job or has that work type enabled;
+— not researched: the recipe has not been unlocked;
+— source or destination storage is gone: the order still points to a storage that was removed;
+— workbenches, workers, or storages are disabled: their Use checkbox was cleared on the relevant page.
+
+The order and all of its settings remain intact. Fix the cause and it will resume automatically.</ProdConsole.Help.Production.Blocked.Body>
+  <ProdConsole.Help.Production.What.Title>What to make</ProdConsole.Help.Production.What.Title>
+  <ProdConsole.Help.Production.What.Body>The What to make panel contains the product, mode, and amount.
+
+— fixed amount: make N items, then finish;
+— maintain stock: keep N items in storage and make more whenever stock falls below the target;
+— forever: keep working until you stop the order;
+— number of runs: used for operations without a finished product, such as butchering, smelting, or burning.
+
+This panel also lets you choose a material when the recipe allows one and set the permitted skill range. RimWorld applies that range directly, so a colonist outside it will not take the bill.</ProdConsole.Help.Production.What.Body>
+  <ProdConsole.Help.Production.Who.Title>Who does the work</ProdConsole.Help.Production.Who.Title>
+  <ProdConsole.Help.Production.Who.Body>Leave Anyone enabled to let any suitable colonist take the job. Select workers by name when you want the order restricted to those colonists, even if somebody else is available nearby.
+
+Selected workers who cannot do the job are marked in red. Their required work type may be disabled on the Work tab, their skill may be too low, or they may be incapable of that work. The console warns you but does not change those settings, since work restrictions are usually intentional.
+
+The Use checkbox on the Colonists page takes priority. A colonist disabled there will never be assigned to a console order.</ProdConsole.Help.Production.Who.Body>
+  <ProdConsole.Help.Production.From.Title>Materials and sources</ProdConsole.Help.Production.From.Title>
+  <ProdConsole.Help.Production.From.Body>Materials controls what the order is allowed to consume. Clearing an option means "do not use this"—useful when your wood is meant for construction rather than fuel.
+
+Sources controls where materials may be collected:
+
+— all available: anywhere on the map;
+— selected storages: only the ones you choose;
+— radius: only items within that many cells of the workbench.
+
+A radius is useful for a remote workshop, so a colonist will not cross the whole map for one log. If the area is empty, however, the order will report not enough resources even when the material exists elsewhere.</ProdConsole.Help.Production.From.Body>
+  <ProdConsole.Help.Production.Where.Title>Workbenches and destination</ProdConsole.Help.Production.Where.Title>
+  <ProdConsole.Help.Production.Where.Body>Workbenches lists the benches allowed to take this order. The console assigns each workbench to one order at a time; otherwise, two orders on the same bench would interfere with each other and count the same output twice.
+
+Several workbenches contribute to one shared total. Five benches assigned to an order for one hundred items will make one hundred together, not one hundred each.
+
+Destination selects the storage for finished goods. Any suitable storage uses normal RimWorld behavior, allowing the colonist to haul the product wherever the game's storage rules send it.</ProdConsole.Help.Production.Where.Body>
+  <ProdConsole.Help.Production.Stats.Title>Statistics</ProdConsole.Help.Production.Stats.Title>
+  <ProdConsole.Help.Production.Stats.Body>The Made line shows three values: how much this order has produced, how much was requested, and how many of that item are currently in storage.
+
+The last value drives Maintain stock mode. If the amount in storage increases through trade, loot, or another mod, the console notices and stops producing until more is needed.</ProdConsole.Help.Production.Stats.Body>
+
+  <!-- Help: order wizard -->
+  <ProdConsole.Help.Wizard.About.Title>How the wizard works</ProdConsole.Help.Wizard.About.Title>
+  <ProdConsole.Help.Wizard.About.Body>The wizard builds an order one step at a time: product, amount, material sources, allowed materials, workbenches, workers, destination, and summary.
+
+Next remains disabled until the current step is complete. This prevents half-configured orders, such as one with no workbench capable of completing it.
+
+You can go back at any time without losing your choices. Nothing in the game changes until you confirm the order on the final step.</ProdConsole.Help.Wizard.About.Body>
+  <ProdConsole.Help.Wizard.Product.Title>Product</ProdConsole.Help.Wizard.Product.Title>
+  <ProdConsole.Help.Wizard.Product.Body>The list is built from the game's own data, so recipes and workbenches added by other mods appear automatically.
+
+Each product shows whether it can be made right now: whether a suitable bench exists, the research is complete, and the materials are available. Products shown in red cannot be selected, preventing an order that is blocked from the moment it is created.
+
+Use the categories on the left to narrow the list, or search by product name.</ProdConsole.Help.Wizard.Product.Body>
+  <ProdConsole.Help.Wizard.Quantity.Title>Amount</ProdConsole.Help.Wizard.Quantity.Title>
+  <ProdConsole.Help.Wizard.Quantity.Body>The three modes answer different questions:
+
+— fixed amount: "make 50 chairs, then stop";
+— maintain stock: "always keep 50 meals in storage";
+— forever: "keep making this until I say stop."
+
+Operations without a product, such as butchering or smelting, are measured in recipe runs instead of items.
+
+The initial values come from the console settings. If your usual order is two hundred items, you do not need to replace the default ten every time.</ProdConsole.Help.Wizard.Quantity.Body>
+  <ProdConsole.Help.Wizard.Sources.Title>Material sources</ProdConsole.Help.Wizard.Sources.Title>
+  <ProdConsole.Help.Wizard.Sources.Body>This step decides where materials may be collected:
+
+— all available: the whole map;
+— selected storages: only checked storages;
+— radius: an area around the workbench.
+
+The total at the bottom shows how much usable material lies inside the selected area. A zero here is a reliable sign that the order will be blocked as soon as it is created.</ProdConsole.Help.Wizard.Sources.Body>
+  <ProdConsole.Help.Wizard.Ingredients.Title>Materials</ProdConsole.Help.Wizard.Ingredients.Title>
+  <ProdConsole.Help.Wizard.Ingredients.Body>Choose which materials the order may use. By default, everything accepted by the recipe is allowed.
+
+Clear an option when you need to reserve that material for something else. For example, forbid wood so colonists burn chemfuel and leave the logs for construction.</ProdConsole.Help.Wizard.Ingredients.Body>
+  <ProdConsole.Help.Wizard.Benches.Title>Workbenches</ProdConsole.Help.Wizard.Benches.Title>
+  <ProdConsole.Help.Wizard.Benches.Body>You select individual workbenches on the map, not just a workbench type. This lets an order use one workshop without touching another.
+
+A bench reserved by another console order cannot be selected. The card shows which order is using it, and it becomes available once that order is completed or stopped.</ProdConsole.Help.Wizard.Benches.Body>
+  <ProdConsole.Help.Wizard.Executors.Title>Workers</ProdConsole.Help.Wizard.Executors.Title>
+  <ProdConsole.Help.Wizard.Executors.Body>Anyone leaves the job open to every suitable colonist, so the order will not stall just because one named worker falls ill.
+
+If you select workers by name, check the notes beside them. A colonist with the required work type disabled or insufficient skill remains visible, but will not perform the job.</ProdConsole.Help.Wizard.Executors.Body>
+  <ProdConsole.Help.Wizard.StoreTo.Title>Destination</ProdConsole.Help.Wizard.StoreTo.Title>
+  <ProdConsole.Help.Wizard.StoreTo.Body>Any suitable storage uses normal RimWorld behavior: finished goods are hauled according to your storage settings.
+
+Choose a specific storage when the product is needed in one place, such as medicine in the hospital or components beside a workbench. If that storage fills up, the console will show it as the reason the order stopped.</ProdConsole.Help.Wizard.StoreTo.Body>
+  <ProdConsole.Help.Wizard.Summary.Title>Summary</ProdConsole.Help.Wizard.Summary.Title>
+  <ProdConsole.Help.Wizard.Summary.Body>The final step shows the entire order: what to make, how much, who may work, which materials and workbenches may be used, and where the result goes. This is your last chance to adjust it before creation.
+
+After confirmation, the order appears on the Production page and starts running. Every choice can still be edited on its order card, so you do not need to repeat the wizard.</ProdConsole.Help.Wizard.Summary.Body>
+
+  <!-- Help: animals -->
+  <ProdConsole.Help.Animals.About.Title>About this page</ProdConsole.Help.Animals.About.Title>
+  <ProdConsole.Help.Animals.About.Body>The species list is on the left, and the selected species is shown on the right. Settings apply to the species as a whole—"manage every alpaca this way"—rather than to one animal at a time.
+
+The console uses the same Tame, Slaughter, and Hunt designations you can place manually. Colonists carry them out according to their work priorities. If nobody has Handle enabled on the Work tab, the designations will simply remain unfinished.
+
+If you are not interested in a species, leave it alone. The console will not touch it until automation is enabled.</ProdConsole.Help.Animals.About.Body>
+  <ProdConsole.Help.Animals.Auto.Title>Automation</ProdConsole.Help.Animals.Auto.Title>
+  <ProdConsole.Help.Animals.Auto.Body>The checkbox below the species name is the main switch: either you manage the species yourself, or the console does.
+
+When disabled, the console leaves that species completely alone. It will not tame, hunt, or slaughter it, and any designations you placed yourself remain yours.
+
+When enabled, the three sections below become active, each with its own checkbox. The designation columns in the animal tables are then locked because the console is managing those same designations and would otherwise undo your manual changes on its next update.</ProdConsole.Help.Animals.Auto.Body>
+  <ProdConsole.Help.Animals.Limits.Title>Population limits</ProdConsole.Help.Animals.Limits.Title>
+  <ProdConsole.Help.Animals.Limits.Body>One table answers two questions at once: which animals should be tamed, and which should be slaughtered. Below the minimum, the console tames more. Above the maximum, it marks extras for slaughter.
+
+Rows represent sex; columns represent Total and the three life stages. Total is not the combined number of males and females. It is a separate limit for each sex, so a milk herd can favor females while avoiding too many males that only fight and eat.
+
+Life-stage limits answer a different question: which animals should be affected once the limit for that sex is crossed. A group that exceeds its own maximum by the largest amount is handled first, while a group already at its minimum is never reduced. Taming mirrors this logic by favoring the group furthest below its minimum.
+
+Each cell has its own mode: Unlimited has no restriction, Range sets a minimum and maximum, and Exact keeps precisely that number.</ProdConsole.Help.Animals.Limits.Body>
+  <ProdConsole.Help.Animals.Taming.Title>Taming</ProdConsole.Help.Animals.Taming.Title>
+  <ProdConsole.Help.Animals.Taming.Body>The console designates wild animals of this species for taming while the tamed population remains below its limits.
+
+Unlimited attempts to tame every eligible animal it can reach, regardless of population. Use limits follows the table.
+
+The Animals to tame checkboxes select life stages. Babies are easier to tame, but take longer to mature.
+
+Area and medical care are assigned as soon as an animal is tamed, saving you from updating each one manually. If a suitable pen exists, pens are offered instead of areas because colonists will take the animal there anyway.
+
+The orange warning shows the chance that a failed tame attempt will trigger an attack. Predators are especially dangerous.</ProdConsole.Help.Animals.Taming.Body>
+  <ProdConsole.Help.Animals.Hunting.Title>Hunting</ProdConsole.Help.Animals.Hunting.Title>
+  <ProdConsole.Help.Animals.Hunting.Body>This is not a target for how many animals to kill. It is a reserve—the number that should remain on the map. Wildlife can recover naturally as long as it is not hunted to extinction, and the reserve protects against that.
+
+Set the reserve separately by life stage and sex. Every eligible animal above it is marked for hunting.
+
+Injured animals may attack the hunter; the warning badge shows the chance. Hunting predators often turns into a fight, so enable it deliberately.</ProdConsole.Help.Animals.Hunting.Body>
+  <ProdConsole.Help.Animals.Slaughter.Title>Slaughter</ProdConsole.Help.Animals.Slaughter.Title>
+  <ProdConsole.Help.Animals.Slaughter.Body>The console marks tamed animals above the limits for slaughter, a few at a time instead of designating the whole herd at once.
+
+Priority decides which animals go first: oldest or youngest. Older animals have less life ahead of them, while younger ones still have time to grow.
+
+Two options are disabled by default: slaughtering pregnant animals and animals bonded to a colonist. Losing offspring or causing a master's mood penalty often costs more than feeding one extra animal.
+
+While this section is enabled, vanilla auto-slaughter is disabled for the species. Two independent rules acting on the same herd would produce results neither one intended.</ProdConsole.Help.Animals.Slaughter.Body>
+  <ProdConsole.Help.Animals.Tables.Title>Animal tables</ProdConsole.Help.Animals.Tables.Title>
+  <ProdConsole.Help.Animals.Tables.Body>The bottom of the card contains two lists: tamed animals of this species and wild ones currently on the map.
+
+The tamed list shows name, sex, age, master, and bond; pregnant animals have a green marker. Slaughter and Release place the normal RimWorld designations immediately without waiting for Save.
+
+The wild list shows sex, age, and Tame and Hunt columns. Use these to target a specific animal without handing the entire species over to the console.
+
+When Automation is enabled, the checkboxes remain visible but cannot be changed, preventing you and the console from fighting over the same designations.</ProdConsole.Help.Animals.Tables.Body>
+
+  <!-- Help: growing -->
+  <ProdConsole.Help.Growing.About.Title>About this page</ProdConsole.Help.Growing.About.Title>
+  <ProdConsole.Help.Growing.About.Body>Fields, growing zones, and hydroponics are listed on the left, with the selected field on the right. The console chooses the crop and manages the cycle; colonists still sow and harvest normally.
+
+A field you have not handed over to the console remains untouched, and you choose its crop yourself.
+
+The filters on the left narrow the list by type and state: hydroponics, growing zones, managed fields, idle fields, or blighted fields.</ProdConsole.Help.Growing.About.Body>
+  <ProdConsole.Help.Growing.Sowing.Title>Sowing and modes</ProdConsole.Help.Growing.Sowing.Title>
+  <ProdConsole.Help.Growing.Sowing.Body>The checkbox in the section header hands the field over to the console. You can then choose a mode:
+
+— Repeat: keep growing the same crop after every harvest;
+— Queue: grow crops from a list, one after another;
+— Do not sow: keep the field managed but assign no crop.
+
+Repeat only offers crops that can be sown right now. The list is shorter in winter because selecting a crop that cannot grow would leave the field silently stuck.
+
+Cut the current crop is for cases where you cannot wait for harvest. The existing plants are cut down and the selected crop is sown immediately.</ProdConsole.Help.Growing.Sowing.Body>
+  <ProdConsole.Help.Growing.Queue.Title>Crop queue</ProdConsole.Help.Growing.Queue.Title>
+  <ProdConsole.Help.Growing.Queue.Body>Drag crops from Available to Queue. Queue entries can also be reordered by dragging, or removed with the cross.
+
+The next crop is assigned only after the field is empty. The console waits for colonists to finish the harvest before changing crops so that half the field is not left unripe.
+
+While it waits, the console closes the field with a hidden service crop. This prevents colonists from sowing the previous crop again, and the field card tells you when this is happening.
+
+Repeat queue loops back to the beginning. Without it, the field stops after the final crop.
+
+You can copy a field plan and paste it onto other fields instead of rebuilding the same queue for every growing zone.</ProdConsole.Help.Growing.Queue.Body>
+  <ProdConsole.Help.Growing.Blight.Title>Blight</ProdConsole.Help.Growing.Blight.Title>
+  <ProdConsole.Help.Growing.Blight.Body>Cut blighted plants designates infected plants for cutting and prevents new sowing until the field is clear.
+
+Stopping sowing is part of the treatment, not an extra precaution. Colonists normally cut and sow at the same time, allowing new plants to catch blight from infected neighbors and making the cleanup endless. The console temporarily closes the field with a hidden service crop, then restores the previous crop after the blight is gone.
+
+Enabling this option gives the console partial control of the field even if normal sowing management is disabled.</ProdConsole.Help.Growing.Blight.Body>
+
+  <!-- Help: general -->
+  <ProdConsole.Help.General.About.Title>What the console does</ProdConsole.Help.General.About.Title>
+  <ProdConsole.Help.General.About.Body>The console brings colony production into one window: orders, workbenches, workers, storages, fields, and herds. Instead of visiting every workbench, you can see the full picture at a glance.
+
+The mod does not patch RimWorld or replace its systems. It places the same bills and designations you would use manually, then keeps them coordinated for you.
+
+The catalog is built from the game's own data, so recipes, workbenches, and animals added by other mods are detected without manual setup.</ProdConsole.Help.General.About.Body>
+  <ProdConsole.Help.General.Window.Title>Window layout</ProdConsole.Help.General.Window.Title>
+  <ProdConsole.Help.General.Window.Body>The tabs across the top open each section. Most pages show a list on the left and the selected item's details on the right.
+
+New order opens the wizard, the cog opens Settings, and ? opens this help window. Help starts on the page that matches the section you were viewing.
+
+Red and yellow badges always include a written reason. The console will not warn you about a problem without explaining it.</ProdConsole.Help.General.Window.Body>
+  <ProdConsole.Help.General.Limits.Title>What the mod does not do</ProdConsole.Help.General.Limits.Title>
+  <ProdConsole.Help.General.Limits.Body>The console does not force colonists to work. Their work priorities, schedules, and moods remain under your control; the console only assigns bills and designations.
+
+It does not remove your manual designations or compete with them. Anything you place yourself remains yours until you explicitly hand that object over to the console.
+
+It does not create items from nothing or speed up production. When something is missing, it tells you what the problem is, but your colony must solve it through normal gameplay.</ProdConsole.Help.General.Limits.Body>
+
+  <!-- Help: overview -->
+  <ProdConsole.Help.Overview.About.Title>About this page</ProdConsole.Help.Overview.About.Title>
+  <ProdConsole.Help.Overview.About.Body>Overview answers one question: is everything working? This page is read-only and contains no settings.
+
+The counters at the top show how many orders are active, currently being worked on, waiting, or stopped. Workbench load shows how many benches are working, busy with something else, or unavailable.
+
+Last update shows when the console last compared its orders with the map. If the timer keeps increasing without resetting, the game is paused.</ProdConsole.Help.Overview.About.Body>
+  <ProdConsole.Help.Overview.Attention.Title>Orders needing attention</ProdConsole.Help.Overview.Attention.Title>
+  <ProdConsole.Help.Overview.Attention.Body>This table collects every order that is not moving: blocked and paused orders, together with the reason.
+
+Click a row to open that order on the Production page, where its settings can be fixed.
+
+Finishing soon on the right shows which products will be completed first. It is useful when you are waiting for a specific item and deciding whether to create another order.</ProdConsole.Help.Overview.Attention.Body>
+  <ProdConsole.Help.Overview.Stock.Title>Stock overview</ProdConsole.Help.Overview.Stock.Title>
+  <ProdConsole.Help.Overview.Stock.Body>The bottom panel shows what is stored, how much current orders require, and the resulting balance.
+
+A red required value means orders need more than the colony currently has. This is not necessarily an error—the material may already be on its way. If the value does not change for several days, however, nobody may be producing or gathering it.
+
+The Stock overview tab provides the same information in greater detail.</ProdConsole.Help.Overview.Stock.Body>
+
+  <!-- Help: workbenches -->
+  <ProdConsole.Help.Benches.About.Title>About this page</ProdConsole.Help.Benches.About.Title>
+  <ProdConsole.Help.Benches.About.Body>Workbench types are listed on the left, and the selected type is shown on the right. The console groups benches by type rather than listing them all separately: ten tailoring benches appear as one type with ten instances.
+
+The Use checkbox determines whether the console may place orders on this workbench type at all. Clear it to keep those benches entirely under manual control.
+
+Individual benches can still be excluded from the list below—for example, to reserve a remote bench for manual bills.</ProdConsole.Help.Benches.About.Body>
+  <ProdConsole.Help.Benches.Card.Title>What the card shows</ProdConsole.Help.Benches.Card.Title>
+  <ProdConsole.Help.Benches.Card.Body>General information shows how many benches of this type exist, how many are ready, and what they are doing.
+
+Instances lists each workbench separately, including whether it is reserved by a console order, available, and currently working.
+
+Recipes shows what this workbench can make and whether the required resources and skills are available. Use it to understand why an order was not assigned to this bench.
+
+Output over 7 days shows how much was produced on workbenches of this type.</ProdConsole.Help.Benches.Card.Body>
+
+  <!-- Help: workers -->
+  <ProdConsole.Help.Executors.About.Title>About this page</ProdConsole.Help.Executors.About.Title>
+  <ProdConsole.Help.Executors.About.Body>This page lists colonists and autonomous machines that can participate in production, with details for the selected worker.
+
+The Use checkbox allows the console to assign that colonist to orders. Clear it to leave them free for other work.
+
+Ignore is a stronger option. An ignored worker is completely hidden from the console and will not appear in any selection list. Use it for guests, slaves, or anyone you do not consider part of the production workforce.</ProdConsole.Help.Executors.About.Body>
+  <ProdConsole.Help.Executors.Card.Title>What the card shows</ProdConsole.Help.Executors.Card.Title>
+  <ProdConsole.Help.Executors.Card.Body>Information shows the colonist's current state and activity.
+
+Skills lists production-related skills and passions, helping you decide who should handle precise work.
+
+Orders and Workbenches show where this colonist is assigned and help explain why they are busy.
+
+Output over 7 days shows how much they produced. It is not a performance review; it helps reveal workers who are assigned on paper but never actually work.</ProdConsole.Help.Executors.Card.Body>
+
+  <!-- Help: storage -->
+  <ProdConsole.Help.Storage.About.Title>About this page</ProdConsole.Help.Storage.About.Title>
+  <ProdConsole.Help.Storage.About.Body>Stockpile zones, shelves, and storage groups are listed on the left, with the selected storage on the right.
+
+The Use checkbox determines whether the console may take materials from this storage or send finished goods to it. Clear it to keep the storage entirely under manual control.
+
+Storages can be renamed directly from this page. The new name is used both in RimWorld and throughout the console.</ProdConsole.Help.Storage.About.Body>
+  <ProdConsole.Help.Storage.Card.Title>What the card shows</ProdConsole.Help.Storage.Card.Title>
+  <ProdConsole.Help.Storage.Card.Body>Information shows capacity, current load, and storage filters.
+
+Orders lists the console orders that take materials from this storage or deliver products to it. Check this list before removing a storage.
+
+Contents shows everything currently stored and can be searched by item name.
+
+The Stock overview tab presents the same data from the opposite direction: grouped by item rather than storage, with the balance between available and required amounts.</ProdConsole.Help.Storage.Card.Body>
+
+  <!-- Help: settings -->
+  <ProdConsole.Help.Settings.About.Title>Settings</ProdConsole.Help.Settings.About.Title>
+  <ProdConsole.Help.Settings.About.Body>Settings apply to every colony and are stored in the player's configuration file rather than in a save.
+
+There are four sections: update intervals, autonomous workbenches, defaults for new orders, and section checkboxes.
+
+Reset restores the original defaults.</ProdConsole.Help.Settings.About.Body>
+  <ProdConsole.Help.Settings.Timings.Title>Update intervals</ProdConsole.Help.Settings.Timings.Title>
+  <ProdConsole.Help.Settings.Timings.Body>There are separate intervals for orders, growing, and animals—and they are separate for a reason.
+
+Orders update frequently because clearing a checkbox should remove a bill from its workbench right away. Fields and herds change over hours of game time, so checking them just as often would add load without improving responsiveness.
+
+If a large colony starts to stutter, increase the Growing and Animals intervals first. Order updates are inexpensive and usually do not need changing.</ProdConsole.Help.Settings.Timings.Body>
+  <ProdConsole.Help.Settings.Defaults.Title>Default values</ProdConsole.Help.Settings.Defaults.Title>
+  <ProdConsole.Help.Settings.Defaults.Body>Every value entered in the wizard has a starting default: fixed amount, target stock, order mode, source and destination storage modes, and the Anyone checkbox.
+
+Each colony has its usual order size. If you normally make two hundred at a time, there is no reason to replace the default ten for every order.
+
+The section checkboxes below control sterilization, slaughtering pregnant or bonded animals, cutting blighted plants, and cutting the current crop. They only set the initial state for a NEW species or NEW field; existing setups are not changed.</ProdConsole.Help.Settings.Defaults.Body>
+
+</LanguageData>

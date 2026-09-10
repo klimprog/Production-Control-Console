@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Production Control Console</name>
+  <author>klimprog</author>
+  <packageId>klimprog.productioncontrolconsole</packageId>
+  <modVersion>0.1.67</modVersion>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>klimprog.rimui</packageId>
+      <displayName>RimUI Framework</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3763759074</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>klimprog.rimui</li>
+  </loadAfter>
+  <description>Центральная консоль производства: одно окно, из которого видно всё производство колонии.
+
+Выбираете предмет — видите, на каких верстаках он делается и сколько их у вас на карте, хватает ли ресурсов и открыто ли исследование. Каталог строится из данных игры, поэтому верстаки и рецепты из любых модов подхватываются сами.
+
+Кнопка «производство» — в нижней панели, рядом с «Работа» и «Расписание».
+
+Требует RimUI Framework.
+
+---
+
+Production Control Console — one window for the whole colony's crafting.
+
+Pick an item and see which workbenches can make it, how many you have on the map, whether the ingredients are in stock and whether the research is done. The catalog is built from the game's own data, so workbenches and recipes from any mod are picked up automatically.
+
+The "production" button sits in the bottom bar, next to "Work" and "Schedule".
+
+Requires RimUI Framework.</description>
+</ModMetaData>

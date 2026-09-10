@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Кнопка нижней панели. tabWindowClass НЕ задаём: окно строится на RimUI (наследник
+       Verse.Window, а не MainTabWindow), поэтому открытием управляет свой workerClass.
+       Ваниль делает так же для кнопки "world" (MainButtonWorker_ToggleWorld). -->
+  <MainButtonDef>
+    <defName>ProdConsole_Production</defName>
+    <label>производство</label>
+    <description>Центральная консоль производства: что можно произвести, на каких верстаках и из чего.</description>
+    <workerClass>Klimprog.ProdConsole.UI.MainButtonWorker_ProdConsole</workerClass>
+    <order>45</order>
+    <validWithoutMap>false</validWithoutMap>
+    <closesWorldView>true</closesWorldView>
+  </MainButtonDef>
+
+</Defs>
