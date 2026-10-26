@@ -57,6 +57,9 @@
   <ProdConsole.Orders.State.Blocked>заблокировано</ProdConsole.Orders.State.Blocked>
   <ProdConsole.Orders.State.Done>выполнено</ProdConsole.Orders.State.Done>
   <ProdConsole.Orders.Delete>Удалить</ProdConsole.Orders.Delete>
+  <ProdConsole.Orders.FromTemplate>По образцу</ProdConsole.Orders.FromTemplate>
+  <ProdConsole.Orders.Delete.Title>Удалить задачу</ProdConsole.Orders.Delete.Title>
+  <ProdConsole.Orders.Delete.Confirm>Удалить задачу «{0}»? Её задания снимутся с верстаков, а ваши собственные задания, которые консоль отложила, вернутся на место. Уже сделанное останется на складах. Отменить удаление нельзя.</ProdConsole.Orders.Delete.Confirm>
   <ProdConsole.Orders.AnyPawn>любой</ProdConsole.Orders.AnyPawn>
 
   <!-- Верстаки -->
@@ -436,6 +439,16 @@
   <ProdConsole.Wizard.Step.Where>Где берём</ProdConsole.Wizard.Step.Where>
   <ProdConsole.Wizard.Step.Executors>Исполнители</ProdConsole.Wizard.Step.Executors>
   <ProdConsole.Wizard.Product.Title>Выберите продукт</ProdConsole.Wizard.Product.Title>
+  <ProdConsole.Pack.Hint>Можно отметить несколько продуктов — получится пакет задач с общими настройками.</ProdConsole.Pack.Hint>
+  <ProdConsole.Pack.Chosen>Отмечено продуктов: {0}. Каждый станет отдельной задачей с общими настройками.</ProdConsole.Pack.Chosen>
+  <ProdConsole.Pack.Name>Пакет задач ({0})</ProdConsole.Pack.Name>
+  <ProdConsole.Pack.QuantityNote>Режим и количество — свои у каждой задачи пакета.</ProdConsole.Pack.QuantityNote>
+  <ProdConsole.Pack.NotProducible>«{0}» сейчас не произвести — снимите отметку на первом шаге.</ProdConsole.Pack.NotProducible>
+  <ProdConsole.Pack.NoIngredients>Для «{0}» не осталось разрешённого сырья.</ProdConsole.Pack.NoIngredients>
+  <ProdConsole.Pack.NoBench>Для «{0}» не выбран ни один верстак.</ProdConsole.Pack.NoBench>
+  <ProdConsole.Pack.For>для: {0}</ProdConsole.Pack.For>
+  <ProdConsole.Pack.Can>умеет: {0}</ProdConsole.Pack.Can>
+  <ProdConsole.Pack.Created>Создано задач: {0}</ProdConsole.Pack.Created>
   <ProdConsole.Wizard.Product.Note>Список собран из рецептов доступных на карте верстаков.</ProdConsole.Wizard.Product.Note>
   <ProdConsole.Wizard.Product.Categories>Категории</ProdConsole.Wizard.Product.Categories>
   <ProdConsole.Wizard.Product.Available>Доступные продукты</ProdConsole.Wizard.Product.Available>
@@ -499,6 +512,13 @@
   <ProdConsole.Wizard.Executors.Empty>Никто из колонистов за эту работу не возьмётся.</ProdConsole.Wizard.Executors.Empty>
   <ProdConsole.Amount.Cycles>Число выполнений</ProdConsole.Amount.Cycles>
   <ProdConsole.Amount.Cycles.Text>У этой операции нет готового продукта, поэтому считать штуки нечем — заказ меряется числом выполнений рецепта.</ProdConsole.Amount.Cycles.Text>
+  <ProdConsole.Amount.CyclesHint>Циклов: {0} (по {1} шт.)</ProdConsole.Amount.CyclesHint>
+  <ProdConsole.Amount.Overshoot>За один цикл делается до {0} шт., поэтому запас может превысить цель на {1} шт.</ProdConsole.Amount.Overshoot>
+  <ProdConsole.Variant.Title>Вариант рецепта</ProdConsole.Variant.Title>
+  <ProdConsole.Variant.Any>Любой подходящий</ProdConsole.Variant.Any>
+  <ProdConsole.Variant.PerCycle>{0} шт./цикл</ProdConsole.Variant.PerCycle>
+  <ProdConsole.Variant.RowLabel>{0} ×{1}</ProdConsole.Variant.RowLabel>
+  <ProdConsole.Variant.Option>{0} (за цикл: {1} шт.)</ProdConsole.Variant.Option>
 
 
   <!-- Категории и сводные записи каталога -->
@@ -514,6 +534,8 @@
   <ProdConsole.Wizard.StoreTo.Any>Любой подходящий склад</ProdConsole.Wizard.StoreTo.Any>
   <ProdConsole.Wizard.StoreTo.AnyText>Игра отнесёт готовое на ближайший склад, который его принимает.</ProdConsole.Wizard.StoreTo.AnyText>
   <ProdConsole.Wizard.StoreTo.Picked>Выбранный склад</ProdConsole.Wizard.StoreTo.Picked>
+  <ProdConsole.Wizard.StoreTo.Floor>На пол у верстака</ProdConsole.Wizard.StoreTo.Floor>
+  <ProdConsole.Wizard.StoreTo.FloorText>Мастер кладёт готовое рядом с верстаком и сразу берётся за следующее, а на склад его относят другие колонисты. В запас предмет засчитывается, когда его отнесут.</ProdConsole.Wizard.StoreTo.FloorText>
 
   <!-- Ингредиенты: обязательное и выбор -->
   <ProdConsole.Wizard.Ingredients.Mandatory>Обязательные</ProdConsole.Wizard.Ingredients.Mandatory>
@@ -564,6 +586,7 @@
   <ProdConsole.Selected.AnyPawn>Выбрано: любой колонист</ProdConsole.Selected.AnyPawn>
   <ProdConsole.Selected.AnySource>Выбрано: все склады карты</ProdConsole.Selected.AnySource>
   <ProdConsole.Selected.AnyStore>Выбрано: любой подходящий склад</ProdConsole.Selected.AnyStore>
+  <ProdConsole.Selected.Floor>Готовое — на пол</ProdConsole.Selected.Floor>
   <ProdConsole.Selected.Radius>Выбрано: в радиусе {0}</ProdConsole.Selected.Radius>
 
   <ProdConsole.SkillNeed>{0}: {1}</ProdConsole.SkillNeed>
@@ -624,6 +647,13 @@
 — число выполнений — для операций без продукта: разделка туш, переплавка, сжигание.
 
 Здесь же выбирается материал, если рецепт из чего-то делается, и диапазон навыка: кому доверять работу. Диапазон отдаётся игре как есть — колонист вне него за задание не возьмётся.</ProdConsole.Help.Production.What.Body>
+  <ProdConsole.Help.Production.Variant.Title>Вариант рецепта</ProdConsole.Help.Production.Variant.Title>
+  <ProdConsole.Help.Production.Variant.Body>Некоторые продукты делаются несколькими рецептами с разным выходом: простая еда — по одной порции или сразу по четыре.
+
+— любой подходящий — каждый верстак берёт первый рецепт, который умеет, начиная с меньшего выхода;
+— конкретный вариант — задача делает только его, и работают на ней только верстаки, которые этот рецепт умеют.
+
+При выходе больше одного «определённое количество» считается целыми циклами: заказ на 50 порций при рецепте ×4 превратится в 52 — поле покажет это сразу, вместе с числом циклов. В режиме «поддерживать количество» запас может превысить цель на несколько штук: последний цикл доделывается целиком.</ProdConsole.Help.Production.Variant.Body>
   <ProdConsole.Help.Production.Who.Title>Кто делает</ProdConsole.Help.Production.Who.Title>
   <ProdConsole.Help.Production.Who.Body>Можно оставить «кто угодно» — тогда работу возьмёт любой подходящий колонист. Можно выбрать поимённо: тогда только они, даже если рядом свободен другой.
 
@@ -641,15 +671,26 @@
 
 Радиус удобен для дальней мастерской: колонист не побежит через всю карту за одной доской. Но если в радиусе пусто, задача встанет с причиной «не хватает ресурсов» — сырьё на карте есть, просто не там.</ProdConsole.Help.Production.From.Body>
   <ProdConsole.Help.Production.Where.Title>На чём и куда класть</ProdConsole.Help.Production.Where.Title>
-  <ProdConsole.Help.Production.Where.Body>«На чём» — верстаки, которым разрешено брать эту задачу. Один верстак консоль отдаёт одной задаче: иначе два задания на одном столе мешали бы друг другу и считали выпуск вдвойне.
+  <ProdConsole.Help.Production.Where.Body>«На чём» — верстаки, которым разрешено брать эту задачу. Один верстак может работать на несколько задач: их задания стоят у него в очереди по приоритету, и если верхней не хватает сырья, верстак берётся за следующую.
 
 Несколько верстаков работают на общий счёт: пять столов не сделают пять раз по сто, они вместе сделают сто.
 
-«Куда класть» — склад для готового. «Любой подходящий» означает обычное поведение игры: колонист отнесёт туда, куда сам сочтёт нужным.</ProdConsole.Help.Production.Where.Body>
+«Куда класть» — что делать с готовым:
+
+— любой подходящий склад — обычное поведение игры: мастер сам отнесёт готовое туда, куда положено по настройкам складов;
+— выбранные склады — готовое понесут туда, и только туда;
+— на пол у верстака — мастер кладёт готовое рядом и сразу берётся за следующее, а на склад его относят другие колонисты.</ProdConsole.Help.Production.Where.Body>
   <ProdConsole.Help.Production.Stats.Title>Статистика</ProdConsole.Help.Production.Stats.Title>
   <ProdConsole.Help.Production.Stats.Body>Строка «Сделано» показывает три числа: сколько выпущено по этой задаче, сколько заказано и сколько такого предмета лежит на складах прямо сейчас.
 
 Последнее число важно для режима «поддерживать»: именно по нему консоль решает, доделывать или остановиться. Если запас растёт сам — из торговли, с трупов, из других модов, — задача честно замолчит.</ProdConsole.Help.Production.Stats.Body>
+  <ProdConsole.Help.Production.Footer.Title>Кнопки карточки</ProdConsole.Help.Production.Footer.Title>
+  <ProdConsole.Help.Production.Footer.Body>Внизу карточки задачи:
+
+— остановить и запустить — пауза: задания снимаются с верстаков, настройки сохраняются;
+— по образцу — мастер новой задачи с настройками этой: исполнители, склады, верстаки, режим и количество. Остаётся выбрать продукт;
+— сохранить — применить изменения; пока менять нечего, кнопка погашена;
+— удалить — консоль переспросит, потому что вернуть удалённую задачу нельзя. Её задания снимутся с верстаков, ваши собственные задания, отложенные консолью, вернутся на место, а сделанное останется на складах.</ProdConsole.Help.Production.Footer.Body>
   <ProdConsole.Help.Wizard.About.Title>Как устроен мастер</ProdConsole.Help.Wizard.About.Title>
   <ProdConsole.Help.Wizard.About.Body>Мастер собирает задачу по шагам: что производим, сколько, где берём сырьё, из чего, на чём, кто делает, куда класть и сводка.
 
@@ -661,7 +702,22 @@
 
 У каждого продукта видно, можно ли его делать прямо сейчас: есть ли верстак, открыто ли исследование, хватает ли сырья. Красные — те, что сделать нельзя; их и выбрать нельзя, чтобы задача не родилась мёртвой.
 
-Категории слева сужают список, поиск ищет по названию.</ProdConsole.Help.Wizard.Product.Body>
+Категории слева сужают список, поиск ищет по названию.
+
+Продукт с рецептом большего выхода стоит двумя строками: «Простая еда» — любой рецепт, «Простая еда ×4» — только рецепт на четыре порции.
+
+Можно отметить несколько продуктов сразу — получится пакет задач.</ProdConsole.Help.Wizard.Product.Body>
+  <ProdConsole.Help.Wizard.Pack.Title>Пакет задач</ProdConsole.Help.Wizard.Pack.Title>
+  <ProdConsole.Help.Wizard.Pack.Body>Если отметить на первом шаге несколько продуктов, мастер соберёт пакет: общие настройки задаются один раз, а на выходе — отдельная задача на каждый продукт.
+
+— количество — режим и число у каждого продукта свои;
+— из чего — одинаковое сырьё у разных продуктов показано одной группой, с подписью, для чего оно;
+— на чём — у каждого верстака подписано, какие продукты пакета он умеет; каждому продукту нужен хотя бы один выбранный верстак;
+— исполнители и склады — общие для всех задач пакета; склад для готового должен принимать каждый продукт.
+
+После создания это обычные задачи: правятся, останавливаются и удаляются по одной. Сводные продукты вроде «мяса» и операции вроде разделки в пакет не берутся — они создаются по одной.
+
+Несколько похожих задач можно сделать и по одной: кнопка «По образцу» в карточке задачи открывает мастер с её настройками.</ProdConsole.Help.Wizard.Pack.Body>
   <ProdConsole.Help.Wizard.Quantity.Title>Сколько</ProdConsole.Help.Wizard.Quantity.Title>
   <ProdConsole.Help.Wizard.Quantity.Body>Три режима на выбор, и это разные вопросы:
 
@@ -670,6 +726,10 @@
 — бесконечно — «делай, пока не скажу стоп».
 
 У операций без продукта — разделки, переплавки — вместо штук число выполнений.
+
+Если рецепт даёт за цикл больше одной штуки, «определённое количество» считается целыми циклами: 50 при рецепте ×4 станет 52, а под полем будет написано, сколько это циклов.
+
+Запас для «поддерживать количество» считается по складам и по тому, что колонисты несут в руках. Лежащее на полу засчитается, когда его отнесут на склад.
 
 Стартовые числа берутся из настроек консоли: если у вас обычный заказ на 200, незачем каждый раз перебивать десятку.</ProdConsole.Help.Wizard.Quantity.Body>
   <ProdConsole.Help.Wizard.Sources.Title>Где берём</ProdConsole.Help.Wizard.Sources.Title>
@@ -693,9 +753,11 @@
 
 Если выбираете поимённо, обратите внимание на подписи: у кого выключен нужный тип работ, у кого не хватает навыка. Такой колонист останется в списке, но работать не станет.</ProdConsole.Help.Wizard.Executors.Body>
   <ProdConsole.Help.Wizard.StoreTo.Title>Куда класть</ProdConsole.Help.Wizard.StoreTo.Title>
-  <ProdConsole.Help.Wizard.StoreTo.Body>«Любой подходящий склад» — обычное поведение игры: готовое унесут туда, куда положено по настройкам складов.
+  <ProdConsole.Help.Wizard.StoreTo.Body>«Любой подходящий склад» — обычное поведение игры: мастер сам отнесёт готовое туда, куда положено по настройкам складов.
 
-Выбранный склад полезен, когда продукт нужен в конкретном месте: лекарства в лазарете, детали у станка. Если склад заполнится, консоль скажет об этом причиной остановки.</ProdConsole.Help.Wizard.StoreTo.Body>
+Выбранный склад полезен, когда продукт нужен в конкретном месте: лекарства в лазарете, детали у станка. Если склад заполнится, консоль скажет об этом причиной остановки.
+
+«На пол у верстака» — мастер кладёт готовое рядом с верстаком и сразу берётся за следующее, а на склад его относят другие колонисты. Удобно, когда мастер один, а носильщиков хватает.</ProdConsole.Help.Wizard.StoreTo.Body>
   <ProdConsole.Help.Wizard.Summary.Title>Сводка</ProdConsole.Help.Wizard.Summary.Title>
   <ProdConsole.Help.Wizard.Summary.Body>Последний шаг показывает задачу целиком: что, сколько, кто, из чего, на чём и куда. Это последняя возможность что-то поправить, не создавая задачу.
 
@@ -791,7 +853,9 @@
 
 Мод ничего не патчит в игре и не подменяет её механики. Он ставит те же задания и пометки, что вы ставите руками, — просто расставляет их сам и следит, чтобы они не противоречили друг другу.
 
-Каталог строится по данным самой игры, поэтому рецепты, верстаки и животные из других модов подхватываются без настройки.</ProdConsole.Help.General.About.Body>
+Каталог строится по данным самой игры, поэтому рецепты, верстаки и животные из других модов подхватываются без настройки.
+
+Мод работает в RimWorld 1.6 и 1.7: одна и та же сборка ставится в обе версии игры.</ProdConsole.Help.General.About.Body>
   <ProdConsole.Help.General.Window.Title>Как устроено окно</ProdConsole.Help.General.Window.Title>
   <ProdConsole.Help.General.Window.Body>Вкладки сверху — разделы. Слева в каждом список, справа карточка выбранного.
 

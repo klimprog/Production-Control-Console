@@ -3,9 +3,11 @@
   <name>Production Control Console</name>
   <author>klimprog</author>
   <packageId>klimprog.productioncontrolconsole</packageId>
-  <modVersion>0.1.67</modVersion>
+  <modVersion>0.2.6</modVersion>
+  <url>https://github.com/klimprog/Production-Control-Console</url>
   <supportedVersions>
     <li>1.6</li>
+    <li>1.7</li>
   </supportedVersions>
   <modDependencies>
     <li>
@@ -17,21 +19,21 @@
   <loadAfter>
     <li>klimprog.rimui</li>
   </loadAfter>
-  <description>Центральная консоль производства: одно окно, из которого видно всё производство колонии.
+  <description>Центральная консоль производства: управление производством колонии в одном окне.
 
-Выбираете предмет — видите, на каких верстаках он делается и сколько их у вас на карте, хватает ли ресурсов и открыто ли исследование. Каталог строится из данных игры, поэтому верстаки и рецепты из любых модов подхватываются сами.
+Задачи на верстаки ставятся пошаговым мастером: что делать, сколько, из чего, на чём, кем и куда класть готовое. Мод раскладывает их в обычные задания игры и следит за исполнением; работают ваши колонисты по своим приоритетам. Там же — садоводство (очередь культур с полным циклом поля) и животноводство (приручение, охота, забой по лимитам стада).
 
-Кнопка «производство» — в нижней панели, рядом с «Работа» и «Расписание».
+Новое в 0.2: поддержка RimWorld 1.7, варианты рецепта (простая еда ×4), «на пол у верстака», пакет задач и «По образцу».
 
-Требует RimUI Framework.
+Кнопка «Производство» — в нижней панели. Требует RimUI Framework 0.4.0 или новее. Harmony не используется.
 
 ---
 
-Production Control Console — one window for the whole colony's crafting.
+Production Control Console brings your colony's production management into one window.
 
-Pick an item and see which workbenches can make it, how many you have on the map, whether the ingredients are in stock and whether the research is done. The catalog is built from the game's own data, so workbenches and recipes from any mod are picked up automatically.
+A step-by-step wizard sets up orders: what to make, how many, from what, on which workbenches, by whom, and where to put the result. The mod turns them into ordinary bills and keeps them on track; your colonists do the work according to their usual priorities. Growing (crop queues with a full field cycle) and animals (taming, hunting, and slaughter by herd limits) are managed from the same window.
 
-The "production" button sits in the bottom bar, next to "Work" and "Schedule".
+New in 0.2: RimWorld 1.7 support, recipe variants (simple meal ×4), drop on floor, order batches, and Use as template.
 
-Requires RimUI Framework.</description>
+The Production button is on the bottom bar. Requires RimUI Framework 0.4.0 or newer. Harmony is not used.</description>
 </ModMetaData>

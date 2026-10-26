@@ -652,11 +652,15 @@ Sources controls where materials may be collected:
 
 A radius is useful for a remote workshop, so a colonist will not cross the whole map for one log. If the area is empty, however, the order will report not enough resources even when the material exists elsewhere.</ProdConsole.Help.Production.From.Body>
   <ProdConsole.Help.Production.Where.Title>Workbenches and destination</ProdConsole.Help.Production.Where.Title>
-  <ProdConsole.Help.Production.Where.Body>Workbenches lists the benches allowed to take this order. The console assigns each workbench to one order at a time; otherwise, two orders on the same bench would interfere with each other and count the same output twice.
+  <ProdConsole.Help.Production.Where.Body>Workbenches lists the benches allowed to take this order. One workbench can serve several orders: their bills wait in its queue by priority, and if the top order is missing materials, the bench moves on to the next one.
 
 Several workbenches contribute to one shared total. Five benches assigned to an order for one hundred items will make one hundred together, not one hundred each.
 
-Destination selects the storage for finished goods. Any suitable storage uses normal RimWorld behavior, allowing the colonist to haul the product wherever the game's storage rules send it.</ProdConsole.Help.Production.Where.Body>
+Destination decides what happens to finished goods:
+
+— any suitable storage: normal RimWorld behavior — the crafter hauls the product wherever your storage settings send it;
+— chosen storage: the product is taken there, and only there;
+— drop on floor: the crafter drops the product next to the bench and starts the next one right away, while other colonists haul it to storage.</ProdConsole.Help.Production.Where.Body>
   <ProdConsole.Help.Production.Stats.Title>Statistics</ProdConsole.Help.Production.Stats.Title>
   <ProdConsole.Help.Production.Stats.Body>The Made line shows three values: how much this order has produced, how much was requested, and how many of that item are currently in storage.
 
@@ -674,7 +678,11 @@ You can go back at any time without losing your choices. Nothing in the game cha
 
 Each product shows whether it can be made right now: whether a suitable bench exists, the research is complete, and the materials are available. Products shown in red cannot be selected, preventing an order that is blocked from the moment it is created.
 
-Use the categories on the left to narrow the list, or search by product name.</ProdConsole.Help.Wizard.Product.Body>
+Use the categories on the left to narrow the list, or search by product name.
+
+A product with a larger-output recipe appears on two rows: “Simple meal” uses any recipe, while “Simple meal ×4” uses only the four-meal recipe.
+
+You can tick several products at once to create a batch of orders.</ProdConsole.Help.Wizard.Product.Body>
   <ProdConsole.Help.Wizard.Quantity.Title>Amount</ProdConsole.Help.Wizard.Quantity.Title>
   <ProdConsole.Help.Wizard.Quantity.Body>The three modes answer different questions:
 
@@ -683,6 +691,10 @@ Use the categories on the left to narrow the list, or search by product name.</P
 — forever: "keep making this until I say stop."
 
 Operations without a product, such as butchering or smelting, are measured in recipe runs instead of items.
+
+If a recipe makes more than one item per run, a fixed amount counts whole runs: 50 with the ×4 recipe becomes 52, and the field shows how many runs that is.
+
+Maintain stock counts items in storage plus items colonists are carrying. Items lying on the floor count once they are hauled to storage.
 
 The initial values come from the console settings. If your usual order is two hundred items, you do not need to replace the default ten every time.</ProdConsole.Help.Wizard.Quantity.Body>
   <ProdConsole.Help.Wizard.Sources.Title>Material sources</ProdConsole.Help.Wizard.Sources.Title>
@@ -706,9 +718,11 @@ A bench reserved by another console order cannot be selected. The card shows whi
 
 If you select workers by name, check the notes beside them. A colonist with the required work type disabled or insufficient skill remains visible, but will not perform the job.</ProdConsole.Help.Wizard.Executors.Body>
   <ProdConsole.Help.Wizard.StoreTo.Title>Destination</ProdConsole.Help.Wizard.StoreTo.Title>
-  <ProdConsole.Help.Wizard.StoreTo.Body>Any suitable storage uses normal RimWorld behavior: finished goods are hauled according to your storage settings.
+  <ProdConsole.Help.Wizard.StoreTo.Body>Any suitable storage uses normal RimWorld behavior: the crafter hauls finished goods according to your storage settings.
 
-Choose a specific storage when the product is needed in one place, such as medicine in the hospital or components beside a workbench. If that storage fills up, the console will show it as the reason the order stopped.</ProdConsole.Help.Wizard.StoreTo.Body>
+Choose a specific storage when the product is needed in one place, such as medicine in the hospital or components beside a workbench. If that storage fills up, the console will show it as the reason the order stopped.
+
+Drop on floor: the crafter drops the result next to the workbench and starts the next item right away, while other colonists haul it to storage. Useful when you have one crafter and enough haulers.</ProdConsole.Help.Wizard.StoreTo.Body>
   <ProdConsole.Help.Wizard.Summary.Title>Summary</ProdConsole.Help.Wizard.Summary.Title>
   <ProdConsole.Help.Wizard.Summary.Body>The final step shows the entire order: what to make, how much, who may work, which materials and workbenches may be used, and where the result goes. This is your last chance to adjust it before creation.
 
@@ -808,7 +822,9 @@ Enabling this option gives the console partial control of the field even if norm
 
 The mod does not patch RimWorld or replace its systems. It places the same bills and designations you would use manually, then keeps them coordinated for you.
 
-The catalog is built from the game's own data, so recipes, workbenches, and animals added by other mods are detected without manual setup.</ProdConsole.Help.General.About.Body>
+The catalog is built from the game's own data, so recipes, workbenches, and animals added by other mods are detected without manual setup.
+
+The mod runs on RimWorld 1.6 and 1.7: the same download works with both versions of the game.</ProdConsole.Help.General.About.Body>
   <ProdConsole.Help.General.Window.Title>Window layout</ProdConsole.Help.General.Window.Title>
   <ProdConsole.Help.General.Window.Body>The tabs across the top open each section. Most pages show a list on the left and the selected item's details on the right.
 
@@ -910,4 +926,52 @@ Each colony has its usual order size. If you normally make two hundred at a time
 
 The section checkboxes below control sterilization, slaughtering pregnant or bonded animals, cutting blighted plants, and cutting the current crop. They only set the initial state for a NEW species or NEW field; existing setups are not changed.</ProdConsole.Help.Settings.Defaults.Body>
 
+  <ProdConsole.Orders.FromTemplate>Use as template</ProdConsole.Orders.FromTemplate>
+  <ProdConsole.Orders.Delete.Title>Delete order</ProdConsole.Orders.Delete.Title>
+  <ProdConsole.Orders.Delete.Confirm>Delete the order “{0}”? Its bills will be removed from the workbenches, and any bills of your own that the console set aside will be put back. Items already made stay in storage. This cannot be undone.</ProdConsole.Orders.Delete.Confirm>
+  <ProdConsole.Pack.Hint>You can tick several products to create a batch of orders with shared settings.</ProdConsole.Pack.Hint>
+  <ProdConsole.Pack.Chosen>Products selected: {0}. Each one becomes a separate order with shared settings.</ProdConsole.Pack.Chosen>
+  <ProdConsole.Pack.Name>Order batch ({0})</ProdConsole.Pack.Name>
+  <ProdConsole.Pack.QuantityNote>Each order in the batch has its own mode and amount.</ProdConsole.Pack.QuantityNote>
+  <ProdConsole.Pack.NotProducible>“{0}” cannot be produced right now. Untick it on the first step.</ProdConsole.Pack.NotProducible>
+  <ProdConsole.Pack.NoIngredients>No allowed materials are left for “{0}”.</ProdConsole.Pack.NoIngredients>
+  <ProdConsole.Pack.NoBench>No workbench is selected for “{0}”.</ProdConsole.Pack.NoBench>
+  <ProdConsole.Pack.For>for: {0}</ProdConsole.Pack.For>
+  <ProdConsole.Pack.Can>makes: {0}</ProdConsole.Pack.Can>
+  <ProdConsole.Pack.Created>Orders created: {0}</ProdConsole.Pack.Created>
+  <ProdConsole.Amount.CyclesHint>Runs: {0} ({1} each)</ProdConsole.Amount.CyclesHint>
+  <ProdConsole.Amount.Overshoot>One run makes up to {0}, so stock may go over the target by {1}.</ProdConsole.Amount.Overshoot>
+  <ProdConsole.Variant.Title>Recipe variant</ProdConsole.Variant.Title>
+  <ProdConsole.Variant.Any>Any suitable</ProdConsole.Variant.Any>
+  <ProdConsole.Variant.PerCycle>{0} per run</ProdConsole.Variant.PerCycle>
+  <ProdConsole.Variant.RowLabel>{0} ×{1}</ProdConsole.Variant.RowLabel>
+  <ProdConsole.Variant.Option>{0} ({1} per run)</ProdConsole.Variant.Option>
+  <ProdConsole.Wizard.StoreTo.Floor>Drop on floor</ProdConsole.Wizard.StoreTo.Floor>
+  <ProdConsole.Wizard.StoreTo.FloorText>The crafter drops the result next to the workbench and starts the next item right away; other colonists haul it to storage. It counts toward stock once it has been hauled.</ProdConsole.Wizard.StoreTo.FloorText>
+  <ProdConsole.Selected.Floor>Result: dropped on floor</ProdConsole.Selected.Floor>
+  <ProdConsole.Help.Production.Variant.Title>Recipe variant</ProdConsole.Help.Production.Variant.Title>
+  <ProdConsole.Help.Production.Variant.Body>Some products have several recipes with different output: a simple meal can be cooked one at a time or four at once.
+
+— any suitable: each workbench uses the first recipe it knows, starting with the smallest output;
+— a specific variant: the order uses only that recipe, and only workbenches that know it work on the order.
+
+When a recipe makes more than one item per run, Exact amount counts whole runs: an order for 50 meals with the ×4 recipe becomes 52, and the field shows this right away along with the number of runs. In Keep in stock mode, stock may go a few items over the target, because the last run is always finished.</ProdConsole.Help.Production.Variant.Body>
+  <ProdConsole.Help.Production.Footer.Title>Order card buttons</ProdConsole.Help.Production.Footer.Title>
+  <ProdConsole.Help.Production.Footer.Body>At the bottom of the order card:
+
+— pause and resume: the order's bills are removed from the workbenches, and its settings are kept;
+— use as template: opens the new order wizard with this order's settings — workers, storage, workbenches, mode, and amount. All that is left is to pick the product;
+— save: applies your changes; the button stays dimmed while there is nothing to save;
+— delete: the console asks first, because a deleted order cannot be restored. Its bills are removed from the workbenches, your own bills that the console set aside are put back, and anything already made stays in storage.</ProdConsole.Help.Production.Footer.Body>
+  <ProdConsole.Help.Wizard.Pack.Title>Order batch</ProdConsole.Help.Wizard.Pack.Title>
+  <ProdConsole.Help.Wizard.Pack.Body>If you tick several products on the first step, the wizard builds a batch: the shared settings are entered once, and you get a separate order for each product.
+
+— amount: each product has its own mode and amount;
+— materials: identical materials used by several products are shown as one group, labeled with what they are for;
+— workbenches: each workbench shows which products in the batch it can make; every product needs at least one selected workbench;
+— workers and storage: shared by all orders in the batch; the destination storage must accept every product.
+
+Once created, these are ordinary orders: you edit, pause, and delete them one at a time. Combined products such as meat and operations such as butchering cannot join a batch — they are created on their own.
+
+You can also create similar orders one by one: the Use as template button on an order card opens the wizard with that order's settings.</ProdConsole.Help.Wizard.Pack.Body>
 </LanguageData>
